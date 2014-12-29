@@ -9,6 +9,7 @@
     "hexo-migrator-wordpress": "~0.1.1",
     "hexo-generator-minify": "~0.1.0",
     "hexo-git-backup": "0.0.9",
-    "hexo-generator-feed": "~0.2.1"
+    "hexo-generator-feed": "~0.2.1",
+    "hexo-local-image": "0.0.2"
   }
 }
