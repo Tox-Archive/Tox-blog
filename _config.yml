@@ -89,5 +89,6 @@ deploy:
 
 backup:
     type: git
+    theme: apollo
     repository:
        github: git@github.com:Tox/Tox-blog.git,master
