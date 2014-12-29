@@ -8,7 +8,7 @@ subtitle:
 description: Perils of Tox development
 author: Tox Foundation
 email: support@tox.im
-language:
+language: en-us
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -98,3 +98,5 @@ feed:
     path: atom.xml
     limit: 20
     
+plugins:
+  - hexo-local-image
