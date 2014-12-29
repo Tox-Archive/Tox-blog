@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Archives | Tox Development blog</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Perils of Tox development">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tox Development blog">
+<meta property="og:url" content="https://blog.tox.im/archives/">
+<meta property="og:site_name" content="Tox Development blog">
+<meta property="og:description" content="Perils of Tox development">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Tox Development blog">
+<meta name="twitter:description" content="Perils of Tox development">
+
+  
+    <link rel="alternative" href="/atom.xml" title="Tox Development blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+<body>
+  <div id="container">
+    <div class="mobile-nav-panel">
+	<i class="icon-reorder icon-large"></i>
+</div>
+<header id="header">
+	<h1 class="blog-title">
+		<a href="/">Tox Development blog</a>
+	</h1>
+	<nav class="nav">
+		<ul>
+			<li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li>
+			<li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li>
+			<li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li>
+		</ul>
+	</nav>
+	<div id="search-form-wrap">
+		<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:https://blog.tox.im"></form>
+	</div>
+</header>
+    <div id="main">
+      
+  
+    <article id="post-tox-bootstrap-now-packaging-for-armhf" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/11/30/tox-bootstrap-now-packaging-for-armhf/" class="article-date">
+  <time datetime="2014-12-01T02:08:22.000Z" itemprop="datePublished">Nov 30 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/11/30/tox-bootstrap-now-packaging-for-armhf/">Tox Bootstrap Now Packaging for armhf</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>For those who own a Raspberry Pi just sitting there, collecting dust after an impulse buying spree, you finally have a reason to use it. With effort from our packager, Urras, we now have the tox-bootstrapd package available for anyone using an armhf instruction set, and quite possibly armel as well. Simply install the <a href="https://wiki.tox.im/Binaries#Apt.2FAptitude_.28Debian.2C_Ubuntu.2C_Mint.2C_etc..29" target="_blank" rel="external">Tox Repo</a> to your Apt or Yum-based distro and off to the races with ye’.</p>
+<p>For more imformation as to what the Tox Bootstrap package does, and why Tox Nodes are important, visit our <a href="https://blog.libtoxcore.so/running-a-bootstrap-node" target="_blank" rel="external">Running a Bootstrap Node</a> page.</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Tox-Core/">Tox Core</a>»<a class="article-category-link" href="/categories/Tox-Core/Tox-Repositories/">Tox Repositories</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+    <article id="post-tox-packaging-and-versions" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/11/23/tox-packaging-and-versions/" class="article-date">
+  <time datetime="2014-11-24T02:10:04.000Z" itemprop="datePublished">Nov 23 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/11/23/tox-packaging-and-versions/">Tox, packaging, and versions</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>As many of you know, Tox follows a pretty fun rolling release style alpha development cycle where a lot of code changes and improves very rapidly without any set pace.</p>
+<p>Because of the oh so fast pace of this we spent a good deal of time designing a cross-OS compilation system that churns out the latest copy of Tox no more than 5 minutes after a commit was pushed ready to be tested by you, our lovely users.</p>
+<p>Because we churned out builds so fast we knew we needed a way to make sure you always ran the latest version of Tox + your favourite client so you could enjoy all the new features and bug fixes as soon as is possible. As such we statically linked and packaged the Linux clients sitting in a repo we run, designed autoupdaters for our Windows clients, and spent a good deal working on efficient ways to update on OS X seamlessly.</p>
+<p>While this system works out wonderfully for those users who pull the tox clients from this repo or use our autoupdaters, there still exists the group of users who use distribution created packages. The problem with distro packaging is that for rolling release software it reduces and slows our ability to get the latest features or security fixes directly in to your hands.</p>
+<p>Our issue with distro packaging at this stage is simple, we don’t want our users to miss out on features or critical security fixes at the hand of slower packagers or the bureaucratic cycle/freeze model that some Linux distributions implement(looking at you, Debian).</p>
+<p>Why is this post happening now of all times? Lemmie tell you a little story.</p>
+<p>A few days back a user entered our IRC channel asking for help joining group chats, he explained that he just ran apt-get update/upgrade and installed the latest Tox package and he wasn’t getting invites to the chat at all. After a bit of questioning I realised he used an obscure Ubuntu fork aimed at older systems that shipped a copy of utox that was almost a month old. It turns out he was attempting to join the new audio group chats with a super old client. After he added our up to date and current repositories he had no more issues.</p>
+<p>If you don’t think this mess is still an issue, <a href="https://github.com/irungentoo/toxcore/compare/master%40%7B30day%7D...master" target="_blank" rel="external">I encourage you to take a look at all the changes that have happened to toxcore alone.</a></p>
+<p>About versioning, it won’t happen while we’re in our rolling release alpha build cycle.</p>
+<p>&nbsp;</p>
+<p>Happy Toxing, Sean</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Tox-Core/">Tox Core</a>»<a class="article-category-link" href="/categories/Tox-Core/Tox-Repositories/">Tox Repositories</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+    <article id="post-utox-now-has-audio-filtering-noise-cancellation-etc" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/11/23/utox-now-has-audio-filtering-noise-cancellation-etc/" class="article-date">
+  <time datetime="2014-11-24T00:06:58.000Z" itemprop="datePublished">Nov 23 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/11/23/utox-now-has-audio-filtering-noise-cancellation-etc/">uTox now has Audio Filtering (Noise cancellation, etc..).</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>To turn it on, the dropdown is right beside the audio input settings in uTox. You can preview your filtered (or not) audio by clicking on the preview button.</p>
+<p>Currently noise reduction and gain control are properly implemented.</p>
+<p>This is what it uses to filter the audio: <a href="https://github.com/irungentoo/filter_audio" title="filter_audio" target="_blank" rel="external">github repo here</a> I put it in its own repo so other clients can easily add it too.</p>
+<p>I really would like to know how well it performs so please try it out and tell us.</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/μTox/">μTox</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+    <article id="post-achievement-get-groupchat-audio" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/11/15/achievement-get-groupchat-audio/" class="article-date">
+  <time datetime="2014-11-15T17:18:14.000Z" itemprop="datePublished">Nov 15 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/11/15/achievement-get-groupchat-audio/">Achievement Get: Groupchat Audio</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>We’ve been promising it since our inception, and by God that time has finally come. With recent Toxcore commits, alongside implementation in our two leading clients, qTox and uTox, Tox users can now join groupchats and start audio calls. </p>
+<p>If you’re currently running either qTox or uTox, we heavily suggest upgrading to the newest versions, as we’ve made great strides recently to implement one of the most requested features of Tox.<br><img src="https://blog.libtoxcore.so/wp-content/uploads/2014/11/Tox-Audio-Gro…-qTox_002.png" alt="Tox Audio Gro… - qTox_002"></p>
+<p>Here’s an audio sample of a music clip being played over group audio:<br>[audio ogg=”<a href="https://blog.libtoxcore.so/wp-content/uploads/2014/11/tox_group_audio.ogg&quot;][/audio" target="_blank" rel="external">https://blog.libtoxcore.so/wp-content/uploads/2014/11/tox_group_audio.ogg&quot;][/audio</a>]<br>(Song: <a href="http://cathndadrecords.bandcamp.com/track/london" target="_blank" rel="external">London by Satan &amp; Megastar</a> Licensed CC-BY 3.0)</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/qTox/">qTox</a>»<a class="article-category-link" href="/categories/qTox/Tox-Core/">Tox Core</a>»<a class="article-category-link" href="/categories/qTox/Tox-Core/μTox/">μTox</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+    <article id="post-tox-on-your-wii" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/10/22/tox-on-your-wii/" class="article-date">
+  <time datetime="2014-10-22T20:56:23.000Z" itemprop="datePublished">Oct 22 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/10/22/tox-on-your-wii/">Lets Tox, everywhere!</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>Howdy folks for the 2nd time today!</p>
+<p>Remember that time you got Linux running on your Wii? When you managed to install Debian to your Raspberry Pi?</p>
+<p>Wouldn’t it be _super cool _if you could Tox your friends without dealing with a compiler or git?</p>
+<p>Thankfully we agree, and we know you have tons of other cases where x86/x86_64 might not be the architecture of your PC. We believe you should be able to Tox no matter where you are or what you use without a bunch of work or hacks, so we’re introducing the Tox Everywhere initiative.</p>
+<p>Be it your PowerPC Mac running Linux or your Wii, the Tox Everywhere initiative was created to give everyone with whatever odd case you may have the same ease of ability to use Tox as our traditional x86 friends</p>
+<p>In the coming weeks expect to see more posts on more architectures and clients, all ready to go directly in our repo so you can install Tox with the same repo instructions we already have on our <a href="https://wiki.tox.im/Binaries" title="binaries" target="_blank" rel="external">binaries</a> page.</p>
+<p>Phase one of this program is targeting the Arm, Armv7, PowerPC, and PowerPC64 architectures and is currently being created as we speak. <a href="http://jenkins.libtoxcore.so/job/qTox-Linux-pkg/" title="PowerPC packages for qTox" target="_blank" rel="external">PowerPC packages for qTox</a> already exist ready for you to install, though they are not yet in the repo.</p>
+<p>For the 2nd time, happy Toxing</p>
+<p>ps: If you have any questions on what we’ll support or when shoot me an email or Tox me, sean [at] tox [.] im</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Jenkins/">Jenkins</a>»<a class="article-category-link" href="/categories/Jenkins/Tox-Core/">Tox Core</a>»<a class="article-category-link" href="/categories/Jenkins/Tox-Core/Tox-Foundation/">Tox Foundation</a>»<a class="article-category-link" href="/categories/Jenkins/Tox-Core/Tox-Foundation/Tox-Repositories/">Tox Repositories</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+    <article id="post-tox-on-osx" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/10/22/tox-on-osx/" class="article-date">
+  <time datetime="2014-10-22T20:36:49.000Z" itemprop="datePublished">Oct 22 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/10/22/tox-on-osx/">Tox on OSX</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>Hodwy folks,</p>
+<p>After 27 whole days of delay our Tox downloads for OS X work again, and are better than ever!</p>
+<p>We ran them previously, but progress on clients stagnated and we couldn’t justify the extra cost to build binaries that didn’t really work.</p>
+<p>Now that qTox works great on OS X we’ve continued our builds for all our OS X users, you can download them <a href="https://wiki.tox.im/Binaries#OS_X" title="here" target="_blank" rel="external">here</a>.</p>
+<p>Happy Toxing!</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/qTox/">qTox</a>»<a class="article-category-link" href="/categories/qTox/Tox-Core/">Tox Core</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+    <article id="post-qtox-now-in-tox-repositories" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/10/20/qtox-now-in-tox-repositories/" class="article-date">
+  <time datetime="2014-10-20T20:37:40.000Z" itemprop="datePublished">Oct 20 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/10/20/qtox-now-in-tox-repositories/">qTox now in Tox Repositories</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>It took awhile, and some may have noticed it was there earlier, but qTox has now hit the Tox Repos. It’s a great addition to the already expansive list of Tox clients users have to choose from, and personally, I think it’s one of the best clients we have to offer.</p>
+<p>If you haven’t already, <a href="https://wiki.tox.im/Binaries#Linux" target="_blank" rel="external">here are the instructions</a> on how to add the Tox Repo to your packaging software.</p>
+<p><img src="https://blog.libtoxcore.so/wp-content/uploads/2014/10/Screenshot-from-2014-10-20-163846.png" alt="Screenshot from 2014-10-20 16:38:46"></p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/qTox/">qTox</a>»<a class="article-category-link" href="/categories/qTox/Tox-Repositories/">Tox Repositories</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+    <article id="post-help-tox-grow-run-a-tox-node-today" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/10/06/help-tox-grow-run-a-tox-node-today/" class="article-date">
+  <time datetime="2014-10-06T22:04:11.000Z" itemprop="datePublished">Oct 6 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/10/06/help-tox-grow-run-a-tox-node-today/">Help Tox Grow, Run a Tox Node Today</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>In light of packaging the bootstrap daemon, we’re going to be running a month-long campaign to expand our current node list. For more information, visit our <a href="https://blog.libtoxcore.so/running-a-bootstrap-node" title="Running a Bootstrap Node" target="_blank" rel="external">Running a Bootstrap Node</a> page or join us on IRC #tox@freenode.</p>
+<p><img src="https://blog.libtoxcore.so/wp-content/uploads/2014/10/preferences-system-network-sharing-300x300.png" alt="preferences-system-network-sharing"></p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Tox-Core/">Tox Core</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+    <article id="post-toxic-added-to-tox-repositories" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/10/06/toxic-added-to-tox-repositories/" class="article-date">
+  <time datetime="2014-10-06T07:35:59.000Z" itemprop="datePublished">Oct 6 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/10/06/toxic-added-to-tox-repositories/">Toxic added to Tox Repositories</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>One of our oldest, but feature-rich clients, <a href="https://wiki.tox.im/Toxic" target="_blank" rel="external">Toxic</a>, has been added to the Tox Repos. Toxic uses an ncurses interface, and is written in C. All Unix-like operating systems are currently supported (e.g. Linux, OSX, FreeBSD).</p>
+<p>If you haven’t added our repository yet, you can follow <a href="https://wiki.tox.im/Binaries#Repositories" target="_blank" rel="external">these instructions.</a> You can also download the packages directly <a href="https://jenkins.libtoxcore.so/job/toxic-linux-pkg/" target="_blank" rel="external">here</a>.</p>
+<p><img src="https://blog.libtoxcore.so/wp-content/uploads/2014/10/Ncursesclient1.png" alt=""></p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Tox-Repositories/">Tox Repositories</a>»<a class="article-category-link" href="/categories/Tox-Repositories/Toxic/">Toxic</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+    <article id="post-ratox-in-tox-repositories" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/10/04/ratox-in-tox-repositories/" class="article-date">
+  <time datetime="2014-10-05T01:13:18.000Z" itemprop="datePublished">Oct 4 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/10/04/ratox-in-tox-repositories/">Ratox in Tox Repositories</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>Man, we’re on fire lately. Ratox, a relatively new client created by the wonderful people at <a href="www.2f30.org">2f30</a>, can now be found in Tox Repos. Unlike other clients relying on GUIs as an interface to the user, Ratox is developed with the UNIX-philosophy in mind and allows complete interaction through named pipes. For more info, visit the <a href="https://wiki.tox.im/Ratox" target="_blank" rel="external">Ratox article</a> on the Tox Wiki.</p>
+<p>If you’re new to Tox, or haven’t added our Tox Repository yet, check out <a href="https://wiki.tox.im/Binaries#Repositories" target="_blank" rel="external">the instructions</a> on how to add the Tox Repo to your software management suite.</p>
+<p><a href="https://blog.libtoxcore.so/wp-content/uploads/2014/10/Screenshot-from-2014-10-04-210506.png" target="_blank" rel="external"><img src="https://blog.libtoxcore.so/wp-content/uploads/2014/10/Screenshot-from-2014-10-04-210506-300x179.png" alt="Screenshot from 2014-10-04 21:05:06"></a></p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Ratox/">Ratox</a>»<a class="article-category-link" href="/categories/Ratox/Tox-Repositories/">Tox Repositories</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="page-number" href="/archives/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/7/">7</a><a class="extend next" rel="next" href="/archives/page/2/">Next &raquo;</a>
+    </nav>
+  
+
+    </div>
+    <div class="mb-search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:blog.tox.im">
+  </form>
+</div>
+<footer id="footer">
+	<h1 class="footer-blog-title">
+		<a href="/">Tox Development blog</a>
+	</h1>
+	<span class="copyright">
+		&copy; 2014 Tox Foundation<br>
+		Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>
+		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+	</span>
+</footer>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Category: Tox Core | Tox Development blog</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Perils of Tox development">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tox Development blog">
+<meta property="og:url" content="https://blog.tox.im/categories/Tox-Core/">
+<meta property="og:site_name" content="Tox Development blog">
+<meta property="og:description" content="Perils of Tox development">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Tox Development blog">
+<meta name="twitter:description" content="Perils of Tox development">
+
+  
+    <link rel="alternative" href="/atom.xml" title="Tox Development blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+<body>
+  <div id="container">
+    <div class="mobile-nav-panel">
+	<i class="icon-reorder icon-large"></i>
+</div>
+<header id="header">
+	<h1 class="blog-title">
+		<a href="/">Tox Development blog</a>
+	</h1>
+	<nav class="nav">
+		<ul>
+			<li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li>
+			<li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li>
+			<li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li>
+		</ul>
+	</nav>
+	<div id="search-form-wrap">
+		<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:https://blog.tox.im"></form>
+	</div>
+</header>
+    <div id="main">
+      
+  
+    <article id="post-tox-bootstrap-now-packaging-for-armhf" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/11/30/tox-bootstrap-now-packaging-for-armhf/" class="article-date">
+  <time datetime="2014-12-01T02:08:22.000Z" itemprop="datePublished">Nov 30 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/11/30/tox-bootstrap-now-packaging-for-armhf/">Tox Bootstrap Now Packaging for armhf</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>For those who own a Raspberry Pi just sitting there, collecting dust after an impulse buying spree, you finally have a reason to use it. With effort from our packager, Urras, we now have the tox-bootstrapd package available for anyone using an armhf instruction set, and quite possibly armel as well. Simply install the <a href="https://wiki.tox.im/Binaries#Apt.2FAptitude_.28Debian.2C_Ubuntu.2C_Mint.2C_etc..29" target="_blank" rel="external">Tox Repo</a> to your Apt or Yum-based distro and off to the races with ye’.</p>
+<p>For more imformation as to what the Tox Bootstrap package does, and why Tox Nodes are important, visit our <a href="https://blog.libtoxcore.so/running-a-bootstrap-node" target="_blank" rel="external">Running a Bootstrap Node</a> page.</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Tox-Core/">Tox Core</a>»<a class="article-category-link" href="/categories/Tox-Core/Tox-Repositories/">Tox Repositories</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+    <article id="post-tox-packaging-and-versions" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/11/23/tox-packaging-and-versions/" class="article-date">
+  <time datetime="2014-11-24T02:10:04.000Z" itemprop="datePublished">Nov 23 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/11/23/tox-packaging-and-versions/">Tox, packaging, and versions</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>As many of you know, Tox follows a pretty fun rolling release style alpha development cycle where a lot of code changes and improves very rapidly without any set pace.</p>
+<p>Because of the oh so fast pace of this we spent a good deal of time designing a cross-OS compilation system that churns out the latest copy of Tox no more than 5 minutes after a commit was pushed ready to be tested by you, our lovely users.</p>
+<p>Because we churned out builds so fast we knew we needed a way to make sure you always ran the latest version of Tox + your favourite client so you could enjoy all the new features and bug fixes as soon as is possible. As such we statically linked and packaged the Linux clients sitting in a repo we run, designed autoupdaters for our Windows clients, and spent a good deal working on efficient ways to update on OS X seamlessly.</p>
+<p>While this system works out wonderfully for those users who pull the tox clients from this repo or use our autoupdaters, there still exists the group of users who use distribution created packages. The problem with distro packaging is that for rolling release software it reduces and slows our ability to get the latest features or security fixes directly in to your hands.</p>
+<p>Our issue with distro packaging at this stage is simple, we don’t want our users to miss out on features or critical security fixes at the hand of slower packagers or the bureaucratic cycle/freeze model that some Linux distributions implement(looking at you, Debian).</p>
+<p>Why is this post happening now of all times? Lemmie tell you a little story.</p>
+<p>A few days back a user entered our IRC channel asking for help joining group chats, he explained that he just ran apt-get update/upgrade and installed the latest Tox package and he wasn’t getting invites to the chat at all. After a bit of questioning I realised he used an obscure Ubuntu fork aimed at older systems that shipped a copy of utox that was almost a month old. It turns out he was attempting to join the new audio group chats with a super old client. After he added our up to date and current repositories he had no more issues.</p>
+<p>If you don’t think this mess is still an issue, <a href="https://github.com/irungentoo/toxcore/compare/master%40%7B30day%7D...master" target="_blank" rel="external">I encourage you to take a look at all the changes that have happened to toxcore alone.</a></p>
+<p>About versioning, it won’t happen while we’re in our rolling release alpha build cycle.</p>
+<p>&nbsp;</p>
+<p>Happy Toxing, Sean</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Tox-Core/">Tox Core</a>»<a class="article-category-link" href="/categories/Tox-Core/Tox-Repositories/">Tox Repositories</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+    <article id="post-help-tox-grow-run-a-tox-node-today" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/10/06/help-tox-grow-run-a-tox-node-today/" class="article-date">
+  <time datetime="2014-10-06T22:04:11.000Z" itemprop="datePublished">Oct 6 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/10/06/help-tox-grow-run-a-tox-node-today/">Help Tox Grow, Run a Tox Node Today</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>In light of packaging the bootstrap daemon, we’re going to be running a month-long campaign to expand our current node list. For more information, visit our <a href="https://blog.libtoxcore.so/running-a-bootstrap-node" title="Running a Bootstrap Node" target="_blank" rel="external">Running a Bootstrap Node</a> page or join us on IRC #tox@freenode.</p>
+<p><img src="https://blog.libtoxcore.so/wp-content/uploads/2014/10/preferences-system-network-sharing-300x300.png" alt="preferences-system-network-sharing"></p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Tox-Core/">Tox Core</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+    <article id="post-tox-now-works-through-tor" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/08/15/tox-now-works-through-tor/" class="article-date">
+  <time datetime="2014-08-15T18:09:02.000Z" itemprop="datePublished">Aug 15 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/08/15/tox-now-works-through-tor/">Tox now works through Tor (and other proxies)</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>Toxcore can now function on TCP only as a fall back when UDP can’t be used.</p>
+<p>There were many people who requested Tor support so I implemented basic SOCKS5 proxy support for toxcore TCP connections.</p>
+<p>To use Tox with Tor, set your Tor proxy address in your Tox client proxy settings and disable UDP (UDP connections bypass the proxy and must be disabled if the proxy is used for privacy and not simply for accessing the internet).</p>
+<p>This will make toxcore use Tor for all connections.</p>
+<p>As of now I’m pretty sure the only possible toxcore leak (if UDP is disabled) would be if a DNS name is passed to the tox_bootstrap_from_address() function it would not be resolved using Tor. (I’m pretty sure all the main clients only pass ip addresses to this function though.)</p>
+<p>Clients are not Tor safe yet and bypass the proxy for any non toxcore related network communications (DNS names for example) which means it should not be used in situations that require serious anonymity yet (unless you use something like iptables to plug the leaks).</p>
+<p>Happy Anonymous Toxing.</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Tox-Core/">Tox Core</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+    <article id="post-to-5000-and-beyond" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/08/04/to-5000-and-beyond/" class="article-date">
+  <time datetime="2014-08-04T17:22:46.000Z" itemprop="datePublished">Aug 4 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/08/04/to-5000-and-beyond/">To 5,000 and beyond!</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p><a href="https://blog.libtoxcore.so/wp-content/uploads/2014/08/wpid-wp-1407172908835.jpeg" target="_blank" rel="external"><img src="https://blog.libtoxcore.so/wp-content/uploads/2014/08/wpid-wp-1407172908835.jpeg" alt="image" title="wp-1407172908835"></a></p>
+<p>Thank you to everyone who has supported us over the year, here’s to the next 5,000!</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Tox-Core/">Tox Core</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+    <article id="post-took-long-enough" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/07/12/took-long-enough/" class="article-date">
+  <time datetime="2014-07-12T19:40:14.000Z" itemprop="datePublished">Jul 12 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/07/12/took-long-enough/">The day we&#39;ve all been waiting for</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>Now that it’s <del>Friday </del>Saturday it’s finally time to spoil the news that we’ve somehow managed to keep mostly secret.</p>
+<p>Tox is once and for all Alpha. Yes, you heard correctly, Alpha. That’s it, go home.</p>
+<p>Kidding! We’ve got a <em>little bit more to share.</em></p>
+<p>Right now when you want to download Tox you click on a button to a wiki page where you follow a confusing chart to find a bunch of builds for various clients, all squeezed together waiting for a click. You don’t know what’s better, you don’t know what does what, and that’s a serious issue.</p>
+<p>First, we’ve introduced a single easy to use webpage. Those confusing charts? gone, just select your OS and be on your way. Remember all those clients when you went to past download Tox? The official client is now just Tox. We’ve gone ahead and chosen the best client for each OS and made it Tox. If you’re used to using builds of other clients or want to try something new don’t be disheartened, we’ll still be providing builds for all the clients so you can test to your hearts extent.</p>
+<p>Having trouble with Tox? soon you’ll be able to go to our new support site, choose your issue, and have an answer. Still confused? You’ll also be able to punch in a question and get a response from a real live human as soon as we can. Say you find a bug, maybe you have a suggestion. Soon you’ll be able to make bug report for Tox, make a suggestion, or just tell us how you feel, and it’ll be sent to the respective support personnel and developers who’ll do what they can to see to it that your bug is resolved as soon as we can.</p>
+<p>And what you’ve all been waiting for, Tox for Windows, OS X, and Linux all have calling, and Tox for Windows has video! Video should be arriving soon for OS X as it’s currently just broken due to a bug, and Linux is being worked on as we speak.</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Tox-Core/">Tox Core</a>»<a class="article-category-link" href="/categories/Tox-Core/Tox-Foundation/">Tox Foundation</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+    <article id="post-tox-updates-kinda" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/07/08/tox-updates-kinda/" class="article-date">
+  <time datetime="2014-07-08T07:03:36.000Z" itemprop="datePublished">Jul 8 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/07/08/tox-updates-kinda/">Tox Updates! Kinda</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>Well folks, here we are, a blog post in what seems like forever.</p>
+<p>Now, if you’re following the project off our blog and twitter, don’t get discouraged, we’re still alive and well, busily working away.</p>
+<p>So, if you haven’t heard we introduced a site called <a href="https://toxme.se" title="https://toxme.se" target="_blank" rel="external">https://toxme.se</a>, a fast and easy way to share your ID with your friends. It’s as simple as punching in an ID, selecting a name, and getting a name like joe@toxme.se. Now I know what you may be wondering, isn’t this controlling in some sense? To correctly answer that we’ll have to look at how it works. The website is an extension of the DNS Discovery standard, a method for storing keys in DNS records, usually encrypted to prevent spoofing and mitm attacks. The way this works is that you can take your domain like cats.com and make your own sarah user, so all your friends can add you by adding sarah@cats.com, we’ve just gone ahead and setup a site to make it easy.</p>
+<p>Now, toxme isn’t new, we introduced it a few weeks back, but never formally announced its arrival. If you signed up back then keep in mind, a few weeks back we did wipe all the records as we moved to an encrypted format, so your entry may no longer exist.</p>
+<p>Now, I know what you’re thinking, that can’t be all they’ve done, right?</p>
+<p>Right!, but we want to keep a good bit of it a surprise, so hold on to your horses for a few more days, this is going to be big.</p>
+<p>Happy Toxxing,</p>
+<p>Sean</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Tox-Core/">Tox Core</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+    <article id="post-the-tcp-branch-an-explanation" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/05/20/the-tcp-branch-an-explanation/" class="article-date">
+  <time datetime="2014-05-20T19:21:56.000Z" itemprop="datePublished">May 20 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/05/20/the-tcp-branch-an-explanation/">The TCP branch: An Explanation</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>The TCP branch was merged 2 days ago breaking all compatibility with older clients, yesterday, a major protocol change was introduced, if you run a bootstrap node or a client with a core version older than <a href="https://github.com/irungentoo/ProjectTox-Core/commit/e85feb8a3db42a0285b940a090c60102fae50374" target="_blank" rel="external">https://github.com/irungentoo/ProjectTox-Core/commit/e85feb8a3db42a0285b940a090c60102fae50374</a> then please update it.</p>
+<p>So, what does the TCP branch bring to Tox?</p>
+<p>Tox now supports using TCP relay nodes to connect to friends meaning those behind unpunchable NATs should now be able to connect.</p>
+<p>The protocol has been revamped to be better and safer. Packets are now generally smaller in size and the protocol used to transport the data securely has been redesigned in order to prevent possible evil relays from interfering with the connections between you and your friends. The protocol also now supports padding which can be used to obscure the size of the data transmitted.</p>
+<p>Tox can switch between relayed TCP and direct UDP connections seamlessly meaning if you initially connect to a friend with a TCP relay and then for some reason 5 minutes later the hole punching works and the direct UDP starts working Tox will automatically switch from one to the other without the users noticing anything.</p>
+<p>This also means that Tox can switch between different relays if one used to connect to the other peer goes offline. Again, without the users noticing anything.</p>
+<p>There have also been some fixes and optimizations to increase the initial connection speed meaning you should see your friends come online faster than before.</p>
+<p>I will warn you though that group chats and A/V have not yet been updated to work with the TCP so issues with them right now are perfectly normal.</p>
+<p>If you try Tox but can’t connect to anyone make sure you are using an updated core and bootstrapping into the network with an updated node, (<a href="https://wiki.tox.im/Nodes" target="_blank" rel="external">https://wiki.tox.im/Nodes</a>)</p>
+<p>In other news Google Summer of Code has officially started which means the amount of work done on Tox will increase.</p>
+<p>This update brings us closer to our goal of creating the best skype replacement that works everywhere while being both secure and simple to use.</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Tox-Core/">Tox Core</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+    <article id="post-tcp-branch-merged-with-master" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/05/18/tcp-branch-merged-with-master/" class="article-date">
+  <time datetime="2014-05-19T00:00:16.000Z" itemprop="datePublished">May 18 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/05/18/tcp-branch-merged-with-master/">TCP Branch Merged with Master</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>irungentoo has merged the TCP branch he has been long working on today, which now enabled those behind restrictive NATs access to TCP relays in order to connect with other users. Most of the changes were backend, which means not much is required to update existing clients, but be aware that old clients will no longer work with new clients.</p>
+<p>Expect a detailed post about all the changes soon.</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Tox-Core/">Tox Core</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+    <article id="post-were-not-dead-just-working-on-tcp" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/05/04/were-not-dead-just-working-on-tcp/" class="article-date">
+  <time datetime="2014-05-04T22:09:18.000Z" itemprop="datePublished">May 4 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/05/04/were-not-dead-just-working-on-tcp/">We&#39;re Not Dead; Just Working on TCP</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>Just for those who may be worried that there haven’t been any commits to the master branch in a few days, irungentoo and others are all making commits to the TCP branch of the GitHub repository. You can view our progress <a href="https://github.com/irungentoo/ProjectTox-Core/tree/TCP" target="_blank" rel="external">here.</a></p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Tox-Core/">Tox Core</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/categories/Tox-Core/page/2/">2</a><a class="extend next" rel="next" href="/categories/Tox-Core/page/2/">Next &raquo;</a>
+    </nav>
+  
+
+    </div>
+    <div class="mb-search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:blog.tox.im">
+  </form>
+</div>
+<footer id="footer">
+	<h1 class="footer-blog-title">
+		<a href="/">Tox Development blog</a>
+	</h1>
+	<span class="copyright">
+		&copy; 2014 Tox Foundation<br>
+		Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>
+		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+	</span>
+</footer>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Tox Development blog</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Perils of Tox development">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tox Development blog">
+<meta property="og:url" content="https://blog.tox.im/page/5/">
+<meta property="og:site_name" content="Tox Development blog">
+<meta property="og:description" content="Perils of Tox development">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Tox Development blog">
+<meta name="twitter:description" content="Perils of Tox development">
+
+  
+    <link rel="alternative" href="/atom.xml" title="Tox Development blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+<body>
+  <div id="container">
+    <div class="mobile-nav-panel">
+	<i class="icon-reorder icon-large"></i>
+</div>
+<header id="header">
+	<h1 class="blog-title">
+		<a href="/">Tox Development blog</a>
+	</h1>
+	<nav class="nav">
+		<ul>
+			<li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li>
+			<li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li>
+			<li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li>
+		</ul>
+	</nav>
+	<div id="search-form-wrap">
+		<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:https://blog.tox.im"></form>
+	</div>
+</header>
+    <div id="main">
+      
+  
+    <article id="post-introducing-sts-single-tox-standard" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/03/31/introducing-sts-single-tox-standard/" class="article-date">
+  <time datetime="2014-03-31T23:20:21.000Z" itemprop="datePublished">Mar 31 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/03/31/introducing-sts-single-tox-standard/">Introducing STS: The Single Tox Standard</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p><div>As Tox grows and more clients are created, we feel it is time to  create a Tox standard. Doing so will enable us to promote a single, cohesive brand despite the numerous clients. STS aims to offer a handbook for existing and potential client developers to follow so they can all remain consistent, yet unique in their own way. Terminology such as the <strong>Tox ID</strong> will represent the 76-character string used to identify users, but <strong>Nickname </strong>and <strong>Names</strong> being used to personally recognize friends. This will prevent confusion for users who wish to switch clients, and allow Tox to focus on pushing a single brand. At the moment, we are <strong>strongly recommending</strong> adherence to the STS, as it will foster a more productive environment, but we recognize that it’s the right of the developer to chose. Once the STS has been completed and v1.0.0 has been published, we will no longer offer support or publicity to clients that wish to deviate from the STS. We regret that we must take such a stance, but it is required that we take such measures in order to uphold one of Tox’s foremost goals: to provide a smooth and easy experience for all walks of life.</div><br>&nbsp;</p>
+<p>Like everything Tox does, the Single Tox Standard is on GitHub where you may open tickets to address concerns, questions, or offer feedback. Your continued support of Tox is appreciated as we draft the first version of STS.</p>
+<p><a href="https://github.com/Tox/STS" target="_blank" rel="external">https://github.com/Tox/STS</a></p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Tox-Core/">Tox Core</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+    <article id="post-toxicity-and-background-and-notifications" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/03/25/toxicity-and-background-and-notifications/" class="article-date">
+  <time datetime="2014-03-26T03:41:53.000Z" itemprop="datePublished">Mar 25 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/03/25/toxicity-and-background-and-notifications/">Toxicity and background and notifications</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>A lot of work is being done on Toxicity recently, one of which is <a href="https://blog.libtoxcore.so/128/jenkins-ci-and-signed-commits" target="_blank" rel="external">signed commits</a>! There was a small hiccup in getting used to it, but from now on everything should be nice and trustable. There’s also a lot of under-the-hood refactoring happening, cleaning up messy code and such, better for developers.</p>
+<p>The reason for this post, though, is the addition of background running and notifications. Currently Toxicity is using a max 10 minute timer (by iOS) to allow apps to utilize background threads while the app isn’t running in the foreground. This allows the app to not completely shutdown and restart Tox core every time you switch out of the app! Right now tox_do has a bit of a bigger interval in-between, but users should still be warned about battery drainage.</p>
+<p>As a result of this background servicing, notifications were possible to add, using simple UILocalNotifications, for incoming messages. It shows the sender, and which groupchat it came from provided it wasn’t a friend’s message. There’s a bit of work to be done still. This mainly includes switching to appropriate chat windows once the user opens the app via notification.</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Toxicity/">Toxicity</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+    <article id="post-antox-0-7-released" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/03/24/antox-0-7-released/" class="article-date">
+  <time datetime="2014-03-24T15:26:23.000Z" itemprop="datePublished">Mar 24 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/03/24/antox-0-7-released/">Antox 0.7 Released</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>We’ve finally arrived at a new version of Antox after a period of slow development. With this release comes two new major features, as well as a myriad of small bug fixes and slight changes not worth mentioning.</p>
+<p><strong>New Features</strong></p>
+<ol>
+<li>Your friends now have profiles, just long hold on them to access it. The profiles contain all your friend’s information including a QR image of their Tox key for easier sharing amongst your social group.</li>
+<li><p>You can now give your friends nicknames/aliases to easier identify your friend. This can be set when adding them for the first time, and later updated in their profile. Clearing their alias altogether will return to displaying their Tox nickname.<br><strong>Upcoming Features in the Next Release</strong></p>
+</li>
+<li><p>Typing indicators to show when your friends are writing to you. You’ll also send a typing status to your friends. These indicators will be a setting so you can turn them off should you wish to do so.</p>
+</li>
+<li>Manually set your language. Currently you will be shown translated strings automatically if they exist based upon your locale, however to give you more control a setting will also be added to let you change the language.</li>
+<li>Welcome Tour to show off all the Antox features and gently introduce new users to Tox itself.</li>
+<li>Continued effort like always to fix the disconnects and any crashes.<br>You can get the updated APKs as always from <a href="http://download.tox.im" target="_blank" rel="external">here</a></li>
+</ol>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Antox/">Antox</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+    <article id="post-gsoc-14-proposals" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/03/21/gsoc-14-proposals/" class="article-date">
+  <time datetime="2014-03-22T00:09:35.000Z" itemprop="datePublished">Mar 21 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/03/21/gsoc-14-proposals/">Student proposals for GSoC 2014</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>As we’ve hit the deadline for student applications, I thought I’d take a moment to share the outcome.</p>
+<p>For 2014, Google accepted 190 organizations, with 4420 students sending in 6313 proposals. This means that on average a random organization received around 33 proposals, if divided evenly. This means that on average, each org would receive around 0.5% of all proposals.</p>
+<p>Now, the number of proposals being divided equally does not happen, some organizations might be more known, some might have few areas to do proposals, others might be umbrellas.</p>
+<p>Project Tox received 88 proposals, meaning over 1.39% of all proposals were sent to us. As Project Tox is a bit of an umbrella, students applied to one of 6 major categories; being Core, AV, Qt, Venom, iOS, and Android. Stats on where proposals went have yet to be calculated, though a good majority went to Android and Qt.</p>
+<p>This rush of students was surprisingly successful, for our first GSoC, I can’t wait to see what good comes out of the chosen students, and what comes out of future summers.</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Google-Summer-of-Code/">Google Summer of Code</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+    <article id="post-tox-core-and-api-changes" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/03/21/tox-core-and-api-changes/" class="article-date">
+  <time datetime="2014-03-21T04:51:05.000Z" itemprop="datePublished">Mar 21 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/03/21/tox-core-and-api-changes/">Tox Core and API changes</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>Recently pushed was the api-fix branch by irungentoo. Nothing too big was changed, fortunately, but things were changed to keep consistencies and so forth. Included in this merge was:</p>
+<ul>
+<li>No more forcing NULL terminated strings in Tox Core (meaning whatever you send to the core, it won’t chop off the end forcefully)</li>
+<li>Some naming changes like tox_get_friend_id -&gt; tox_get_friend_number to clear some confusions</li>
+<li>Many <code>int</code>s were changed to <code>int32_t</code> for consistency and clarity<br>You can check all the changes <a href="https://github.com/irungentoo/ProjectTox-Core/commit/5770a0e29ab35efb1ef656ab81c499635fc5fecf" target="_blank" rel="external">here</a>, as well.</li>
+</ul>
+<p>All of the clients have been able to update their builds to reflect the API changes as well, amazingly fast. There might be even more changes to come to make the API even better in the future! In other news, more work is being done on TCP  in the core. Can’t wait for that to finish.</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Tox-Core/">Tox Core</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+    <article id="post-toxicity-and-jenkins" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/03/21/toxicity-and-jenkins/" class="article-date">
+  <time datetime="2014-03-21T04:40:16.000Z" itemprop="datePublished">Mar 21 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/03/21/toxicity-and-jenkins/">Toxicity and Jenkins</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>The main Toxicity dev has finally finished with some personal stuff and is back to working on Toxicity, rather than merging a bunch of pull requests! Along with that the Jenkins build for Toxicity is working perfectly, thanks to stqism (Sean) and stal for their work on that.</p>
+<p>Along with some recent commits, a few big issues were resolved, including updating core and fixing some PR bugs. Hopefully there’ll be more in the future. A little bird hinted to me something about background threading…</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Toxicity/">Toxicity</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+    <article id="post-antox-jenkins" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/03/20/antox-jenkins/" class="article-date">
+  <time datetime="2014-03-20T06:30:17.000Z" itemprop="datePublished">Mar 20 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/03/20/antox-jenkins/">Antox + Jenkins</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>Just a quick post, we’ve finally got Antox working on<a href="http://http://jenkins.tox.im/job/Android-Antox" target="_blank" rel="external"> Jenkins</a>.</p>
+<p>Antox downloads from our <a href="http://download.tox.im" title="download.tox.im" target="_blank" rel="external">download.tox.im</a> site are now built up to the commit, with no more than a 10 minute delay after irungentoo or Astonex push a commit.</p>
+<p>Also note that the gplay signing key is going to change, and will share one with the Jenkins build.</p>
+<p>The latest Antox apk is also always available <a href="https://c1cf.https.cdn.softlayer.net/80C1CF/192.254.75.110:8080/job/Android-Antox/lastSuccessfulBuild/artifact/antox.apk" target="_blank" rel="external">here</a>.</p>
+<p>Note: I<strong> </strong><em>just</em> noticed <a href="https://blog.libtoxcore.so/141/antox-nightly-builds-google-play-store" target="_blank" rel="external">this.</a></p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Antox/">Antox</a>»<a class="article-category-link" href="/categories/Antox/Jenkins/">Jenkins</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+    <article id="post-antox-nightly-builds-google-play-store" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/03/19/antox-nightly-builds-google-play-store/" class="article-date">
+  <time datetime="2014-03-20T03:42:39.000Z" itemprop="datePublished">Mar 19 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/03/19/antox-nightly-builds-google-play-store/">Antox Nightly Builds &amp; Google Play Store</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>You can now finally get up to date Antox releases on the <a href="http://wiki.tox.im/binaries" target="_blank" rel="external">Tox Downloads</a> page. These APKs are updated automagically every time there’s a change to Antox or the Tox core, which is usually several times a day.</p>
+<p>This comes just in time as unfortunately we’ve had to pull Antox from the Google Play Store Alpha. This is due to a technical mishap with our key signing. Check back here and the current Google+ group for more news on how we fix this.</p>
+<p>Lastly as a small note, you can now get bitcoins for your commits to Antox thanks to anonymous doners on<a href="http://tip4commit.com/projects/654" target="_blank" rel="external"> tip4commit</a>.</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Antox/">Antox</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+    <article id="post-jenkins-ci-and-signed-commits" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/03/19/jenkins-ci-and-signed-commits/" class="article-date">
+  <time datetime="2014-03-19T20:22:31.000Z" itemprop="datePublished">Mar 19 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/03/19/jenkins-ci-and-signed-commits/">Jenkins CI and signed commits</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>This is the first post in our new Jenkins section. In this section, we will post updates about how we’re building Tox automatically.</p>
+<p>Today we started rolling out a new feature in our builds, Signed git commits. What are signed commits, and why are we using them? Well, the first question is answered quite easily: We use PGP signatures in order to verify the integrity of any commit. If you don’t know what PGP is, you can read about it here: <a href="https://en.wikipedia.org/wiki/Pretty_Good_Privacy" title="Pretty Good Privacy" target="_blank" rel="external">PGP</a>. Now, why are we doing this? This answer is a little more complicated.</p>
+<p>A friend (we’ll call him Bob) of mine recently told me a little story about how something went horribly wrong when using git. In git, you can set your <code>user.email</code> and <code>user.name</code> to arbitrary values. There is no way to check if the email and name you gave are actually YOURS.</p>
+<p>Now, there was another user who had push access to the repository, and they were malicious, as later discovered. Let’s call them Mallory. One day, Mallory decided to push a malicious feature to the git repository. Mallory was smart however, and so they did this before creating the commit: <code>git config user.name Bob</code> and <code>git config user.email bob@example.com</code>.</p>
+<p>You might already see where this is going now. Mallory pushed the malicious code under the name and email of Bob. When the “feature” was discovered, Bob was blamed immediately, and noone even thought about blaming Mallory (who didn’t work at the company anymore at this point) because after all, the email and name stated quite clearly that Bob committed that code. Gladly, Bob wasn’t fired, as he could assure that it was NOT him who committed the code.</p>
+<p>Now, what can we do to prevent this from happening? It’s surprisingly easy. Git has always offered the functionality to sign Tags with PGP, but starting with version 1.7.9, functionality to sign commits was added. It’s very easy to enable, too. First step, locate your PGP key:<br><code>$ gpg --list-secret-keys | grep ^sec
+sec 2048R/75D697BF 2013-07-08 [expires: 2023-07-06]</code><br>Second step, set up that key to be used with git:<br><code>$ git config --global user.signingkey 75D697BF</code><br>And now you’re ready to sign your git commits with <code>git commit -S</code>. Now that commit is signed, and everyone that has your PGP public key can confirm that YOU made this commit (or someone stole your private key, but that’s a completely different problem, and you should revoke your key immediately.) You can verify the signatures on commits like this: <code>git log --show-signature</code>. Since the output is very long, I put the output for different scenarios in a <a href="https://gist.github.com/sonOfRa/9649586" title="Git commit signatures" target="_blank" rel="external">gist</a></p>
+<p>Does that mean that every Tox contributor has to set up PGP now? While personally, I think EVERYONE should have PGP, no. You can go on developing and adding Pull Request just as you did before. Only the repository maintainers of core, the bindings, and the clients need to worry about this.</p>
+<p>And what does all this have to do with our Build Server? Currently, our Build Server fetches the latest changes from our different repositories and makes the updated code available to the build jobs, which then create a new binary each time the build is triggered by a change. This results in downloads that are minutes older than the latest commit, at the most.</p>
+<p>Even though malicious commits are very unlikely, a malicious commit would also trigger a build on all clients, and until it is reverted, we would have built malicious binaries. In order to prevent this, we check the signatures of the commits each time the code is checked out. If the verification fails, the checkout will be marked as failed, and no builds using the unsigned commit would be made.</p>
+<p>So what does this mean for the repository maintainers? Not much, except that they have to set up PGP and start signing their commits. There is one small problem, though. It is not possible to sign Pull Request through the Github Web-Interface. Therefore, we have to check out the Pull Request locally. Github has a guide how to do this <a href="https://help.github.com/articles/checking-out-pull-requests-locally" title="Local PR" target="_blank" rel="external">here</a>. Now, after you’ve checked out the Pull Request you want to merge, and it’s in the branch “1234”, this is how you would merge the PR and push the result to master:<br>`<br>$ git checkout master</p>
+<h1 id="—no-ff_creates_a_merge_commit">—no-ff creates a merge commit</h1>
+<h1 id="-S_signs_the_commit">-S signs the commit</h1>
+<p>$ git merge —no-ff -S 1234<br>$ git push origin master<br><code>The</code>—no-ff` option is vital, because we need a commit on master for which we can check the signature. If the option is ommitted, the commits might simply be added into the master branch, and signing will be problematic.</p>
+<p>Here’s some handy aliases so you don’t forget to sign your commits or merges, and one to view signed commits when using git log:<br>`</p>
+<h1 id="View_log_with_signatures_with_‘git_slog’">View log with signatures with ‘git slog’</h1>
+<p>$ git config —global alias.slog “log —show-signature”</p>
+<h1 id="Create_a_signed_commit_with_‘git_scommit’">Create a signed commit with ‘git scommit’</h1>
+<p>$ git config —global alias.scommit “commit -S”</p>
+<h1 id="Create_a_signed,_non-fast-forward_merge">Create a signed, non-fast-forward merge</h1>
+<p>$ git config —global alias.smerge “merge -S —no-ff”<br>`</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Jenkins/">Jenkins</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jToxcore/">jToxcore</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jenkins/">jenkins</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/pgp/">pgp</a></li></ul>
+
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+    <article id="post-build-systems-yo" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/03/17/build-systems-yo/" class="article-date">
+  <time datetime="2014-03-17T05:19:32.000Z" itemprop="datePublished">Mar 17 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/03/17/build-systems-yo/">The joys of build systems, and the future of Toxic</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>In a time long ago Tox used cmake.</p>
+<p>Cmake was first purely because it matched our goals, sort of. It provided a nice run everywhere interface that the average person who compiled the then build only Tox could use without issues. Cmake wasn’t all golden though, maintaining it was a sea of unneeded complexities and overkill, too much for the average developer to deal with for the size of Tox. While this wasn’t a major issue, one developer took it on himself to switch to autotools, with the promise that he’d maintain it.</p>
+<p> Toxic starts to look all pretty</p>
+<p>Our first client, the API test, was nTox. Not long after, Toxic followed. Toxic was pretty client in core, composed of a couple files and real ui, development on it skyrocketed. It wasn’t long till Toxic was a fully featured client, almost like the shiny new GUI clients in development. I had a crazy idea that ended up perfect with the timing, moving Toxic from a part of core to its own repo, Tox/toxic. When this happened, autotools were inherited over, as they were an accepted part of core.</p>
+<p>That’s cool, what about the future of Toxic?</p>
+<p>And now, the fun part. A couple days ago IRIXuser and myself were talking about the GSoC project on a replacement build system, we wanted something smooth and easy, without unneeded complexities. (We’re a dozen files and headers, after all.) We stumbled upon <a href="http://hypertriton.com/bsdbuild/" title="BSDBuild" target="_blank" rel="external">BSDBuild</a>, a simple build system based off 4.4BSD make libraries. A bit of look in to it and we discovered that it was easy. Like <em>very easy</em>. The entire system for end users was a configure that someone editing it generated and a Makefile made by hand. This was something our iOS developer could understand without a learning curve, with a quick glance.</p>
+<p>4.4BSD? iOS? But I use Linux!</p>
+<p>Before I go any further, I’ll take a moment to explain how the existing build system works, what users see, and how BSDBuild works. GNU autotools is composed of about 7 separate binaries and 8 files, though for this I’ll focus on just the ones Toxic used. To compile Toxic, the entire set of autotools binaries is required, along with a GNU make. A user installs all of these and runs autoreconf -i to generate configure. This process takes around 13 seconds. Afterwards the user runs the configure, making the compiled Makefile in the process. This process takes about 12 seconds. Afterwards the user runs make and make install, building the program. BSDBuild is based off 4.4BSD make libraries, built around a standard POSIX bourne shell and makefile. The developers provide the configure and Makefile, who are interpreted, and not system specific. To compile BSDBuild Toxic, a user installs zero extra files, as the configure is provided. a user runs the configure we provide, generating a Makefile.config. This process takes around 4 seconds. Afterwards the user uses make to compile and install like normal.</p>
+<p>What could be so wrong with GNU autotools?</p>
+<p>The design of autotools is an over complex one, composed of m4, marcos, and dozens of files and commands. This results in a slow and bloated install process for users, along with something that even developers who have been using it <em>for decades </em><a href="http://esr.ibiblio.org/?p=1877" title="still run in to undefined behavior." target="_blank" rel="external">still run in to undefined behavior</a>. The result of this means that things like —disable-av being <a href="https://github.com/Tox/toxic/pull/100" target="_blank" rel="external">broken</a> go unnoticed, without support for things like —enable-debug (A BSDBuild specific flag we implemented with ease). From an end user perspective, this means a configure process that takes 9 times longer and lacks features, requiring more software installed.</p>
+<p>But BSDBuild couldn’t be perfect, I mean you <strong>did </strong>drop cmake!</p>
+<p>One of the major issues with BSDBuild is that support for checks (REQUIRE(toxcore) can’t be done without making them first. Thankfully, the design of the pm file used for a check is so simple, we had toxcore, toxav, sodium, and openal done in half an hour. Since configure is provided by us, this means no extra work for the end user. Now, BSDBuild does have some other side effects, developers editing either configure.in or Makefile (The entire BSDBuild) do need to have BSDBuild installed, in order to run the mkconfigure command.</p>
+<p>BSDBuild doesn’t work on GNU/HURD, right?</p>
+<p>Wrong! Something to consider is that while BSD Makefiles run on GNU make, GNU Makefiles may not run on BSD make. While GNU autotools produce GNU Makefiles, the POSIX compliant BSDBuild files are more supported on more platforms than the autotools equivalent, going as far as supporting making Visual Studio and DOS Watcom projects, despite Toxic not running on Windows.</p>
+<p>Reactions</p>
+<p>Reactions to BSDBuild have been mixed, while the autotools maintainer has made some rather ignorant remarks about the compile process with BSDBuild, stating that perl is required (It is not), we do forgive him, BSDBuild isn’t a well known system. A few people have stated that the work was a bit of a waste of time, autotools is working. We disagree with this ideology, something like this might seem trivial in the short term, though the ease of use will aide future Toxic developers and helping them focus on the code, and not the build system.</p>
+<p>The last group of people have been supportive, these have generally been users of more popular and more exotic systems, from praising the easy debugging, to the following:</p>
+<blockquote>
+<p>“&lt;rhaps0dy&gt; so, uhm</p>
+<p>&lt;rhaps0dy&gt; where do I get the BSDBuild version of libtoxcore?</p>
+<p>&lt;LordAro&gt; rhaps0dy: there isn’t one</p>
+<p>&lt;LordAro&gt; only toxic has a bsdbuild build system so far</p>
+<p>&lt;LordAro&gt; and that’s not in master until people can be convinced that it’s “a good thing” (tm)</p>
+<p>&lt;rhaps0dy&gt; :/</p>
+<p>&lt;LordAro&gt; (which it is)</p>
+<p>&lt;rhaps0dy&gt; I agree lol</p>
+</blockquote>
+<p>Why isn’t this in master yet?</p>
+<p>With a couple of the reactions coming from other developers who I do like, I would greatly like them to try the system out, explore it a bit, get some honest feedback. As of now, this has not happened, though I do try to push them whenever I can. As well, being new, the new build system may have a couple of quirks that we would really like to get out first. When the time comes I’ll merge the branch in to master, just not right now.</p>
+<p>I encourage you to try it now, tell me what works, what doesn’t work, and most of all, your thoughts on this pending switch.</p>
+<p>Testing it is easy, just do a new clone of Toxic, specifying the bsdmake branch: <code>git clone https://github.com/Tox/toxic -b bsdmake</code></p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Toxic/">Toxic</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/page/4/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/6/">Next &raquo;</a>
+    </nav>
+  
+
+    </div>
+    <div class="mb-search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:blog.tox.im">
+  </form>
+</div>
+<footer id="footer">
+	<h1 class="footer-blog-title">
+		<a href="/">Tox Development blog</a>
+	</h1>
+	<span class="copyright">
+		&copy; 2014 Tox Foundation<br>
+		Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>
+		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+	</span>
+</footer>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>
