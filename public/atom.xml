@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="https://blog.tox.im/"/>
-  <updated>2014-12-29T12:12:43.352Z</updated>
+  <updated>2014-12-29T12:18:44.155Z</updated>
   <id>https://blog.tox.im/</id>
   
   <author>
@@ -19,9 +19,9 @@
     <link href="https://blog.tox.im/2014/11/30/tox-bootstrap-now-packaging-for-armhf/"/>
     <id>https://blog.tox.im/2014/11/30/tox-bootstrap-now-packaging-for-armhf/</id>
     <published>2014-12-01T02:08:22.000Z</published>
-    <updated>2014-12-29T10:48:54.000Z</updated>
+    <updated>2014-12-29T12:18:23.000Z</updated>
     <content type="html"><![CDATA[<p>For those who own a Raspberry Pi just sitting there, collecting dust after an impulse buying spree, you finally have a reason to use it. With effort from our packager, Urras, we now have the tox-bootstrapd package available for anyone using an armhf instruction set, and quite possibly armel as well. Simply install the <a href="https://wiki.tox.im/Binaries#Apt.2FAptitude_.28Debian.2C_Ubuntu.2C_Mint.2C_etc..29" target="_blank" rel="external">Tox Repo</a> to your Apt or Yum-based distro and off to the races with ye’.</p>
-<p>For more imformation as to what the Tox Bootstrap package does, and why Tox Nodes are important, visit our <a href="https://blog.libtoxcore.so/running-a-bootstrap-node" target="_blank" rel="external">Running a Bootstrap Node</a> page.</p>
+<p>For more imformation as to what the Tox Bootstrap package does, and why Tox Nodes are important, visit our Running a Bootstrap Node page.</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>For those who own a Raspberry Pi just sitting there, collecting dust after an impulse buying spree, you finally have a reason to use it. ]]>
