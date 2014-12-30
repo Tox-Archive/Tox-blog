@@ -11,4 +11,4 @@ It took awhile, and some may have noticed it was there earlier, but qTox has now
 
 If you haven't already, [here are the instructions](https://wiki.tox.im/Binaries#Linux) on how to add the Tox Repo to your packaging software.
 
-![Screenshot from 2014-10-20 16:38:46](https://blog.libtoxcore.so/wp-content/uploads/2014/10/Screenshot-from-2014-10-20-163846.png)
+![Screenshot from 2014-10-20 16:38:46]({{BASE_PATH}}/images/)

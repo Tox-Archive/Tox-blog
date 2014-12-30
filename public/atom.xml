@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="https://blog.tox.im/"/>
-  <updated>2014-12-29T14:01:01.603Z</updated>
+  <updated>2014-12-30T22:21:21.877Z</updated>
   <id>https://blog.tox.im/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="https://blog.tox.im/2014/11/30/tox-bootstrap-now-packaging-for-armhf/"/>
     <id>https://blog.tox.im/2014/11/30/tox-bootstrap-now-packaging-for-armhf/</id>
     <published>2014-12-01T02:08:22.000Z</published>
-    <updated>2014-12-29T12:18:23.000Z</updated>
+    <updated>2014-12-30T22:17:29.000Z</updated>
     <content type="html"><![CDATA[<p>For those who own a Raspberry Pi just sitting there, collecting dust after an impulse buying spree, you finally have a reason to use it. With effort from our packager, Urras, we now have the tox-bootstrapd package available for anyone using an armhf instruction set, and quite possibly armel as well. Simply install the <a href="https://wiki.tox.im/Binaries#Apt.2FAptitude_.28Debian.2C_Ubuntu.2C_Mint.2C_etc..29" target="_blank" rel="external">Tox Repo</a> to your Apt or Yum-based distro and off to the races with ye’.</p>
 <p>For more imformation as to what the Tox Bootstrap package does, and why Tox Nodes are important, visit our Running a Bootstrap Node page.</p>
 ]]></content>
@@ -38,7 +38,7 @@
     <link href="https://blog.tox.im/2014/11/23/tox-packaging-and-versions/"/>
     <id>https://blog.tox.im/2014/11/23/tox-packaging-and-versions/</id>
     <published>2014-11-24T02:10:04.000Z</published>
-    <updated>2014-12-29T10:48:54.000Z</updated>
+    <updated>2014-12-30T22:17:29.000Z</updated>
     <content type="html"><![CDATA[<p>As many of you know, Tox follows a pretty fun rolling release style alpha development cycle where a lot of code changes and improves very rapidly without any set pace.</p>
 <p>Because of the oh so fast pace of this we spent a good deal of time designing a cross-OS compilation system that churns out the latest copy of Tox no more than 5 minutes after a commit was pushed ready to be tested by you, our lovely users.</p>
 <p>Because we churned out builds so fast we knew we needed a way to make sure you always ran the latest version of Tox + your favourite client so you could enjoy all the new features and bug fixes as soon as is possible. As such we statically linked and packaged the Linux clients sitting in a repo we run, designed autoupdaters for our Windows clients, and spent a good deal working on efficient ways to update on OS X seamlessly.</p>
@@ -66,7 +66,7 @@
     <link href="https://blog.tox.im/2014/11/23/utox-now-has-audio-filtering-noise-cancellation-etc/"/>
     <id>https://blog.tox.im/2014/11/23/utox-now-has-audio-filtering-noise-cancellation-etc/</id>
     <published>2014-11-24T00:06:58.000Z</published>
-    <updated>2014-12-29T10:48:54.000Z</updated>
+    <updated>2014-12-30T22:17:29.000Z</updated>
     <content type="html"><![CDATA[<p>To turn it on, the dropdown is right beside the audio input settings in uTox. You can preview your filtered (or not) audio by clicking on the preview button.</p>
 <p>Currently noise reduction and gain control are properly implemented.</p>
 <p>This is what it uses to filter the audio: <a href="https://github.com/irungentoo/filter_audio" title="filter_audio" target="_blank" rel="external">github repo here</a> I put it in its own repo so other clients can easily add it too.</p>
@@ -85,9 +85,9 @@
     <link href="https://blog.tox.im/2014/11/15/achievement-get-groupchat-audio/"/>
     <id>https://blog.tox.im/2014/11/15/achievement-get-groupchat-audio/</id>
     <published>2014-11-15T17:18:14.000Z</published>
-    <updated>2014-12-29T10:48:54.000Z</updated>
+    <updated>2014-12-30T22:17:29.000Z</updated>
     <content type="html"><![CDATA[<p>We’ve been promising it since our inception, and by God that time has finally come. With recent Toxcore commits, alongside implementation in our two leading clients, qTox and uTox, Tox users can now join groupchats and start audio calls. </p>
-<p>If you’re currently running either qTox or uTox, we heavily suggest upgrading to the newest versions, as we’ve made great strides recently to implement one of the most requested features of Tox.<br><img src="https://blog.libtoxcore.so/wp-content/uploads/2014/11/Tox-Audio-Gro…-qTox_002.png" alt="Tox Audio Gro… - qTox_002"></p>
+<p>If you’re currently running either qTox or uTox, we heavily suggest upgrading to the newest versions, as we’ve made great strides recently to implement one of the most requested features of Tox.<br><img src="/images/" alt="Tox Audio Gro… - qTox_002"></p>
 <p>Here’s an audio sample of a music clip being played over group audio:<br>[audio ogg=”<a href="https://blog.libtoxcore.so/wp-content/uploads/2014/11/tox_group_audio.ogg&quot;][/audio" target="_blank" rel="external">https://blog.libtoxcore.so/wp-content/uploads/2014/11/tox_group_audio.ogg&quot;][/audio</a>]<br>(Song: <a href="http://cathndadrecords.bandcamp.com/track/london" target="_blank" rel="external">London by Satan &amp; Megastar</a> Licensed CC-BY 3.0)</p>
 ]]></content>
     <summary type="html">
@@ -107,7 +107,7 @@
     <link href="https://blog.tox.im/2014/10/22/tox-on-your-wii/"/>
     <id>https://blog.tox.im/2014/10/22/tox-on-your-wii/</id>
     <published>2014-10-22T20:56:23.000Z</published>
-    <updated>2014-12-29T10:48:54.000Z</updated>
+    <updated>2014-12-30T22:17:29.000Z</updated>
     <content type="html"><![CDATA[<p>Howdy folks for the 2nd time today!</p>
 <p>Remember that time you got Linux running on your Wii? When you managed to install Debian to your Raspberry Pi?</p>
 <p>Wouldn’t it be _super cool _if you could Tox your friends without dealing with a compiler or git?</p>
@@ -138,7 +138,7 @@
     <link href="https://blog.tox.im/2014/10/22/tox-on-osx/"/>
     <id>https://blog.tox.im/2014/10/22/tox-on-osx/</id>
     <published>2014-10-22T20:36:49.000Z</published>
-    <updated>2014-12-29T10:48:54.000Z</updated>
+    <updated>2014-12-30T22:17:29.000Z</updated>
     <content type="html"><![CDATA[<p>Hodwy folks,</p>
 <p>After 27 whole days of delay our Tox downloads for OS X work again, and are better than ever!</p>
 <p>We ran them previously, but progress on clients stagnated and we couldn’t justify the extra cost to build binaries that didn’t really work.</p>
@@ -162,10 +162,10 @@
     <link href="https://blog.tox.im/2014/10/20/qtox-now-in-tox-repositories/"/>
     <id>https://blog.tox.im/2014/10/20/qtox-now-in-tox-repositories/</id>
     <published>2014-10-20T20:37:40.000Z</published>
-    <updated>2014-12-29T10:48:54.000Z</updated>
+    <updated>2014-12-30T22:17:29.000Z</updated>
     <content type="html"><![CDATA[<p>It took awhile, and some may have noticed it was there earlier, but qTox has now hit the Tox Repos. It’s a great addition to the already expansive list of Tox clients users have to choose from, and personally, I think it’s one of the best clients we have to offer.</p>
 <p>If you haven’t already, <a href="https://wiki.tox.im/Binaries#Linux" target="_blank" rel="external">here are the instructions</a> on how to add the Tox Repo to your packaging software.</p>
-<p><img src="https://blog.libtoxcore.so/wp-content/uploads/2014/10/Screenshot-from-2014-10-20-163846.png" alt="Screenshot from 2014-10-20 16:38:46"></p>
+<p><img src="/images/" alt="Screenshot from 2014-10-20 16:38:46"></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>It took awhile, and some may have noticed it was there earlier, but qTox has now hit the Tox Repos. It’s a great addition to the already ]]>
@@ -182,9 +182,9 @@
     <link href="https://blog.tox.im/2014/10/06/help-tox-grow-run-a-tox-node-today/"/>
     <id>https://blog.tox.im/2014/10/06/help-tox-grow-run-a-tox-node-today/</id>
     <published>2014-10-06T22:04:11.000Z</published>
-    <updated>2014-12-29T10:48:54.000Z</updated>
+    <updated>2014-12-30T22:17:29.000Z</updated>
     <content type="html"><![CDATA[<p>In light of packaging the bootstrap daemon, we’re going to be running a month-long campaign to expand our current node list. For more information, visit our <a href="https://blog.libtoxcore.so/running-a-bootstrap-node" title="Running a Bootstrap Node" target="_blank" rel="external">Running a Bootstrap Node</a> page or join us on IRC #tox@freenode.</p>
-<p><img src="https://blog.libtoxcore.so/wp-content/uploads/2014/10/preferences-system-network-sharing-300x300.png" alt="preferences-system-network-sharing"></p>
+<p><img src="/images/" alt="preferences-system-network-sharing"></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>In light of packaging the bootstrap daemon, we’re going to be running a month-long campaign to expand our current node list. For more inf]]>
@@ -199,10 +199,10 @@
     <link href="https://blog.tox.im/2014/10/06/toxic-added-to-tox-repositories/"/>
     <id>https://blog.tox.im/2014/10/06/toxic-added-to-tox-repositories/</id>
     <published>2014-10-06T07:35:59.000Z</published>
-    <updated>2014-12-29T10:48:54.000Z</updated>
+    <updated>2014-12-30T22:17:29.000Z</updated>
     <content type="html"><![CDATA[<p>One of our oldest, but feature-rich clients, <a href="https://wiki.tox.im/Toxic" target="_blank" rel="external">Toxic</a>, has been added to the Tox Repos. Toxic uses an ncurses interface, and is written in C. All Unix-like operating systems are currently supported (e.g. Linux, OSX, FreeBSD).</p>
 <p>If you haven’t added our repository yet, you can follow <a href="https://wiki.tox.im/Binaries#Repositories" target="_blank" rel="external">these instructions.</a> You can also download the packages directly <a href="https://jenkins.libtoxcore.so/job/toxic-linux-pkg/" target="_blank" rel="external">here</a>.</p>
-<p><img src="https://blog.libtoxcore.so/wp-content/uploads/2014/10/Ncursesclient1.png" alt=""></p>
+<p><img src="/images/" alt=""></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>One of our oldest, but feature-rich clients, <a href="https://wiki.tox.im/Toxic" target="_blank" rel="external">Toxic</a>, has been added]]>
@@ -219,10 +219,10 @@
     <link href="https://blog.tox.im/2014/10/04/ratox-in-tox-repositories/"/>
     <id>https://blog.tox.im/2014/10/04/ratox-in-tox-repositories/</id>
     <published>2014-10-05T01:13:18.000Z</published>
-    <updated>2014-12-29T10:48:54.000Z</updated>
+    <updated>2014-12-30T22:17:29.000Z</updated>
     <content type="html"><![CDATA[<p>Man, we’re on fire lately. Ratox, a relatively new client created by the wonderful people at <a href="www.2f30.org">2f30</a>, can now be found in Tox Repos. Unlike other clients relying on GUIs as an interface to the user, Ratox is developed with the UNIX-philosophy in mind and allows complete interaction through named pipes. For more info, visit the <a href="https://wiki.tox.im/Ratox" target="_blank" rel="external">Ratox article</a> on the Tox Wiki.</p>
 <p>If you’re new to Tox, or haven’t added our Tox Repository yet, check out <a href="https://wiki.tox.im/Binaries#Repositories" target="_blank" rel="external">the instructions</a> on how to add the Tox Repo to your software management suite.</p>
-<p><a href="https://blog.libtoxcore.so/wp-content/uploads/2014/10/Screenshot-from-2014-10-04-210506.png" target="_blank" rel="external"><img src="https://blog.libtoxcore.so/wp-content/uploads/2014/10/Screenshot-from-2014-10-04-210506-300x179.png" alt="Screenshot from 2014-10-04 21:05:06"></a></p>
+<p><a href="https://blog.libtoxcore.so/wp-content/uploads/2014/10/Screenshot-from-2014-10-04-210506.png" target="_blank" rel="external"><img src="/images/" alt="Screenshot from 2014-10-04 21:05:06"></a></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>Man, we’re on fire lately. Ratox, a relatively new client created by the wonderful people at <a href="www.2f30.org">2f30</a>, can now be ]]>
@@ -239,9 +239,9 @@
     <link href="https://blog.tox.im/2014/10/03/antox-release-0-14-0-alpha/"/>
     <id>https://blog.tox.im/2014/10/03/antox-release-0-14-0-alpha/</id>
     <published>2014-10-03T21:52:43.000Z</published>
-    <updated>2014-12-29T10:48:54.000Z</updated>
+    <updated>2014-12-30T22:17:29.000Z</updated>
     <content type="html"><![CDATA[<p>It didn’t take long for another release to happen but here it is, version 0.14.0. This release mostly brings a lot of changes to under the hood. Namely, the entire code base has been moved from Java to Scala and with it came a new sleek UI with improved animations</p>
-<p><img src="https://blog.libtoxcore.so/wp-content/uploads/2014/10/dpopow.png" alt=""></p>
+<p><img src="/images/" alt=""></p>
 <p>Hopefully this transition of language goes smoothly and everything works as well as it did before. Next in the development line is adding avatars and finally finishing off implementing audio calling</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -259,7 +259,7 @@
     <link href="https://blog.tox.im/2014/10/03/toxic-release-v-0-5-2-and-groupchat-issues/"/>
     <id>https://blog.tox.im/2014/10/03/toxic-release-v-0-5-2-and-groupchat-issues/</id>
     <published>2014-10-03T05:49:23.000Z</published>
-    <updated>2014-12-29T10:48:54.000Z</updated>
+    <updated>2014-12-30T22:17:29.000Z</updated>
     <content type="html"><![CDATA[<p>Major changes include:</p>
 <ul>
 <li>Ability to set an avatar. You can set it in the config file (see the <a href="https://github.com/Tox/toxic/blob/master/misc/toxic.conf.example" target="_blank" rel="external">example config file</a>) or with the command ‘/avatar &lt;path&gt;’ (Note: This command will only set it temporarily until you restart your client).</li>
@@ -288,7 +288,7 @@
     <link href="https://blog.tox.im/2014/10/02/utox-updates-0-1-a/"/>
     <id>https://blog.tox.im/2014/10/02/utox-updates-0-1-a/</id>
     <published>2014-10-02T22:58:53.000Z</published>
-    <updated>2014-12-29T10:48:54.000Z</updated>
+    <updated>2014-12-30T22:17:29.000Z</updated>
     <content type="html"><![CDATA[<p>The major update this week is the new groupchats that should work much better (connection wise) than the old ones. Note that as of now they are still missing important features like usernames but the base of them (joining/quitting/sending messages) should already work well.</p>
 <p>As for uTox, mainly bug/translation fixes.</p>
 <p>Also, I will be pushing updates in a more regular manner until group chats work well.</p>
@@ -306,10 +306,10 @@
     <link href="https://blog.tox.im/2014/09/28/utox-now-in-apt-yum-repos/"/>
     <id>https://blog.tox.im/2014/09/28/utox-now-in-apt-yum-repos/</id>
     <published>2014-09-28T21:56:19.000Z</published>
-    <updated>2014-12-29T10:48:54.000Z</updated>
+    <updated>2014-12-30T22:17:29.000Z</updated>
     <content type="html"><![CDATA[<p>uTox is now the second Tox client to be hosted on the Tox Repositories, second to Venom.<br>If you haven’t already, add our Tox repo to Apt or Yum by following <a href="https://wiki.tox.im/Binaries#Repositories" target="_blank" rel="external">these instructions.</a> It’s a great way to get the latest changes to Tox clients in a quick and easy fashion.</p>
 <p>32 and 64bit instructions supported; more to come in the upcoming week! (We’re in the process of getting Toxic and qTox on the repo as well!)</p>
-<p><a href="https://blog.libtoxcore.so/wp-content/uploads/2014/09/Screenshot-09282014-055347-PM.png" target="_blank" rel="external"><img src="https://blog.libtoxcore.so/wp-content/uploads/2014/09/Screenshot-09282014-055347-PM-300x186.png" alt="Screenshot - 09282014 - 05:53:47 PM"></a></p>
+<p><a href="https://blog.libtoxcore.so/wp-content/uploads/2014/09/Screenshot-09282014-055347-PM.png" target="_blank" rel="external"><img src="/images/" alt="Screenshot - 09282014 - 05:53:47 PM"></a></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>uTox is now the second Tox client to be hosted on the Tox Repositories, second to Venom.<br>If you haven’t already, add our Tox repo to A]]>
@@ -326,17 +326,17 @@
     <link href="https://blog.tox.im/2014/09/27/antox-0-13-0-alpha-release/"/>
     <id>https://blog.tox.im/2014/09/27/antox-0-13-0-alpha-release/</id>
     <published>2014-09-27T22:16:50.000Z</published>
-    <updated>2014-12-29T10:48:54.000Z</updated>
+    <updated>2014-12-30T22:17:29.000Z</updated>
     <content type="html"><![CDATA[<p>&nbsp;</p>
 <p>Another day another release. This release is probably the biggest in the recent past and there’s some screenshots to go along with it.</p>
 <p>The Login activity has been changed to be given a nice background. Also, instead of having to write the name of your profile, the text box has been swapped for a dropdown list of all the profiles you have created to make logging in a much simpler and quicker process.</p>
-<p><img src="https://blog.libtoxcore.so/wp-content/uploads/2014/09/1b07ad60-468a-11e4-839c-b52f035218d9.png" alt=""></p>
+<p><img src="/images/" alt=""></p>
 <p>&nbsp;</p>
 <p>The Create Account activity has also been changed to be given a nice looking background. The weird lookingÂ  checkbox from before has been turned into an incognito button.</p>
-<p><img src="https://blog.libtoxcore.so/wp-content/uploads/2014/09/9697a970-4550-11e4-8227-c0dddf6bcae1.png" alt=""></p>
+<p><img src="/images/" alt=""></p>
 <p>&nbsp;</p>
 <p>The last design change to take place was to the friend requests. You can now accept and reject them right from the contacts list so you don’t have to bring in the new pane or long hold on them.</p>
-<p><img src="https://blog.libtoxcore.so/wp-content/uploads/2014/09/qyietr.png" alt=""></p>
+<p><img src="/images/643afe46335683a8a849a84e7705fe12f9eabf41.png" alt=""></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>Non-design wise, there have been various crash fixes. The app will also wake the CPU when doing network activity to try and keep you online over extended periods of time, and most importantly, you can now send any file in a file transfer, not just attach an image. Lastly, changing the app’s language will no longer require a restart.</p>
@@ -359,7 +359,7 @@
     <link href="https://blog.tox.im/2014/09/24/utox-updates-0-1-8/"/>
     <id>https://blog.tox.im/2014/09/24/utox-updates-0-1-8/</id>
     <published>2014-09-24T19:49:28.000Z</published>
-    <updated>2014-12-29T10:48:54.000Z</updated>
+    <updated>2014-12-30T22:17:29.000Z</updated>
     <content type="html"><![CDATA[<p>What’s new: Save file location changed, bug fixes, bug fixes, new translations and some small features like the icon on windows changing colour when a message is received.</p>
 <p>For credits and a detailed list of all changes: <a href="https://github.com/notsecure/uTox/commits/master" title="https://github.com/notsecure/uTox/commits/master" target="_blank" rel="external">https://github.com/notsecure/uTox/commits/master</a></p>
 <p>The main change in this update and why I made this post is that uTox now saves to roaming appdata instead of local appdata which should lead to less people losing their saves. uTox should automatically load the save from its previous location meaning you don’t have to move it there yourself. What you should do that uTox doesn’t do is remove the old location.</p>
@@ -379,9 +379,9 @@
     <link href="https://blog.tox.im/2014/09/20/f-droid-repo-changing-ssl-certificate/"/>
     <id>https://blog.tox.im/2014/09/20/f-droid-repo-changing-ssl-certificate/</id>
     <published>2014-09-20T13:12:09.000Z</published>
-    <updated>2014-12-29T10:48:54.000Z</updated>
+    <updated>2014-12-30T22:17:29.000Z</updated>
     <content type="html"><![CDATA[<p><strong>Edit:</strong> This certificate was causing some problems as it was intended for a *.tox.im domain but the repo was on my markwinter.me domain. For now, I have reverted the certificate back to the original markwinter.me cert.</p>
-<p>Just a quick post to let F-Droid users know that I have changed the SSL certificate. Instead of using my own cert, it will now serve a Tox one. The certificate should match<br><a href="https://blog.libtoxcore.so/wp-content/uploads/2014/09/nQTLUdO.png" target="_blank" rel="external"><img src="https://blog.libtoxcore.so/wp-content/uploads/2014/09/nQTLUdO-200x300.png" alt="nQTLUdO"></a><br>Some time next month, the URL will also change to fdroid.tox.im or repo.tox.im but I will write another post when that happens</p>
+<p>Just a quick post to let F-Droid users know that I have changed the SSL certificate. Instead of using my own cert, it will now serve a Tox one. The certificate should match<br><a href="https://blog.libtoxcore.so/wp-content/uploads/2014/09/nQTLUdO.png" target="_blank" rel="external"><img src="/images/" alt="nQTLUdO"></a><br>Some time next month, the URL will also change to fdroid.tox.im or repo.tox.im but I will write another post when that happens</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p><strong>Edit:</strong> This certificate was causing some problems as it was intended for a *.tox.im domain but the repo was on my markwin]]>
@@ -396,7 +396,7 @@
     <link href="https://blog.tox.im/2014/09/07/warrant-canary-updated-changes/"/>
     <id>https://blog.tox.im/2014/09/07/warrant-canary-updated-changes/</id>
     <published>2014-09-07T20:09:58.000Z</published>
-    <updated>2014-12-29T10:48:54.000Z</updated>
+    <updated>2014-12-30T22:17:29.000Z</updated>
     <content type="html"><![CDATA[<p>To show a more serious commitment to the warrant canary, we will now be updating it every two weeks. The canary itself will now contain news headlines as well to mitigate automatic signing and updating.</p>
 <p>You can visit the canary at <a href="https://wiki.tox.im/canary.html" target="_blank" rel="external">https://wiki.tox.im/canary.html</a></p>
 <p>&nbsp;</p>
@@ -414,7 +414,7 @@
     <link href="https://blog.tox.im/2014/08/19/-ce-bctox-updates-0-1-3/"/>
     <id>https://blog.tox.im/2014/08/19/-ce-bctox-updates-0-1-3/</id>
     <published>2014-08-19T13:04:22.000Z</published>
-    <updated>2014-12-29T10:48:54.000Z</updated>
+    <updated>2014-12-30T22:17:29.000Z</updated>
     <content type="html"><![CDATA[<p><strong>New features:</strong></p>
 <ul>
 <li>Network options: IPv6/UDP enable/disable</li>
@@ -446,7 +446,7 @@
     <link href="https://blog.tox.im/2014/08/17/antox-v0-12-released/"/>
     <id>https://blog.tox.im/2014/08/17/antox-v0-12-released/</id>
     <published>2014-08-17T20:11:54.000Z</published>
-    <updated>2014-12-29T10:48:54.000Z</updated>
+    <updated>2014-12-30T22:17:29.000Z</updated>
     <content type="html"><![CDATA[<p><strong>Edit:</strong> <span style="color: #000000;">There seems to be a problem of crashing when registering (both skipping and not skipping). I’d recommend not upgrading just yet and I’ll try and get it fixed by the end of the week. Sorry for the wait</span></p>
 <p>It’s been a long time since I’ve written a blog post for a release of Antox but I felt with the major changes in this version, it would be best if I did.</p>
 <p>The major change in this release which may cause confusion is the introduction of an account system. When you create an account, it assigns the account a new tox id as well as its own friends list and chat logs, so that you can easily create and manage multiple identities from the same application. You just logout of one account, and login to another to swap tox id’s. No hassle in dragging tox save files about. It also takes the account name and registers it on <a href="https://toxme.se" target="_blank" rel="external">https://toxme.se</a> so that others can add you using just the account name. If you don’t want to be signed up on toxme, you should tick “skip registration” in the registration screen. I’ve taken these steps to try and make the application extremely easy to use. Regular users are used to creating accounts and having people add that account name and this is what I’m trying to emulate for tox. Hopefully others like the changes I’ve made and that other clients follow so that the experience is the same across all platforms.</p>

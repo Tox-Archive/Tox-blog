@@ -12,19 +12,19 @@ Another day another release. This release is probably the biggest in the recent 
 
 The Login activity has been changed to be given a nice background. Also, instead of having to write the name of your profile, the text box has been swapped for a dropdown list of all the profiles you have created to make logging in a much simpler and quicker process.
 
-![](https://blog.libtoxcore.so/wp-content/uploads/2014/09/1b07ad60-468a-11e4-839c-b52f035218d9.png)
+![]({{BASE_PATH}}/images/)
 
 &nbsp;
 
 The Create Account activity has also been changed to be given a nice looking background. The weird lookingÂ  checkbox from before has been turned into an incognito button.
 
-![](https://blog.libtoxcore.so/wp-content/uploads/2014/09/9697a970-4550-11e4-8227-c0dddf6bcae1.png)
+![]({{BASE_PATH}}/images/)
 
 &nbsp;
 
 The last design change to take place was to the friend requests. You can now accept and reject them right from the contacts list so you don't have to bring in the new pane or long hold on them.
 
-![](https://blog.libtoxcore.so/wp-content/uploads/2014/09/qyietr.png)
+![]({{BASE_PATH}}/images/643afe46335683a8a849a84e7705fe12f9eabf41.png)
 
 &nbsp;
 

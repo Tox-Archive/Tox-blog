@@ -12,4 +12,4 @@ If you haven't already, add our Tox repo to Apt or Yum by following [these instr
 
 32 and 64bit instructions supported; more to come in the upcoming week! (We're in the process of getting Toxic and qTox on the repo as well!)
 
-[![Screenshot - 09282014 - 05:53:47 PM](https://blog.libtoxcore.so/wp-content/uploads/2014/09/Screenshot-09282014-055347-PM-300x186.png)](https://blog.libtoxcore.so/wp-content/uploads/2014/09/Screenshot-09282014-055347-PM.png)
+[![Screenshot - 09282014 - 05:53:47 PM]({{BASE_PATH}}/images/)](https://blog.libtoxcore.so/wp-content/uploads/2014/09/Screenshot-09282014-055347-PM.png)

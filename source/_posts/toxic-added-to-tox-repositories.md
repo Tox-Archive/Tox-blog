@@ -11,4 +11,4 @@ One of our oldest, but feature-rich clients, [Toxic](https://wiki.tox.im/Toxic),
 
 If you haven't added our repository yet, you can follow [these instructions.](https://wiki.tox.im/Binaries#Repositories) You can also download the packages directly [here](https://jenkins.libtoxcore.so/job/toxic-linux-pkg/).
 
-![](https://blog.libtoxcore.so/wp-content/uploads/2014/10/Ncursesclient1.png)
+![]({{BASE_PATH}}/images/)

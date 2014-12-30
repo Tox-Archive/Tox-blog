@@ -4,7 +4,7 @@ comment: false
 date: 2014-10-06 16:55:28
 ---
 
-![preferences-system-network-sharing](https://blog.libtoxcore.so/wp-content/uploads/2014/10/preferences-system-network-sharing-300x300.png)
+![preferences-system-network-sharing]({{BASE_PATH}}/images/)
 Tox relies on bootstrap nodes ("Tox Nodes") to help facilitate connections to the DHT, and we need your help to keep Tox strong. By running as many nodes as we can, we make it even harder for third parties, including the government, to censor access to Tox. If you have a spare server, you can run a node that can help keep the Tox Network healthy, and resistant to censorship.
 
 # How does it work?
