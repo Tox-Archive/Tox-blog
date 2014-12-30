@@ -100,6 +100,7 @@ feed:
     
 plugins:
   - hexo-local-image
+  - hexo-summarizer
 
 sitemap:
     path: sitemap.xml
