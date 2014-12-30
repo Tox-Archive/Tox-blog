@@ -12,6 +12,7 @@
     "hexo-generator-feed": "~0.2.1",
     "hexo-local-image": "0.0.2",
     "hexo-generator-sitemap": "~0.2.0",
-    "hexo-migrator-image": "~1.0.4"
+    "hexo-migrator-image": "~1.0.4",
+    "hexo-summarizer": "git://github.com/vfasky/hexo-summarizer.git"
   }
 }
