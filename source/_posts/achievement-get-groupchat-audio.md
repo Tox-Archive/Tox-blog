@@ -9,7 +9,7 @@ tags:
 ---
 
 We've been promising it since our inception, and by God that time has finally come. With recent Toxcore commits, alongside implementation in our two leading clients, qTox and uTox, Tox users can now join groupchats and start audio calls. 
-
+<!-- more -->
 If you're currently running either qTox or uTox, we heavily suggest upgrading to the newest versions, as we've made great strides recently to implement one of the most requested features of Tox.
 ![Tox Audio Gro… - qTox_002]({{BASE_PATH}}/images/8938a9d3290338ce20892fbb200eee167f98ce94.png)
 
