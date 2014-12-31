@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="https://blog.tox.im/"/>
-  <updated>2014-12-31T00:13:22.811Z</updated>
+  <updated>2014-12-31T00:25:33.196Z</updated>
   <id>https://blog.tox.im/</id>
   
   <author>
@@ -87,8 +87,10 @@
     <link href="https://blog.tox.im/2014/11/15/achievement-get-groupchat-audio/"/>
     <id>https://blog.tox.im/2014/11/15/achievement-get-groupchat-audio/</id>
     <published>2014-11-15T17:18:14.000Z</published>
-    <updated>2014-12-31T00:12:41.000Z</updated>
-    <content type="html"><![CDATA[<p>We’ve been promising it since our inception, and by God that time has finally come. With recent Toxcore commits, alongside implementation in our two leading clients, qTox and uTox, Tox users can now join groupchats and start audio calls.<br><a id="more"></a><br>If you’re currently running either qTox or uTox, we heavily suggest upgrading to the newest versions, as we’ve made great strides recently to implement one of the most requested features of Tox.<br><img src="/images/8938a9d3290338ce20892fbb200eee167f98ce94.png" alt="Tox Audio Gro… - qTox_002"></p>
+    <updated>2014-12-31T00:24:53.000Z</updated>
+    <content type="html"><![CDATA[<p>We’ve been promising it since our inception, and by God that time has finally come. With recent Toxcore commits, alongside implementation in our two leading clients, qTox and uTox, Tox users can now join groupchats and start audio calls.<br><a id="more"></a><br>If you’re currently running either qTox or uTox, we heavily suggest upgrading to the newest versions, as we’ve made great strides recently to implement one of the most requested features of Tox.</p>
+<img src="/images/vsrykl.png">
+
 <p>Here’s an audio sample of a music clip being played over group audio:<br>[audio ogg=”<a href="https://blog.libtoxcore.so/wp-content/uploads/2014/11/tox_group_audio.ogg&quot;][/audio" target="_blank" rel="external">https://blog.libtoxcore.so/wp-content/uploads/2014/11/tox_group_audio.ogg&quot;][/audio</a>]<br>(Song: <a href="http://cathndadrecords.bandcamp.com/track/london" target="_blank" rel="external">London by Satan &amp; Megastar</a> Licensed CC-BY 3.0)</p>
 ]]></content>
     <summary type="html">
