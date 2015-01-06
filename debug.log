@@ -1,0 +1,26 @@
+date: "2015-01-06 18:28:57.795"
+argv: node /usr/local/bin/hexo gzip
+os: Linux 3.13.0-34-generic linux x64
+versions:
+  http_parser: "1.0"
+  node: 0.10.25
+  v8: 3.14.5.9
+  ares: 1.10.0
+  uv: 0.10.23
+  zlib: 1.2.8
+  modules: "11"
+  openssl: 1.0.1f
+  hexo: 2.8.3
+---
+[debug] 18:28:55.528 Config file loaded from /usr/share/nginx/_config.yml[debug] 18:28:55.530 Version info checked successfully[debug] 18:28:55.553 Loading database.[debug] 18:28:55.626 Processed: draft.md (2ms)[debug] 18:28:55.626 Processed: page.md (2ms)[debug] 18:28:55.626 Processed: photo.md (2ms)[debug] 18:28:55.626 Processed: post.md (2ms)[debug] 18:28:55.892 Plugin loaded successfully: hexo-console-optimize[debug] 18:28:55.899 Plugin loaded successfully: hexo-generator-feed[debug] 18:28:55.975 Plugin loaded successfully: hexo-generator-minify[debug] 18:28:55.991 Plugin loaded successfully: hexo-generator-sitemap[debug] 18:28:56.049 Plugin loaded successfully: hexo-git-backup[debug] 18:28:56.050 Plugin loaded successfully: hexo-gzip[debug] 18:28:56.051 Plugin loaded successfully: hexo-local-image[debug] 18:28:56.219 Plugin loaded successfully: hexo-migrator-image[debug] 18:28:56.374 Plugin loaded successfully: hexo-migrator-wordpress[debug] 18:28:56.391 Plugin loaded successfully: hexo-renderer-ejs[debug] 18:28:56.410 Plugin loaded successfully: hexo-renderer-marked[debug] 18:28:56.569 Plugin loaded successfully: hexo-renderer-stylus[debug] 18:28:57.241 Plugin loaded successfully: hexo-summarizer[debug] 18:28:57.243 Script load successfully: fancybox.js[debug] 18:28:57.301 Processed: about/index.md.2014-12-31T00-12-41.664Z.bak (1ms)[debug] 18:28:57.301 Processed: running-a-bootstrap-node/index.md.2014-12-31T00-12-41.664Z.bak (0ms)[debug] 18:28:57.750 Processed: about/index.md.2014-12-30T22-17-28.980Z.bak (0ms)[debug] 18:28:57.751 Processed: images/50ddb4011dc87d2fc7b3ab693dc77612bcd0c032.png (1ms)[debug] 18:28:57.751 Processed: running-a-bootstrap-node/index.md.2014-12-30T22-17-28.980Z.bak (0ms)[debug] 18:28:57.751 Processed: about/index.md.2014-12-30T22-29-24.873Z.bak (0ms)[debug] 18:28:57.751 Processed: running-a-bootstrap-node/index.md.2014-12-30T22-29-24.873Z.bak (0ms)[debug] 18:28:57.752 Processed: about/index.md.2014-12-30T22-36-19.296Z.bak (0ms)[debug] 18:28:57.752 Processed: running-a-bootstrap-node/index.md.2014-12-30T22-36-19.296Z.bak (0ms)[debug] 18:28:57.752 Processed: about/index.md.2014-12-31T00-07-51.158Z.bak (0ms)[debug] 18:28:57.752 Processed: running-a-bootstrap-node/index.md.2014-12-31T00-07-51.158Z.bak (0ms)[debug] 18:28:57.753 Processed: images/vsrykl.png (0ms)[debug] 18:28:57.753 Processed: images/antox-0-4-app-info.png (0ms)[debug] 18:28:57.753 Processed: images/antox-tox-im-certificate.png (0ms)[debug] 18:28:57.753 Processed: images/toxcore-over-5000-commits.jpeg (0ms)[debug] 18:28:57.753 Processed: images/antox-0-13-0-1.png (0ms)[debug] 18:28:57.754 Processed: images/antox-0-13-0-2.png (1ms)[debug] 18:28:57.754 Processed: images/antox-0-13-0-3.png (0ms)[debug] 18:28:57.754 Processed: images/antox-0-14-0.png (0ms)[debug] 18:28:57.754 Processed: images/qtox-settings-window.png (0ms)[debug] 18:28:57.754 Processed: images/ratox-small.png (0ms)[debug] 18:28:57.754 Processed: images/toxic-0-5-1.png (0ms)[debug] 18:28:57.755 Processed: images/utox-small.png (1ms)[error] 18:28:57.786 HexoError: Process failed: _posts/achievement-get-groupchat-audio.md
+Error: Unexpected tag "soundcloud https://soundcloud.com/plebtier/tox-group-audio default" on line 7 in file /usr/share/nginx/source/_posts/achievement-get-groupchat-audio.md.
+    at Object.exports.throwError (/usr/local/lib/node_modules/hexo/node_modules/swig/lib/utils.js:183:9)
+    at parseTag (/usr/local/lib/node_modules/hexo/node_modules/swig/lib/parser.js:543:13)
+    at /usr/local/lib/node_modules/hexo/node_modules/swig/lib/parser.js:638:15
+    at Object.exports.each (/usr/local/lib/node_modules/hexo/node_modules/swig/lib/utils.js:45:11)
+    at Object.exports.parse (/usr/local/lib/node_modules/hexo/node_modules/swig/lib/parser.js:622:9)
+    at parse (/usr/local/lib/node_modules/hexo/node_modules/swig/lib/swig.js:343:19)
+    at precompile (/usr/local/lib/node_modules/hexo/node_modules/swig/lib/swig.js:473:23)
+    at compile (/usr/local/lib/node_modules/hexo/node_modules/swig/lib/swig.js:588:16)
+    at Object.render (/usr/local/lib/node_modules/hexo/node_modules/swig/lib/swig.js:507:17)
+    at /usr/local/lib/node_modules/hexo/lib/post/render.js:61:29

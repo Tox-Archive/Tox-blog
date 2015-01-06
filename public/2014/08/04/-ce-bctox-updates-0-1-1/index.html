@@ -1,187 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  <title>μTox updates [0.1.1] | Tox Development blog</title>
-  <meta name="viewport" content="width=device-width">
-  <meta name="description" content="New features:
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>μTox updates [0.1.1] | Tox Development blog</title><meta name="viewport" content="width=device-width"><meta name="description" content="New features:
 
 Ability to drag and drop files to send them (for Windows, Xlib version already had this)Bugfixes:
 
 Fixed lag issue (Xlib)
 
-Fix possible file transfer issue (contribution by doughdemon)">
-<meta property="og:type" content="article">
-<meta property="og:title" content="μTox updates [0.1.1]">
-<meta property="og:url" content="https://blog.tox.im/2014/08/04/-ce-bctox-updates-0-1-1/">
-<meta property="og:site_name" content="Tox Development blog">
-<meta property="og:description" content="New features:
+Fix possible file transfer issue (contribution by doughdemon)"><meta property="og:type" content="article"><meta property="og:title" content="μTox updates [0.1.1]"><meta property="og:url" content="https://blog.tox.im/2014/08/04/-ce-bctox-updates-0-1-1/"><meta property="og:site_name" content="Tox Development blog"><meta property="og:description" content="New features:
 
 Ability to drag and drop files to send them (for Windows, Xlib version already had this)Bugfixes:
 
 Fixed lag issue (Xlib)
 
-Fix possible file transfer issue (contribution by doughdemon)">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="μTox updates [0.1.1]">
-<meta name="twitter:description" content="New features:
+Fix possible file transfer issue (contribution by doughdemon)"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="μTox updates [0.1.1]"><meta name="twitter:description" content="New features:
 
 Ability to drag and drop files to send them (for Windows, Xlib version already had this)Bugfixes:
 
 Fixed lag issue (Xlib)
 
-Fix possible file transfer issue (contribution by doughdemon)">
-
-  
-    <link rel="alternative" href="/atom.xml" title="Tox Development blog" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
-
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  
-</head>
-<body>
-  <div id="container">
-    <div class="mobile-nav-panel">
-	<i class="icon-reorder icon-large"></i>
-</div>
-<header id="header">
-	<h1 class="blog-title">
-		<a href="/">Tox Development blog</a>
-	</h1>
-	<nav class="nav">
-		<ul>
-			<li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li>
-			<li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li>
-			<li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li>
-		</ul>
-	</nav>
-	<div id="search-form-wrap">
-		<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:https://blog.tox.im"></form>
-	</div>
-</header>
-    <div id="main">
-      <article id="post--ce-bctox-updates-0-1-1" class="post">
-	<footer class="entry-meta-header">
-		<span class="meta-elements date">
-			<a href="/2014/08/04/-ce-bctox-updates-0-1-1/" class="article-date">
-  <time datetime="2014-08-04T23:11:19.000Z" itemprop="datePublished">Aug 4 2014</time>
-</a>
-		</span>
-		<span class="meta-elements author">Tox Foundation</span>
-		<div class="commentscount">
-			
-		</div>
-	</footer>
-	
-	<header class="entry-header">
-		
-  
-    <h1 class="article-title entry-title" itemprop="name">
-      μTox updates [0.1.1]
-    </h1>
-  
-
-	</header>
-	<div class="entry-content">
-		
-    	<p><strong>New features:</strong></p>
-<ul>
-<li><p>Ability to drag and drop files to send them (for Windows, Xlib version already had this)<br><strong>Bugfixes:</strong></p>
-</li>
-<li><p>Fixed lag issue (Xlib)</p>
-</li>
-<li>Fix possible file transfer issue (<a href="https://github.com/notsecure/uTox/pull/189" target="_blank" rel="external">contribution by doughdemon</a>)</li>
-<li>File transfers are now only marked as complete when the receiver confirms that the file is received completely (fixes possible issue with friend disconnecting as the file transfer nears completion)</li>
-<li><p>Some toxcore bug fixes<br><strong>Other:</strong></p>
-</li>
-<li><p>Audio and video are now decoded on a separate thread for each call, fixes an issue with the decoding being slow and causing the main thread to get stuck in its receive loop</p>
-</li>
-<li>Set thread stack size (Xlib) - reduces memory usage (<a href="https://github.com/notsecure/uTox/pull/192" target="_blank" rel="external">contribution by doughdemon</a>)</li>
-<li>Option to build without DBUS (<a href="https://github.com/notsecure/uTox/pull/193" target="_blank" rel="external">contribution by doughdemon</a>)</li>
-<li>Enabled pixel subrendering for text (Xlib)</li>
-</ul>
-
-    
-	</div>
-	<footer class="entry-footer">
-		<div class="entry-meta-footer">
-			<span class="category">
-				
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/μTox/">μTox</a>
-  </div>
-
-			</span>
-			<span class="tags">
-				
-			</span>
-		</div>
-	</footer>
-	
-    
-<nav id="article-nav">
-  
-    <a href="/2014/08/11/-ce-bctox-updates-0-1-2/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          μTox updates [0.1.2]
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2014/08/04/to-5000-and-beyond/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">
-        
-          To 5,000 and beyond!
-        
-      </div>
-    </a>
-  
-</nav>
-
-  
-</article>
-
-
-
-
-
-    </div>
-    <div class="mb-search">
-  <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="Search">
-    <input type="hidden" name="q" value="site:blog.tox.im">
-  </form>
-</div>
-<footer id="footer">
-	<h1 class="footer-blog-title">
-		<a href="/">Tox Development blog</a>
-	</h1>
-	<span class="copyright">
-		&copy; 2015 Tox Foundation<br>
-		Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>
-		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-	</span>
-</footer>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js" type="text/javascript"></script>
-
-  </div>
-</body>
-</html>
+Fix possible file transfer issue (contribution by doughdemon)"><link rel="alternative" href="/atom.xml" title="Tox Development blog" type="application/atom+xml"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/style.css" type="text/css"><!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div id="container"><div class="mobile-nav-panel"><i class="icon-reorder icon-large"></i></div><header id="header"><h1 class="blog-title"><a href="/">Tox Development blog</a></h1><nav class="nav"><ul><li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li><li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li><li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li></ul></nav><div id="search-form-wrap"><form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:https://blog.tox.im"></form></div></header><div id="main"><article id="post--ce-bctox-updates-0-1-1" class="post"><footer class="entry-meta-header"><span class="meta-elements date"><a href="/2014/08/04/-ce-bctox-updates-0-1-1/" class="article-date"><time datetime="2014-08-04T23:11:19.000Z" itemprop="datePublished">Aug 4 2014</time></a></span> <span class="meta-elements author">Tox Foundation</span><div class="commentscount"></div></footer><header class="entry-header"><h1 class="article-title entry-title" itemprop="name">μTox updates [0.1.1]</h1></header><div class="entry-content"><p><strong>New features:</strong></p><ul><li><p>Ability to drag and drop files to send them (for Windows, Xlib version already had this)<br><strong>Bugfixes:</strong></p></li><li><p>Fixed lag issue (Xlib)</p></li><li>Fix possible file transfer issue (<a href="https://github.com/notsecure/uTox/pull/189" target="_blank" rel="external">contribution by doughdemon</a>)</li><li>File transfers are now only marked as complete when the receiver confirms that the file is received completely (fixes possible issue with friend disconnecting as the file transfer nears completion)</li><li><p>Some toxcore bug fixes<br><strong>Other:</strong></p></li><li><p>Audio and video are now decoded on a separate thread for each call, fixes an issue with the decoding being slow and causing the main thread to get stuck in its receive loop</p></li><li>Set thread stack size (Xlib) - reduces memory usage (<a href="https://github.com/notsecure/uTox/pull/192" target="_blank" rel="external">contribution by doughdemon</a>)</li><li>Option to build without DBUS (<a href="https://github.com/notsecure/uTox/pull/193" target="_blank" rel="external">contribution by doughdemon</a>)</li><li>Enabled pixel subrendering for text (Xlib)</li></ul></div><footer class="entry-footer"><div class="entry-meta-footer"><span class="category"><div class="article-category"><a class="article-category-link" href="/categories/μTox/">μTox</a></div></span> <span class="tags"></span></div></footer><nav id="article-nav"><a href="/2014/08/11/-ce-bctox-updates-0-1-2/" id="article-nav-newer" class="article-nav-link-wrap"><strong class="article-nav-caption">Newer</strong><div class="article-nav-title">μTox updates [0.1.2]</div></a> <a href="/2014/08/04/to-5000-and-beyond/" id="article-nav-older" class="article-nav-link-wrap"><strong class="article-nav-caption">Older</strong><div class="article-nav-title">To 5,000 and beyond!</div></a></nav></article></div><div class="mb-search"><form action="//google.com/search" method="get" accept-charset="utf-8"><input type="search" name="q" results="0" placeholder="Search"> <input type="hidden" name="q" value="site:blog.tox.im"></form></div><footer id="footer"><h1 class="footer-blog-title"><a href="/">Tox Development blog</a></h1><span class="copyright">&copy; 2015 Tox Foundation<br>Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></span></footer><script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css"><script src="/fancybox/jquery.fancybox.pack.js"></script><script src="/js/script.js" type="text/javascript"></script></div></body></html>
