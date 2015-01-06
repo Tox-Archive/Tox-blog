@@ -11,3 +11,4 @@ Man, we're on fire lately. Ratox, a relatively new client created by the wonderf
 <!-- more -->
 If you're new to Tox, or haven't added our Tox Repository yet, check out [the instructions](https://wiki.tox.im/Binaries#Repositories) on how to add the Tox Repo to your software management suite.
 
+{% limg ratox_small.png %}

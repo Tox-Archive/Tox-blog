@@ -12,19 +12,21 @@ Another day another release. This release is probably the biggest in the recent 
 
 The Login activity has been changed to be given a nice background. Also, instead of having to write the name of your profile, the text box has been swapped for a dropdown list of all the profiles you have created to make logging in a much simpler and quicker process.
 
-![]({{BASE_PATH}}/images/)
+<!-- more -->
+
+{% limg antox-0-13-0-1.png %}
 
 &nbsp;
 
 The Create Account activity has also been changed to be given a nice looking background. The weird lookingÂ  checkbox from before has been turned into an incognito button.
 
-![]({{BASE_PATH}}/images/)
+{% limg antox-0-13-0-2.png %}
 
 &nbsp;
 
 The last design change to take place was to the friend requests. You can now accept and reject them right from the contacts list so you don't have to bring in the new pane or long hold on them.
 
-![]({{BASE_PATH}}/images/643afe46335683a8a849a84e7705fe12f9eabf41.png)
+{% limg antox-0-13-0-3.png %}
 
 &nbsp;
 
