@@ -1,7 +1,166 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><title>Tox Core and API changes | Tox Development blog</title><meta name="viewport" content="width=device-width"><meta name="description" content="Recently pushed was the api-fix branch by irungentoo. Nothing too big was changed, fortunately, but things were changed to keep consistencies and so forth. Included in this merge was:
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Tox Core and API changes | Tox Development blog</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Recently pushed was the api-fix branch by irungentoo. Nothing too big was changed, fortunately, but things were changed to keep consistencies and so forth. Included in this merge was:
 
-No more forcing"><meta property="og:type" content="article"><meta property="og:title" content="Tox Core and API changes"><meta property="og:url" content="https://blog.tox.im/2014/03/21/tox-core-and-api-changes/"><meta property="og:site_name" content="Tox Development blog"><meta property="og:description" content="Recently pushed was the api-fix branch by irungentoo. Nothing too big was changed, fortunately, but things were changed to keep consistencies and so forth. Included in this merge was:
+No more forcing">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Tox Core and API changes">
+<meta property="og:url" content="https://blog.tox.im/2014/03/21/tox-core-and-api-changes/">
+<meta property="og:site_name" content="Tox Development blog">
+<meta property="og:description" content="Recently pushed was the api-fix branch by irungentoo. Nothing too big was changed, fortunately, but things were changed to keep consistencies and so forth. Included in this merge was:
 
-No more forcing"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Tox Core and API changes"><meta name="twitter:description" content="Recently pushed was the api-fix branch by irungentoo. Nothing too big was changed, fortunately, but things were changed to keep consistencies and so forth. Included in this merge was:
+No more forcing">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Tox Core and API changes">
+<meta name="twitter:description" content="Recently pushed was the api-fix branch by irungentoo. Nothing too big was changed, fortunately, but things were changed to keep consistencies and so forth. Included in this merge was:
 
-No more forcing"><link rel="alternative" href="/atom.xml" title="Tox Development blog" type="application/atom+xml"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/style.css" type="text/css"><!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div id="container"><div class="mobile-nav-panel"><i class="icon-reorder icon-large"></i></div><header id="header"><h1 class="blog-title"><a href="/">Tox Development blog</a></h1><nav class="nav"><ul><li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li><li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li><li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li></ul></nav><div id="search-form-wrap"><form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:https://blog.tox.im"></form></div></header><div id="main"><article id="post-tox-core-and-api-changes" class="post"><footer class="entry-meta-header"><span class="meta-elements date"><a href="/2014/03/21/tox-core-and-api-changes/" class="article-date"><time datetime="2014-03-21T04:51:05.000Z" itemprop="datePublished">Mar 21 2014</time></a></span> <span class="meta-elements author">Tox Foundation</span><div class="commentscount"></div></footer><header class="entry-header"><h1 class="article-title entry-title" itemprop="name">Tox Core and API changes</h1></header><div class="entry-content"><p>Recently pushed was the api-fix branch by irungentoo. Nothing too big was changed, fortunately, but things were changed to keep consistencies and so forth. Included in this merge was:</p><ul><li>No more forcing NULL terminated strings in Tox Core (meaning whatever you send to the core, it won’t chop off the end forcefully)</li><li>Some naming changes like tox_get_friend_id -&gt; tox_get_friend_number to clear some confusions</li><li>Many <code>int</code>s were changed to <code>int32_t</code> for consistency and clarity<br>You can check all the changes <a href="https://github.com/irungentoo/ProjectTox-Core/commit/5770a0e29ab35efb1ef656ab81c499635fc5fecf" target="_blank" rel="external">here</a>, as well.</li></ul><p>All of the clients have been able to update their builds to reflect the API changes as well, amazingly fast. There might be even more changes to come to make the API even better in the future! In other news, more work is being done on TCP in the core. Can’t wait for that to finish.</p></div><footer class="entry-footer"><div class="entry-meta-footer"><span class="category"><div class="article-category"><a class="article-category-link" href="/categories/Tox-Core/">Tox Core</a></div></span> <span class="tags"></span></div></footer><nav id="article-nav"><a href="/2014/03/21/gsoc-14-proposals/" id="article-nav-newer" class="article-nav-link-wrap"><strong class="article-nav-caption">Newer</strong><div class="article-nav-title">Student proposals for GSoC 2014</div></a> <a href="/2014/03/21/toxicity-and-jenkins/" id="article-nav-older" class="article-nav-link-wrap"><strong class="article-nav-caption">Older</strong><div class="article-nav-title">Toxicity and Jenkins</div></a></nav></article></div><div class="mb-search"><form action="//google.com/search" method="get" accept-charset="utf-8"><input type="search" name="q" results="0" placeholder="Search"> <input type="hidden" name="q" value="site:blog.tox.im"></form></div><footer id="footer"><h1 class="footer-blog-title"><a href="/">Tox Development blog</a></h1><span class="copyright">&copy; 2015 Tox Foundation<br>Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></span></footer><script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css"><script src="/fancybox/jquery.fancybox.pack.js"></script><script src="/js/script.js" type="text/javascript"></script></div></body></html>
+No more forcing">
+
+  
+    <link rel="alternative" href="/atom.xml" title="Tox Development blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+<body>
+  <div id="container">
+    <div class="mobile-nav-panel">
+	<i class="icon-reorder icon-large"></i>
+</div>
+<header id="header">
+	<h1 class="blog-title">
+		<a href="/">Tox Development blog</a>
+	</h1>
+	<nav class="nav">
+		<ul>
+			<li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li>
+			<li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li>
+			<li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li>
+		</ul>
+	</nav>
+	<div id="search-form-wrap">
+		<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:https://blog.tox.im"></form>
+	</div>
+</header>
+    <div id="main">
+      <article id="post-tox-core-and-api-changes" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/03/21/tox-core-and-api-changes/" class="article-date">
+  <time datetime="2014-03-21T04:51:05.000Z" itemprop="datePublished">Mar 21 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 class="article-title entry-title" itemprop="name">
+      Tox Core and API changes
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>Recently pushed was the api-fix branch by irungentoo. Nothing too big was changed, fortunately, but things were changed to keep consistencies and so forth. Included in this merge was:</p>
+<ul>
+<li>No more forcing NULL terminated strings in Tox Core (meaning whatever you send to the core, it won’t chop off the end forcefully)</li>
+<li>Some naming changes like tox_get_friend_id -&gt; tox_get_friend_number to clear some confusions</li>
+<li>Many <code>int</code>s were changed to <code>int32_t</code> for consistency and clarity<br>You can check all the changes <a href="https://github.com/irungentoo/ProjectTox-Core/commit/5770a0e29ab35efb1ef656ab81c499635fc5fecf" target="_blank" rel="external">here</a>, as well.</li>
+</ul>
+<p>All of the clients have been able to update their builds to reflect the API changes as well, amazingly fast. There might be even more changes to come to make the API even better in the future! In other news, more work is being done on TCP in the core. Can’t wait for that to finish.</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Tox-Core/">Tox Core</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+    
+<nav id="article-nav">
+  
+    <a href="/2014/03/21/gsoc-14-proposals/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Student proposals for GSoC 2014
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2014/03/21/toxicity-and-jenkins/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">
+        
+          Toxicity and Jenkins
+        
+      </div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+    </div>
+    <div class="mb-search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:blog.tox.im">
+  </form>
+</div>
+<footer id="footer">
+	<h1 class="footer-blog-title">
+		<a href="/">Tox Development blog</a>
+	</h1>
+	<span class="copyright">
+		&copy; 2015 Tox Foundation<br>
+		Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>
+		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+	</span>
+</footer>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>

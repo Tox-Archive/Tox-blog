@@ -1,4 +1,187 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><title>The joys of build systems, and the future of Toxic | Tox Development blog</title><meta name="viewport" content="width=device-width"><meta name="description" content="In a time long ago Tox used cmake.
-Cmake was first purely because it matched our goals, sort of. It provided a nice run everywhere interface that the average person who compiled the then build only To"><meta property="og:type" content="article"><meta property="og:title" content="The joys of build systems, and the future of Toxic"><meta property="og:url" content="https://blog.tox.im/2014/03/17/build-systems-yo/"><meta property="og:site_name" content="Tox Development blog"><meta property="og:description" content="In a time long ago Tox used cmake.
-Cmake was first purely because it matched our goals, sort of. It provided a nice run everywhere interface that the average person who compiled the then build only To"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="The joys of build systems, and the future of Toxic"><meta name="twitter:description" content="In a time long ago Tox used cmake.
-Cmake was first purely because it matched our goals, sort of. It provided a nice run everywhere interface that the average person who compiled the then build only To"><link rel="alternative" href="/atom.xml" title="Tox Development blog" type="application/atom+xml"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/style.css" type="text/css"><!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div id="container"><div class="mobile-nav-panel"><i class="icon-reorder icon-large"></i></div><header id="header"><h1 class="blog-title"><a href="/">Tox Development blog</a></h1><nav class="nav"><ul><li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li><li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li><li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li></ul></nav><div id="search-form-wrap"><form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:https://blog.tox.im"></form></div></header><div id="main"><article id="post-build-systems-yo" class="post"><footer class="entry-meta-header"><span class="meta-elements date"><a href="/2014/03/17/build-systems-yo/" class="article-date"><time datetime="2014-03-17T05:19:32.000Z" itemprop="datePublished">Mar 17 2014</time></a></span> <span class="meta-elements author">Tox Foundation</span><div class="commentscount"></div></footer><header class="entry-header"><h1 class="article-title entry-title" itemprop="name">The joys of build systems, and the future of Toxic</h1></header><div class="entry-content"><p>In a time long ago Tox used cmake.</p><p>Cmake was first purely because it matched our goals, sort of. It provided a nice run everywhere interface that the average person who compiled the then build only Tox could use without issues. Cmake wasn’t all golden though, maintaining it was a sea of unneeded complexities and overkill, too much for the average developer to deal with for the size of Tox. While this wasn’t a major issue, one developer took it on himself to switch to autotools, with the promise that he’d maintain it.</p><p>Toxic starts to look all pretty</p><p>Our first client, the API test, was nTox. Not long after, Toxic followed. Toxic was pretty client in core, composed of a couple files and real ui, development on it skyrocketed. It wasn’t long till Toxic was a fully featured client, almost like the shiny new GUI clients in development. I had a crazy idea that ended up perfect with the timing, moving Toxic from a part of core to its own repo, Tox/toxic. When this happened, autotools were inherited over, as they were an accepted part of core.</p><p>That’s cool, what about the future of Toxic?</p><p>And now, the fun part. A couple days ago IRIXuser and myself were talking about the GSoC project on a replacement build system, we wanted something smooth and easy, without unneeded complexities. (We’re a dozen files and headers, after all.) We stumbled upon <a href="http://hypertriton.com/bsdbuild/" title="BSDBuild" target="_blank" rel="external">BSDBuild</a>, a simple build system based off 4.4BSD make libraries. A bit of look in to it and we discovered that it was easy. Like <em>very easy</em>. The entire system for end users was a configure that someone editing it generated and a Makefile made by hand. This was something our iOS developer could understand without a learning curve, with a quick glance.</p><p>4.4BSD? iOS? But I use Linux!</p><p>Before I go any further, I’ll take a moment to explain how the existing build system works, what users see, and how BSDBuild works. GNU autotools is composed of about 7 separate binaries and 8 files, though for this I’ll focus on just the ones Toxic used. To compile Toxic, the entire set of autotools binaries is required, along with a GNU make. A user installs all of these and runs autoreconf -i to generate configure. This process takes around 13 seconds. Afterwards the user runs the configure, making the compiled Makefile in the process. This process takes about 12 seconds. Afterwards the user runs make and make install, building the program. BSDBuild is based off 4.4BSD make libraries, built around a standard POSIX bourne shell and makefile. The developers provide the configure and Makefile, who are interpreted, and not system specific. To compile BSDBuild Toxic, a user installs zero extra files, as the configure is provided. a user runs the configure we provide, generating a Makefile.config. This process takes around 4 seconds. Afterwards the user uses make to compile and install like normal.</p><p>What could be so wrong with GNU autotools?</p><p>The design of autotools is an over complex one, composed of m4, marcos, and dozens of files and commands. This results in a slow and bloated install process for users, along with something that even developers who have been using it <em>for decades</em><a href="http://esr.ibiblio.org/?p=1877" title="still run in to undefined behavior." target="_blank" rel="external">still run in to undefined behavior</a>. The result of this means that things like —disable-av being <a href="https://github.com/Tox/toxic/pull/100" target="_blank" rel="external">broken</a> go unnoticed, without support for things like —enable-debug (A BSDBuild specific flag we implemented with ease). From an end user perspective, this means a configure process that takes 9 times longer and lacks features, requiring more software installed.</p><p>But BSDBuild couldn’t be perfect, I mean you <strong>did</strong>drop cmake!</p><p>One of the major issues with BSDBuild is that support for checks (REQUIRE(toxcore) can’t be done without making them first. Thankfully, the design of the pm file used for a check is so simple, we had toxcore, toxav, sodium, and openal done in half an hour. Since configure is provided by us, this means no extra work for the end user. Now, BSDBuild does have some other side effects, developers editing either configure.in or Makefile (The entire BSDBuild) do need to have BSDBuild installed, in order to run the mkconfigure command.</p><p>BSDBuild doesn’t work on GNU/HURD, right?</p><p>Wrong! Something to consider is that while BSD Makefiles run on GNU make, GNU Makefiles may not run on BSD make. While GNU autotools produce GNU Makefiles, the POSIX compliant BSDBuild files are more supported on more platforms than the autotools equivalent, going as far as supporting making Visual Studio and DOS Watcom projects, despite Toxic not running on Windows.</p><p>Reactions</p><p>Reactions to BSDBuild have been mixed, while the autotools maintainer has made some rather ignorant remarks about the compile process with BSDBuild, stating that perl is required (It is not), we do forgive him, BSDBuild isn’t a well known system. A few people have stated that the work was a bit of a waste of time, autotools is working. We disagree with this ideology, something like this might seem trivial in the short term, though the ease of use will aide future Toxic developers and helping them focus on the code, and not the build system.</p><p>The last group of people have been supportive, these have generally been users of more popular and more exotic systems, from praising the easy debugging, to the following:</p><blockquote><p>“&lt;rhaps0dy&gt; so, uhm</p><p>&lt;rhaps0dy&gt; where do I get the BSDBuild version of libtoxcore?</p><p>&lt;LordAro&gt; rhaps0dy: there isn’t one</p><p>&lt;LordAro&gt; only toxic has a bsdbuild build system so far</p><p>&lt;LordAro&gt; and that’s not in master until people can be convinced that it’s “a good thing” (tm)</p><p>&lt;rhaps0dy&gt; :/</p><p>&lt;LordAro&gt; (which it is)</p><p>&lt;rhaps0dy&gt; I agree lol</p></blockquote><p>Why isn’t this in master yet?</p><p>With a couple of the reactions coming from other developers who I do like, I would greatly like them to try the system out, explore it a bit, get some honest feedback. As of now, this has not happened, though I do try to push them whenever I can. As well, being new, the new build system may have a couple of quirks that we would really like to get out first. When the time comes I’ll merge the branch in to master, just not right now.</p><p>I encourage you to try it now, tell me what works, what doesn’t work, and most of all, your thoughts on this pending switch.</p><p>Testing it is easy, just do a new clone of Toxic, specifying the bsdmake branch: <code>git clone https://github.com/Tox/toxic -b bsdmake</code></p></div><footer class="entry-footer"><div class="entry-meta-footer"><span class="category"><div class="article-category"><a class="article-category-link" href="/categories/Toxic/">Toxic</a></div></span> <span class="tags"></span></div></footer><nav id="article-nav"><a href="/2014/03/19/jenkins-ci-and-signed-commits/" id="article-nav-newer" class="article-nav-link-wrap"><strong class="article-nav-caption">Newer</strong><div class="article-nav-title">Jenkins CI and signed commits</div></a> <a href="/2014/03/17/antox-0-6-5-released/" id="article-nav-older" class="article-nav-link-wrap"><strong class="article-nav-caption">Older</strong><div class="article-nav-title">Antox 0.6.5 Released</div></a></nav></article></div><div class="mb-search"><form action="//google.com/search" method="get" accept-charset="utf-8"><input type="search" name="q" results="0" placeholder="Search"> <input type="hidden" name="q" value="site:blog.tox.im"></form></div><footer id="footer"><h1 class="footer-blog-title"><a href="/">Tox Development blog</a></h1><span class="copyright">&copy; 2015 Tox Foundation<br>Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></span></footer><script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css"><script src="/fancybox/jquery.fancybox.pack.js"></script><script src="/js/script.js" type="text/javascript"></script></div></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>The joys of build systems, and the future of Toxic | Tox Development blog</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="In a time long ago Tox used cmake.
+Cmake was first purely because it matched our goals, sort of. It provided a nice run everywhere interface that the average person who compiled the then build only To">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The joys of build systems, and the future of Toxic">
+<meta property="og:url" content="https://blog.tox.im/2014/03/17/build-systems-yo/">
+<meta property="og:site_name" content="Tox Development blog">
+<meta property="og:description" content="In a time long ago Tox used cmake.
+Cmake was first purely because it matched our goals, sort of. It provided a nice run everywhere interface that the average person who compiled the then build only To">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The joys of build systems, and the future of Toxic">
+<meta name="twitter:description" content="In a time long ago Tox used cmake.
+Cmake was first purely because it matched our goals, sort of. It provided a nice run everywhere interface that the average person who compiled the then build only To">
+
+  
+    <link rel="alternative" href="/atom.xml" title="Tox Development blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+<body>
+  <div id="container">
+    <div class="mobile-nav-panel">
+	<i class="icon-reorder icon-large"></i>
+</div>
+<header id="header">
+	<h1 class="blog-title">
+		<a href="/">Tox Development blog</a>
+	</h1>
+	<nav class="nav">
+		<ul>
+			<li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li>
+			<li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li>
+			<li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li>
+		</ul>
+	</nav>
+	<div id="search-form-wrap">
+		<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:https://blog.tox.im"></form>
+	</div>
+</header>
+    <div id="main">
+      <article id="post-build-systems-yo" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/03/17/build-systems-yo/" class="article-date">
+  <time datetime="2014-03-17T05:19:32.000Z" itemprop="datePublished">Mar 17 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 class="article-title entry-title" itemprop="name">
+      The joys of build systems, and the future of Toxic
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>In a time long ago Tox used cmake.</p>
+<p>Cmake was first purely because it matched our goals, sort of. It provided a nice run everywhere interface that the average person who compiled the then build only Tox could use without issues. Cmake wasn’t all golden though, maintaining it was a sea of unneeded complexities and overkill, too much for the average developer to deal with for the size of Tox. While this wasn’t a major issue, one developer took it on himself to switch to autotools, with the promise that he’d maintain it.</p>
+<p> Toxic starts to look all pretty</p>
+<p>Our first client, the API test, was nTox. Not long after, Toxic followed. Toxic was pretty client in core, composed of a couple files and real ui, development on it skyrocketed. It wasn’t long till Toxic was a fully featured client, almost like the shiny new GUI clients in development. I had a crazy idea that ended up perfect with the timing, moving Toxic from a part of core to its own repo, Tox/toxic. When this happened, autotools were inherited over, as they were an accepted part of core.</p>
+<p>That’s cool, what about the future of Toxic?</p>
+<p>And now, the fun part. A couple days ago IRIXuser and myself were talking about the GSoC project on a replacement build system, we wanted something smooth and easy, without unneeded complexities. (We’re a dozen files and headers, after all.) We stumbled upon <a href="http://hypertriton.com/bsdbuild/" title="BSDBuild" target="_blank" rel="external">BSDBuild</a>, a simple build system based off 4.4BSD make libraries. A bit of look in to it and we discovered that it was easy. Like <em>very easy</em>. The entire system for end users was a configure that someone editing it generated and a Makefile made by hand. This was something our iOS developer could understand without a learning curve, with a quick glance.</p>
+<p>4.4BSD? iOS? But I use Linux!</p>
+<p>Before I go any further, I’ll take a moment to explain how the existing build system works, what users see, and how BSDBuild works. GNU autotools is composed of about 7 separate binaries and 8 files, though for this I’ll focus on just the ones Toxic used. To compile Toxic, the entire set of autotools binaries is required, along with a GNU make. A user installs all of these and runs autoreconf -i to generate configure. This process takes around 13 seconds. Afterwards the user runs the configure, making the compiled Makefile in the process. This process takes about 12 seconds. Afterwards the user runs make and make install, building the program. BSDBuild is based off 4.4BSD make libraries, built around a standard POSIX bourne shell and makefile. The developers provide the configure and Makefile, who are interpreted, and not system specific. To compile BSDBuild Toxic, a user installs zero extra files, as the configure is provided. a user runs the configure we provide, generating a Makefile.config. This process takes around 4 seconds. Afterwards the user uses make to compile and install like normal.</p>
+<p>What could be so wrong with GNU autotools?</p>
+<p>The design of autotools is an over complex one, composed of m4, marcos, and dozens of files and commands. This results in a slow and bloated install process for users, along with something that even developers who have been using it <em>for decades </em><a href="http://esr.ibiblio.org/?p=1877" title="still run in to undefined behavior." target="_blank" rel="external">still run in to undefined behavior</a>. The result of this means that things like —disable-av being <a href="https://github.com/Tox/toxic/pull/100" target="_blank" rel="external">broken</a> go unnoticed, without support for things like —enable-debug (A BSDBuild specific flag we implemented with ease). From an end user perspective, this means a configure process that takes 9 times longer and lacks features, requiring more software installed.</p>
+<p>But BSDBuild couldn’t be perfect, I mean you <strong>did</strong> drop cmake!</p>
+<p>One of the major issues with BSDBuild is that support for checks (REQUIRE(toxcore) can’t be done without making them first. Thankfully, the design of the pm file used for a check is so simple, we had toxcore, toxav, sodium, and openal done in half an hour. Since configure is provided by us, this means no extra work for the end user. Now, BSDBuild does have some other side effects, developers editing either configure.in or Makefile (The entire BSDBuild) do need to have BSDBuild installed, in order to run the mkconfigure command.</p>
+<p>BSDBuild doesn’t work on GNU/HURD, right?</p>
+<p>Wrong! Something to consider is that while BSD Makefiles run on GNU make, GNU Makefiles may not run on BSD make. While GNU autotools produce GNU Makefiles, the POSIX compliant BSDBuild files are more supported on more platforms than the autotools equivalent, going as far as supporting making Visual Studio and DOS Watcom projects, despite Toxic not running on Windows.</p>
+<p>Reactions</p>
+<p>Reactions to BSDBuild have been mixed, while the autotools maintainer has made some rather ignorant remarks about the compile process with BSDBuild, stating that perl is required (It is not), we do forgive him, BSDBuild isn’t a well known system. A few people have stated that the work was a bit of a waste of time, autotools is working. We disagree with this ideology, something like this might seem trivial in the short term, though the ease of use will aide future Toxic developers and helping them focus on the code, and not the build system.</p>
+<p>The last group of people have been supportive, these have generally been users of more popular and more exotic systems, from praising the easy debugging, to the following:</p>
+<blockquote>
+<p>&lt;rhaps0dy&gt; so, uhm</p>
+<p>&lt;rhaps0dy&gt; where do I get the BSDBuild version of libtoxcore?</p>
+<p>&lt;LordAro&gt; rhaps0dy: there isn’t one</p>
+<p>&lt;LordAro&gt; only toxic has a bsdbuild build system so far</p>
+<p>&lt;LordAro&gt; and that’s not in master until people can be convinced that it’s “a good thing” (tm)</p>
+<p>&lt;rhaps0dy&gt; :/</p>
+<p>&lt;LordAro&gt; (which it is)</p>
+<p>&lt;rhaps0dy&gt; I agree lol</p>
+</blockquote>
+<p>Why isn’t this in master yet?</p>
+<p>With a couple of the reactions coming from other developers who I do like, I would greatly like them to try the system out, explore it a bit, get some honest feedback. As of now, this has not happened, though I do try to push them whenever I can. As well, being new, the new build system may have a couple of quirks that we would really like to get out first. When the time comes I’ll merge the branch in to master, just not right now.</p>
+<p>I encourage you to try it now, tell me what works, what doesn’t work, and most of all, your thoughts on this pending switch.</p>
+<p>Testing it is easy, just do a new clone of Toxic, specifying the bsdmake branch: <code>git clone https://github.com/Tox/toxic -b bsdmake</code></p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Toxic/">Toxic</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+    
+<nav id="article-nav">
+  
+    <a href="/2014/03/19/jenkins-ci-and-signed-commits/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Jenkins CI and signed commits
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2014/03/17/antox-0-6-5-released/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">
+        
+          Antox 0.6.5 Released
+        
+      </div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+    </div>
+    <div class="mb-search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:blog.tox.im">
+  </form>
+</div>
+<footer id="footer">
+	<h1 class="footer-blog-title">
+		<a href="/">Tox Development blog</a>
+	</h1>
+	<span class="copyright">
+		&copy; 2015 Tox Foundation<br>
+		Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>
+		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+	</span>
+</footer>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>

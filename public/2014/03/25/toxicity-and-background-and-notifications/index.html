@@ -1,1 +1,156 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><title>Toxicity and background and notifications | Tox Development blog</title><meta name="viewport" content="width=device-width"><meta name="description" content="A lot of work is being done on Toxicity recently, one of which is signed commits! There was a small hiccup in getting used to it, but from now on everything should be nice and trustable. There’s also"><meta property="og:type" content="article"><meta property="og:title" content="Toxicity and background and notifications"><meta property="og:url" content="https://blog.tox.im/2014/03/25/toxicity-and-background-and-notifications/"><meta property="og:site_name" content="Tox Development blog"><meta property="og:description" content="A lot of work is being done on Toxicity recently, one of which is signed commits! There was a small hiccup in getting used to it, but from now on everything should be nice and trustable. There’s also"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Toxicity and background and notifications"><meta name="twitter:description" content="A lot of work is being done on Toxicity recently, one of which is signed commits! There was a small hiccup in getting used to it, but from now on everything should be nice and trustable. There’s also"><link rel="alternative" href="/atom.xml" title="Tox Development blog" type="application/atom+xml"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/style.css" type="text/css"><!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div id="container"><div class="mobile-nav-panel"><i class="icon-reorder icon-large"></i></div><header id="header"><h1 class="blog-title"><a href="/">Tox Development blog</a></h1><nav class="nav"><ul><li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li><li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li><li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li></ul></nav><div id="search-form-wrap"><form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:https://blog.tox.im"></form></div></header><div id="main"><article id="post-toxicity-and-background-and-notifications" class="post"><footer class="entry-meta-header"><span class="meta-elements date"><a href="/2014/03/25/toxicity-and-background-and-notifications/" class="article-date"><time datetime="2014-03-26T03:41:53.000Z" itemprop="datePublished">Mar 25 2014</time></a></span> <span class="meta-elements author">Tox Foundation</span><div class="commentscount"></div></footer><header class="entry-header"><h1 class="article-title entry-title" itemprop="name">Toxicity and background and notifications</h1></header><div class="entry-content"><p>A lot of work is being done on Toxicity recently, one of which is <a href="https://blog.libtoxcore.so/128/jenkins-ci-and-signed-commits" target="_blank" rel="external">signed commits</a>! There was a small hiccup in getting used to it, but from now on everything should be nice and trustable. There’s also a lot of under-the-hood refactoring happening, cleaning up messy code and such, better for developers.</p><p>The reason for this post, though, is the addition of background running and notifications. Currently Toxicity is using a max 10 minute timer (by iOS) to allow apps to utilize background threads while the app isn’t running in the foreground. This allows the app to not completely shutdown and restart Tox core every time you switch out of the app! Right now tox_do has a bit of a bigger interval in-between, but users should still be warned about battery drainage.</p><p>As a result of this background servicing, notifications were possible to add, using simple UILocalNotifications, for incoming messages. It shows the sender, and which groupchat it came from provided it wasn’t a friend’s message. There’s a bit of work to be done still. This mainly includes switching to appropriate chat windows once the user opens the app via notification.</p></div><footer class="entry-footer"><div class="entry-meta-footer"><span class="category"><div class="article-category"><a class="article-category-link" href="/categories/Toxicity/">Toxicity</a></div></span> <span class="tags"></span></div></footer><nav id="article-nav"><a href="/2014/03/31/introducing-sts-single-tox-standard/" id="article-nav-newer" class="article-nav-link-wrap"><strong class="article-nav-caption">Newer</strong><div class="article-nav-title">Introducing STS: The Single Tox Standard</div></a> <a href="/2014/03/24/antox-0-7-released/" id="article-nav-older" class="article-nav-link-wrap"><strong class="article-nav-caption">Older</strong><div class="article-nav-title">Antox 0.7 Released</div></a></nav></article></div><div class="mb-search"><form action="//google.com/search" method="get" accept-charset="utf-8"><input type="search" name="q" results="0" placeholder="Search"> <input type="hidden" name="q" value="site:blog.tox.im"></form></div><footer id="footer"><h1 class="footer-blog-title"><a href="/">Tox Development blog</a></h1><span class="copyright">&copy; 2015 Tox Foundation<br>Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></span></footer><script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css"><script src="/fancybox/jquery.fancybox.pack.js"></script><script src="/js/script.js" type="text/javascript"></script></div></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Toxicity and background and notifications | Tox Development blog</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="A lot of work is being done on Toxicity recently, one of which is signed commits! There was a small hiccup in getting used to it, but from now on everything should be nice and trustable. There’s also">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Toxicity and background and notifications">
+<meta property="og:url" content="https://blog.tox.im/2014/03/25/toxicity-and-background-and-notifications/">
+<meta property="og:site_name" content="Tox Development blog">
+<meta property="og:description" content="A lot of work is being done on Toxicity recently, one of which is signed commits! There was a small hiccup in getting used to it, but from now on everything should be nice and trustable. There’s also">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Toxicity and background and notifications">
+<meta name="twitter:description" content="A lot of work is being done on Toxicity recently, one of which is signed commits! There was a small hiccup in getting used to it, but from now on everything should be nice and trustable. There’s also">
+
+  
+    <link rel="alternative" href="/atom.xml" title="Tox Development blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+<body>
+  <div id="container">
+    <div class="mobile-nav-panel">
+	<i class="icon-reorder icon-large"></i>
+</div>
+<header id="header">
+	<h1 class="blog-title">
+		<a href="/">Tox Development blog</a>
+	</h1>
+	<nav class="nav">
+		<ul>
+			<li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li>
+			<li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li>
+			<li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li>
+		</ul>
+	</nav>
+	<div id="search-form-wrap">
+		<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:https://blog.tox.im"></form>
+	</div>
+</header>
+    <div id="main">
+      <article id="post-toxicity-and-background-and-notifications" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/03/25/toxicity-and-background-and-notifications/" class="article-date">
+  <time datetime="2014-03-26T03:41:53.000Z" itemprop="datePublished">Mar 25 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 class="article-title entry-title" itemprop="name">
+      Toxicity and background and notifications
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>A lot of work is being done on Toxicity recently, one of which is <a href="https://blog.libtoxcore.so/128/jenkins-ci-and-signed-commits" target="_blank" rel="external">signed commits</a>! There was a small hiccup in getting used to it, but from now on everything should be nice and trustable. There’s also a lot of under-the-hood refactoring happening, cleaning up messy code and such, better for developers.</p>
+<p>The reason for this post, though, is the addition of background running and notifications. Currently Toxicity is using a max 10 minute timer (by iOS) to allow apps to utilize background threads while the app isn’t running in the foreground. This allows the app to not completely shutdown and restart Tox core every time you switch out of the app! Right now tox_do has a bit of a bigger interval in-between, but users should still be warned about battery drainage.</p>
+<p>As a result of this background servicing, notifications were possible to add, using simple UILocalNotifications, for incoming messages. It shows the sender, and which groupchat it came from provided it wasn’t a friend’s message. There’s a bit of work to be done still. This mainly includes switching to appropriate chat windows once the user opens the app via notification.</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Toxicity/">Toxicity</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+    
+<nav id="article-nav">
+  
+    <a href="/2014/03/31/introducing-sts-single-tox-standard/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Introducing STS: The Single Tox Standard
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2014/03/24/antox-0-7-released/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">
+        
+          Antox 0.7 Released
+        
+      </div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+    </div>
+    <div class="mb-search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:blog.tox.im">
+  </form>
+</div>
+<footer id="footer">
+	<h1 class="footer-blog-title">
+		<a href="/">Tox Development blog</a>
+	</h1>
+	<span class="copyright">
+		&copy; 2015 Tox Foundation<br>
+		Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>
+		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+	</span>
+</footer>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>

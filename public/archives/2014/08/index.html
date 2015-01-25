@@ -1,1 +1,571 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><title>Archives: 2014/8 | Tox Development blog</title><meta name="viewport" content="width=device-width"><meta name="description" content="Perils of Tox development"><meta property="og:type" content="website"><meta property="og:title" content="Tox Development blog"><meta property="og:url" content="https://blog.tox.im/archives/2014/08/"><meta property="og:site_name" content="Tox Development blog"><meta property="og:description" content="Perils of Tox development"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Tox Development blog"><meta name="twitter:description" content="Perils of Tox development"><link rel="alternative" href="/atom.xml" title="Tox Development blog" type="application/atom+xml"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/style.css" type="text/css"><!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div id="container"><div class="mobile-nav-panel"><i class="icon-reorder icon-large"></i></div><header id="header"><h1 class="blog-title"><a href="/">Tox Development blog</a></h1><nav class="nav"><ul><li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li><li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li><li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li></ul></nav><div id="search-form-wrap"><form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:https://blog.tox.im"></form></div></header><div id="main"><article id="post--ce-bctox-updates-0-1-3" class="post"><footer class="entry-meta-header"><span class="meta-elements date"><a href="/2014/08/19/-ce-bctox-updates-0-1-3/" class="article-date"><time datetime="2014-08-19T13:04:22.000Z" itemprop="datePublished">Aug 19 2014</time></a></span> <span class="meta-elements author">Tox Foundation</span><div class="commentscount"></div></footer><header class="entry-header"><h1 itemprop="name" class="entry-title"><a class="article-title" href="/2014/08/19/-ce-bctox-updates-0-1-3/">μTox updates [0.1.3]</a></h1></header><div class="entry-content"><p><strong>New features:</strong></p><ul><li>Network options: IPv6/UDP enable/disable</li><li>SOCKS 5 proxy support (makes it possible to use Tox through Tor)</li><li>Right click menus (Xlib, Windows already had them)</li><li>Option to copy messages without the names (through a right click menu)</li><li>Option to show only online friends</li><li><p>Support for translations<br><strong>Bugfixes:</strong></p></li><li><p>Many small fixes<br><strong>Other:</strong></p></li><li><p>toxcore has a new congestion control algorithm, file transfers should have better performance now</p></li></ul></div><footer class="entry-footer"><div class="entry-meta-footer"><span class="category"><div class="article-category"><a class="article-category-link" href="/categories/μTox/">μTox</a></div></span> <span class="tags"></span></div></footer></article><hr class="article-devider"><article id="post-antox-v0-12-released" class="post"><footer class="entry-meta-header"><span class="meta-elements date"><a href="/2014/08/17/antox-v0-12-released/" class="article-date"><time datetime="2014-08-17T20:11:54.000Z" itemprop="datePublished">Aug 17 2014</time></a></span> <span class="meta-elements author">Tox Foundation</span><div class="commentscount"></div></footer><header class="entry-header"><h1 itemprop="name" class="entry-title"><a class="article-title" href="/2014/08/17/antox-v0-12-released/">Antox v0.12 released</a></h1></header><div class="entry-content"><p><strong>Edit:</strong> <span style="color: #000000">There seems to be a problem of crashing when registering (both skipping and not skipping). I’d recommend not upgrading just yet and I’ll try and get it fixed by the end of the week. Sorry for the wait</span></p><p>It’s been a long time since I’ve written a blog post for a release of Antox but I felt with the major changes in this version, it would be best if I did.</p><p>The major change in this release which may cause confusion is the introduction of an account system. When you create an account, it assigns the account a new tox id as well as its own friends list and chat logs, so that you can easily create and manage multiple identities from the same application. You just logout of one account, and login to another to swap tox id’s. No hassle in dragging tox save files about. It also takes the account name and registers it on <a href="https://toxme.se" target="_blank" rel="external">https://toxme.se</a> so that others can add you using just the account name. If you don’t want to be signed up on toxme, you should tick “skip registration” in the registration screen. I’ve taken these steps to try and make the application extremely easy to use. Regular users are used to creating accounts and having people add that account name and this is what I’m trying to emulate for tox. Hopefully others like the changes I’ve made and that other clients follow so that the experience is the same across all platforms.</p><p>Some other notable changes are:</p><ul><li>Nicer looking tabs in the main section</li><li>You can now accept and reject file transfers</li><li>File transfer speed is now displayed</li><li>Better ordering and searching of the contacts list</li><li>The Tox ID can now be found under the ‘Advanced’ tab of Settings<br>We will soon have A/V in antox as well. The functions have already been wrapped in jToxCore and are just being proof-read as we speak to make sure it’s correct. Once merged and ready, audio is the first function I want to get into antox.</li></ul><p><strong>Edit:</strong>If you tick “skip registration” an account name is still required so that multiple tox id’s can be used. It uses the account name you entered as the file name for the tox save so that when you login, it loads the appropriate tox id</p></div><footer class="entry-footer"><div class="entry-meta-footer"><span class="category"><div class="article-category"><a class="article-category-link" href="/categories/Antox/">Antox</a></div></span> <span class="tags"></span></div></footer></article><hr class="article-devider"><article id="post-tox-now-works-through-tor" class="post"><footer class="entry-meta-header"><span class="meta-elements date"><a href="/2014/08/15/tox-now-works-through-tor/" class="article-date"><time datetime="2014-08-15T18:09:02.000Z" itemprop="datePublished">Aug 15 2014</time></a></span> <span class="meta-elements author">Tox Foundation</span><div class="commentscount"></div></footer><header class="entry-header"><h1 itemprop="name" class="entry-title"><a class="article-title" href="/2014/08/15/tox-now-works-through-tor/">Tox now works through Tor (and other proxies)</a></h1></header><div class="entry-content"><p>Toxcore can now function on TCP only as a fall back when UDP can’t be used.</p><p>There were many people who requested Tor support so I implemented basic SOCKS5 proxy support for toxcore TCP connections.</p><p>To use Tox with Tor, set your Tor proxy address in your Tox client proxy settings and disable UDP (UDP connections bypass the proxy and must be disabled if the proxy is used for privacy and not simply for accessing the internet).</p><p>This will make toxcore use Tor for all connections.</p><p>As of now I’m pretty sure the only possible toxcore leak (if UDP is disabled) would be if a DNS name is passed to the tox_bootstrap_from_address() function it would not be resolved using Tor. (I’m pretty sure all the main clients only pass ip addresses to this function though.)</p><p>Clients are not Tor safe yet and bypass the proxy for any non toxcore related network communications (DNS names for example) which means it should not be used in situations that require serious anonymity yet (unless you use something like iptables to plug the leaks).</p><p>Happy Anonymous Toxing.</p></div><footer class="entry-footer"><div class="entry-meta-footer"><span class="category"><div class="article-category"><a class="article-category-link" href="/categories/Tox-Core/">Tox Core</a></div></span> <span class="tags"></span></div></footer></article><hr class="article-devider"><article id="post-warrant-canary-changes" class="post"><footer class="entry-meta-header"><span class="meta-elements date"><a href="/2014/08/13/warrant-canary-changes/" class="article-date"><time datetime="2014-08-13T18:31:24.000Z" itemprop="datePublished">Aug 13 2014</time></a></span> <span class="meta-elements author">Tox Foundation</span><div class="commentscount"></div></footer><header class="entry-header"><h1 itemprop="name" class="entry-title"><a class="article-title" href="/2014/08/13/warrant-canary-changes/">Warrant Canary Changes</a></h1></header><div class="entry-content"><p>While moving the wiki frontend a week ago we managed to forget to move it after changing the IP. This resulted in it being down for around a week.</p><p>We apologize for making this mistake, and have not been contacted by {3 letter agency}.</p><p>In addition to this, the canary is now located at <a href="https://wiki.tox.im/canary.html" target="_blank" rel="external">https://wiki.tox.im/canary.html</a></p><p>It is also pgp signed with the build system key at <a href="https://wiki.tox.im/canary.html" target="_blank" rel="external">https://wiki.tox.im/canary.asc</a></p></div><footer class="entry-footer"><div class="entry-meta-footer"><span class="category"><div class="article-category"><a class="article-category-link" href="/categories/Tox-Foundation/">Tox Foundation</a></div></span> <span class="tags"></span></div></footer></article><hr class="article-devider"><article id="post--ce-bctox-updates-0-1-2" class="post"><footer class="entry-meta-header"><span class="meta-elements date"><a href="/2014/08/11/-ce-bctox-updates-0-1-2/" class="article-date"><time datetime="2014-08-11T20:44:17.000Z" itemprop="datePublished">Aug 11 2014</time></a></span> <span class="meta-elements author">Tox Foundation</span><div class="commentscount"></div></footer><header class="entry-header"><h1 itemprop="name" class="entry-title"><a class="article-title" href="/2014/08/11/-ce-bctox-updates-0-1-2/">μTox updates [0.1.2]</a></h1></header><div class="entry-content"><p><strong>New features:</strong></p><ul><li>Pasting inline images from the clipboard (paste an image and it displays in the chat) (<a href="https://github.com/notsecure/uTox/pull/200" target="_blank" rel="external">code for Xlib by blucoat</a>)</li><li>Search bar to search friends list (<a href="https://github.com/notsecure/uTox/pull/210" target="_blank" rel="external">contribution by CowInAPie</a>)</li><li>Better viewing of large inline images: horizontal scrolling by dragging the image when it is zoomed (unzooming now takes a doubleclick)</li><li><p>Xlib: pasting files from a file manager to send them (<a href="https://github.com/notsecure/uTox/pull/200" target="_blank" rel="external">code by blucoat</a>)<br><strong>Bugfixes:</strong></p></li><li><p>Fixed some clipboard related issues (mostly middle-click issues)</p></li><li>Xlib: set WM_CLASS for better behaviour with some window managers</li><li><p>Fixed a possible segfault in the DNS code<br><strong>Other:</strong></p></li><li><p>Updated the bootstrap <a href="https://wiki.tox.im/Nodes" target="_blank" rel="external">Nodes</a></p></li><li>Changed the font used in the chat (now matches the font used in edit boxes)</li><li>New updater features (requires redownload), get it <a href="https://wiki.tox.im/Binaries" target="_blank" rel="external">here</a></li><li>Updater renamed to “runner” so that it does not require admin permissions (…)</li></ul></div><footer class="entry-footer"><div class="entry-meta-footer"><span class="category"><div class="article-category"><a class="article-category-link" href="/categories/μTox/">μTox</a></div></span> <span class="tags"></span></div></footer></article><hr class="article-devider"><article id="post--ce-bctox-updates-0-1-1" class="post"><footer class="entry-meta-header"><span class="meta-elements date"><a href="/2014/08/04/-ce-bctox-updates-0-1-1/" class="article-date"><time datetime="2014-08-04T23:11:19.000Z" itemprop="datePublished">Aug 4 2014</time></a></span> <span class="meta-elements author">Tox Foundation</span><div class="commentscount"></div></footer><header class="entry-header"><h1 itemprop="name" class="entry-title"><a class="article-title" href="/2014/08/04/-ce-bctox-updates-0-1-1/">μTox updates [0.1.1]</a></h1></header><div class="entry-content"><p><strong>New features:</strong></p><ul><li><p>Ability to drag and drop files to send them (for Windows, Xlib version already had this)<br><strong>Bugfixes:</strong></p></li><li><p>Fixed lag issue (Xlib)</p></li><li>Fix possible file transfer issue (<a href="https://github.com/notsecure/uTox/pull/189" target="_blank" rel="external">contribution by doughdemon</a>)</li><li>File transfers are now only marked as complete when the receiver confirms that the file is received completely (fixes possible issue with friend disconnecting as the file transfer nears completion)</li><li><p>Some toxcore bug fixes<br><strong>Other:</strong></p></li><li><p>Audio and video are now decoded on a separate thread for each call, fixes an issue with the decoding being slow and causing the main thread to get stuck in its receive loop</p></li><li>Set thread stack size (Xlib) - reduces memory usage (<a href="https://github.com/notsecure/uTox/pull/192" target="_blank" rel="external">contribution by doughdemon</a>)</li><li>Option to build without DBUS (<a href="https://github.com/notsecure/uTox/pull/193" target="_blank" rel="external">contribution by doughdemon</a>)</li><li>Enabled pixel subrendering for text (Xlib)</li></ul></div><footer class="entry-footer"><div class="entry-meta-footer"><span class="category"><div class="article-category"><a class="article-category-link" href="/categories/μTox/">μTox</a></div></span> <span class="tags"></span></div></footer></article><hr class="article-devider"><article id="post-to-5000-and-beyond" class="post"><footer class="entry-meta-header"><span class="meta-elements date"><a href="/2014/08/04/to-5000-and-beyond/" class="article-date"><time datetime="2014-08-04T17:22:46.000Z" itemprop="datePublished">Aug 4 2014</time></a></span> <span class="meta-elements author">Tox Foundation</span><div class="commentscount"></div></footer><header class="entry-header"><h1 itemprop="name" class="entry-title"><a class="article-title" href="/2014/08/04/to-5000-and-beyond/">To 5,000 and beyond!</a></h1></header><div class="entry-content"><img src="/images/toxcore-over-5000-commits.jpeg"><p>Thank you to everyone who has supported us over the year, here’s to the next 5,000!</p></div><footer class="entry-footer"><div class="entry-meta-footer"><span class="category"><div class="article-category"><a class="article-category-link" href="/categories/Tox-Core/">Tox Core</a></div></span> <span class="tags"></span></div></footer></article><hr class="article-devider"><article id="post-apt-yum-repos-now-available-for-venom" class="post"><footer class="entry-meta-header"><span class="meta-elements date"><a href="/2014/08/01/apt-yum-repos-now-available-for-venom/" class="article-date"><time datetime="2014-08-01T07:39:21.000Z" itemprop="datePublished">Aug 1 2014</time></a></span> <span class="meta-elements author">Tox Foundation</span><div class="commentscount"></div></footer><header class="entry-header"><h1 itemprop="name" class="entry-title"><a class="article-title" href="/2014/08/01/apt-yum-repos-now-available-for-venom/">Apt &amp; Yum Repos Now Available for Venom</a></h1></header><div class="entry-content"><p>It’s been a long timesince we’ve starting packaging Venom builds as .deb and .rpm, but they never made it into their own repository’s. Today, that changes. For those of you who’ve wanted to install and update your Tox clients via your built-in package manager, your dream has come true.</p><h3 id="Apt/Aptitude_(Debian,_Ubuntu,_Mint,_etc-)">Apt/Aptitude (Debian, Ubuntu, Mint, etc.)</h3><p>If you want to set the repo up under Debian or any of its’ derivatives, simply run <code>wget https://repo.tox.im/tox-apt.sh &amp;amp;&amp;amp; sudo chmod +x ./tox-apt.sh &amp;amp;&amp;amp; ./tox-apt.sh</code> in your favorite terminal and then <code>apt-get install venom</code>.<br>If you want to update venom, simply run <code>apt-get update &amp;&amp; apt-get upgrade</code><br>&nbsp;</p><h3 id="Yum_(Fedora,_CentOS,_RHEL,_etc-)">Yum (Fedora, CentOS, RHEL, etc.)</h3><p>Simply add <code>https://repo.tox.im/tox.repo</code> to your repo list, and then <code>yum install venom</code></p></div><footer class="entry-footer"><div class="entry-meta-footer"><span class="category"><div class="article-category"><a class="article-category-link" href="/categories/qTox/">qTox</a>»<a class="article-category-link" href="/categories/qTox/Venom/">Venom</a></div></span> <span class="tags"></span></div></footer></article><hr class="article-devider"></div><div class="mb-search"><form action="//google.com/search" method="get" accept-charset="utf-8"><input type="search" name="q" results="0" placeholder="Search"> <input type="hidden" name="q" value="site:blog.tox.im"></form></div><footer id="footer"><h1 class="footer-blog-title"><a href="/">Tox Development blog</a></h1><span class="copyright">&copy; 2015 Tox Foundation<br>Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></span></footer><script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css"><script src="/fancybox/jquery.fancybox.pack.js"></script><script src="/js/script.js" type="text/javascript"></script></div></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Archives: 2014/8 | Tox Development blog</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Perils of Tox development">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tox Development blog">
+<meta property="og:url" content="https://blog.tox.im/archives/2014/08/">
+<meta property="og:site_name" content="Tox Development blog">
+<meta property="og:description" content="Perils of Tox development">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Tox Development blog">
+<meta name="twitter:description" content="Perils of Tox development">
+
+  
+    <link rel="alternative" href="/atom.xml" title="Tox Development blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+<body>
+  <div id="container">
+    <div class="mobile-nav-panel">
+	<i class="icon-reorder icon-large"></i>
+</div>
+<header id="header">
+	<h1 class="blog-title">
+		<a href="/">Tox Development blog</a>
+	</h1>
+	<nav class="nav">
+		<ul>
+			<li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li>
+			<li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li>
+			<li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li>
+		</ul>
+	</nav>
+	<div id="search-form-wrap">
+		<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:https://blog.tox.im"></form>
+	</div>
+</header>
+    <div id="main">
+      
+  
+    <article id="post--ce-bctox-updates-0-1-3" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/08/19/-ce-bctox-updates-0-1-3/" class="article-date">
+  <time datetime="2014-08-19T13:04:22.000Z" itemprop="datePublished">Aug 19 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/08/19/-ce-bctox-updates-0-1-3/">μTox updates [0.1.3]</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p><strong>New features:</strong></p>
+<ul>
+<li>Network options: IPv6/UDP enable/disable</li>
+<li>SOCKS 5 proxy support (makes it possible to use Tox through Tor)</li>
+<li>Right click menus (Xlib, Windows already had them)</li>
+<li>Option to copy messages without the names (through a right click menu)</li>
+<li>Option to show only online friends</li>
+<li><p>Support for translations<br><strong>Bugfixes:</strong></p>
+</li>
+<li><p>Many small fixes<br><strong>Other:</strong></p>
+</li>
+<li><p>toxcore has a new congestion control algorithm, file transfers should have better performance now</p>
+</li>
+</ul>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/μTox/">μTox</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+
+  
+    <article id="post-antox-v0-12-released" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/08/17/antox-v0-12-released/" class="article-date">
+  <time datetime="2014-08-17T20:11:54.000Z" itemprop="datePublished">Aug 17 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/08/17/antox-v0-12-released/">Antox v0.12 released</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p><strong>Edit:</strong> <span style="color: #000000;">There seems to be a problem of crashing when registering (both skipping and not skipping). I’d recommend not upgrading just yet and I’ll try and get it fixed by the end of the week. Sorry for the wait</span></p>
+<p>It’s been a long time since I’ve written a blog post for a release of Antox but I felt with the major changes in this version, it would be best if I did.</p>
+<p>The major change in this release which may cause confusion is the introduction of an account system. When you create an account, it assigns the account a new tox id as well as its own friends list and chat logs, so that you can easily create and manage multiple identities from the same application. You just logout of one account, and login to another to swap tox id’s. No hassle in dragging tox save files about. It also takes the account name and registers it on <a href="https://toxme.se" target="_blank" rel="external">https://toxme.se</a> so that others can add you using just the account name. If you don’t want to be signed up on toxme, you should tick “skip registration” in the registration screen. I’ve taken these steps to try and make the application extremely easy to use. Regular users are used to creating accounts and having people add that account name and this is what I’m trying to emulate for tox. Hopefully others like the changes I’ve made and that other clients follow so that the experience is the same across all platforms.</p>
+<p>Some other notable changes are:</p>
+<ul>
+<li>Nicer looking tabs in the main section</li>
+<li>You can now accept and reject file transfers</li>
+<li>File transfer speed is now displayed</li>
+<li>Better ordering and searching of the contacts list</li>
+<li>The Tox ID can now be found under the ‘Advanced’ tab of Settings<br>We will soon have A/V in antox as well. The functions have already been wrapped in jToxCore and are just being proof-read as we speak to make sure it’s correct. Once merged and ready, audio is the first function I want to get into antox.</li>
+</ul>
+<p><strong>Edit: </strong>If you tick “skip registration” an account name is still required so that multiple tox id’s can be used. It uses the account name you entered as the file name for the tox save so that when you login, it loads the appropriate tox id</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Antox/">Antox</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+
+  
+    <article id="post-tox-now-works-through-tor" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/08/15/tox-now-works-through-tor/" class="article-date">
+  <time datetime="2014-08-15T18:09:02.000Z" itemprop="datePublished">Aug 15 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/08/15/tox-now-works-through-tor/">Tox now works through Tor (and other proxies)</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>Toxcore can now function on TCP only as a fall back when UDP can’t be used.</p>
+<p>There were many people who requested Tor support so I implemented basic SOCKS5 proxy support for toxcore TCP connections.</p>
+<p>To use Tox with Tor, set your Tor proxy address in your Tox client proxy settings and disable UDP (UDP connections bypass the proxy and must be disabled if the proxy is used for privacy and not simply for accessing the internet).</p>
+<p>This will make toxcore use Tor for all connections.</p>
+<p>As of now I’m pretty sure the only possible toxcore leak (if UDP is disabled) would be if a DNS name is passed to the tox_bootstrap_from_address() function it would not be resolved using Tor. (I’m pretty sure all the main clients only pass ip addresses to this function though.)</p>
+<p>Clients are not Tor safe yet and bypass the proxy for any non toxcore related network communications (DNS names for example) which means it should not be used in situations that require serious anonymity yet (unless you use something like iptables to plug the leaks).</p>
+<p>Happy Anonymous Toxing.</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Tox-Core/">Tox Core</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+
+  
+    <article id="post-warrant-canary-changes" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/08/13/warrant-canary-changes/" class="article-date">
+  <time datetime="2014-08-13T18:31:24.000Z" itemprop="datePublished">Aug 13 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/08/13/warrant-canary-changes/">Warrant Canary Changes</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>While moving the wiki frontend a week ago we managed to forget to move it after changing the IP. This resulted in it being down for around a week.</p>
+<p>We apologize for making this mistake, and have not been contacted by {3 letter agency}.</p>
+<p>In addition to this, the canary is now located at <a href="https://wiki.tox.im/canary.html" target="_blank" rel="external">https://wiki.tox.im/canary.html</a></p>
+<p>It is also pgp signed with the build system key at <a href="https://wiki.tox.im/canary.html" target="_blank" rel="external">https://wiki.tox.im/canary.asc</a></p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Tox-Foundation/">Tox Foundation</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+
+  
+    <article id="post--ce-bctox-updates-0-1-2" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/08/11/-ce-bctox-updates-0-1-2/" class="article-date">
+  <time datetime="2014-08-11T20:44:17.000Z" itemprop="datePublished">Aug 11 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/08/11/-ce-bctox-updates-0-1-2/">μTox updates [0.1.2]</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p><strong>New features:</strong></p>
+<ul>
+<li>Pasting inline images from the clipboard (paste an image and it displays in the chat) (<a href="https://github.com/notsecure/uTox/pull/200" target="_blank" rel="external">code for Xlib by blucoat</a>)</li>
+<li>Search bar to search friends list (<a href="https://github.com/notsecure/uTox/pull/210" target="_blank" rel="external">contribution by CowInAPie</a>)</li>
+<li>Better viewing of large inline images: horizontal scrolling by dragging the image when it is zoomed (unzooming now takes a doubleclick)</li>
+<li><p>Xlib: pasting files from a file manager to send them (<a href="https://github.com/notsecure/uTox/pull/200" target="_blank" rel="external">code by blucoat</a>)<br><strong>Bugfixes:</strong></p>
+</li>
+<li><p>Fixed some clipboard related issues (mostly middle-click issues)</p>
+</li>
+<li>Xlib: set WM_CLASS for better behaviour with some window managers</li>
+<li><p>Fixed a possible segfault in the DNS code<br><strong>Other:</strong></p>
+</li>
+<li><p>Updated the bootstrap <a href="https://wiki.tox.im/Nodes" target="_blank" rel="external">Nodes</a></p>
+</li>
+<li>Changed the font used in the chat (now matches the font used in edit boxes)</li>
+<li>New updater features (requires redownload), get it <a href="https://wiki.tox.im/Binaries" target="_blank" rel="external">here</a></li>
+<li>Updater renamed to “runner” so that it does not require admin permissions (…)</li>
+</ul>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/μTox/">μTox</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+
+  
+    <article id="post--ce-bctox-updates-0-1-1" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/08/04/-ce-bctox-updates-0-1-1/" class="article-date">
+  <time datetime="2014-08-04T23:11:19.000Z" itemprop="datePublished">Aug 4 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/08/04/-ce-bctox-updates-0-1-1/">μTox updates [0.1.1]</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p><strong>New features:</strong></p>
+<ul>
+<li><p>Ability to drag and drop files to send them (for Windows, Xlib version already had this)<br><strong>Bugfixes:</strong></p>
+</li>
+<li><p>Fixed lag issue (Xlib)</p>
+</li>
+<li>Fix possible file transfer issue (<a href="https://github.com/notsecure/uTox/pull/189" target="_blank" rel="external">contribution by doughdemon</a>)</li>
+<li>File transfers are now only marked as complete when the receiver confirms that the file is received completely (fixes possible issue with friend disconnecting as the file transfer nears completion)</li>
+<li><p>Some toxcore bug fixes<br><strong>Other:</strong></p>
+</li>
+<li><p>Audio and video are now decoded on a separate thread for each call, fixes an issue with the decoding being slow and causing the main thread to get stuck in its receive loop</p>
+</li>
+<li>Set thread stack size (Xlib) - reduces memory usage (<a href="https://github.com/notsecure/uTox/pull/192" target="_blank" rel="external">contribution by doughdemon</a>)</li>
+<li>Option to build without DBUS (<a href="https://github.com/notsecure/uTox/pull/193" target="_blank" rel="external">contribution by doughdemon</a>)</li>
+<li>Enabled pixel subrendering for text (Xlib)</li>
+</ul>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/μTox/">μTox</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+
+  
+    <article id="post-to-5000-and-beyond" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/08/04/to-5000-and-beyond/" class="article-date">
+  <time datetime="2014-08-04T17:22:46.000Z" itemprop="datePublished">Aug 4 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/08/04/to-5000-and-beyond/">To 5,000 and beyond!</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<img src="/images/toxcore-over-5000-commits.jpeg">
+
+<p>Thank you to everyone who has supported us over the year, here’s to the next 5,000!</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Tox-Core/">Tox Core</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+
+  
+    <article id="post-apt-yum-repos-now-available-for-venom" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/08/01/apt-yum-repos-now-available-for-venom/" class="article-date">
+  <time datetime="2014-08-01T07:39:21.000Z" itemprop="datePublished">Aug 1 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/08/01/apt-yum-repos-now-available-for-venom/">Apt &amp; Yum Repos Now Available for Venom</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>It’s been a long timesince we’ve starting packaging Venom builds as .deb and .rpm, but they never made it into their own repository’s. Today, that changes. For those of you who’ve wanted to install and update your Tox clients via your built-in package manager, your dream has come true.</p>
+<h3 id="Apt/Aptitude_(Debian,_Ubuntu,_Mint,_etc-)">Apt/Aptitude (Debian, Ubuntu, Mint, etc.)</h3>
+<p>If you want to set the repo up under Debian or any of its’ derivatives, simply run <code>wget https://repo.tox.im/tox-apt.sh &amp;&amp; sudo chmod +x ./tox-apt.sh &amp;&amp; ./tox-apt.sh</code> in your favorite terminal and then <code>apt-get install venom</code>.<br>If you want to update venom, simply run <code>apt-get update &amp;&amp; apt-get upgrade</code></p>
+<h3 id="Yum_(Fedora,_CentOS,_RHEL,_etc-)">Yum (Fedora, CentOS, RHEL, etc.)</h3>
+<p>Simply add <code>https://repo.tox.im/tox.repo</code> to your repo list, and then <code>yum install venom</code></p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/qTox/">qTox</a>»<a class="article-category-link" href="/categories/qTox/Venom/">Venom</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+
+  
+  
+
+    </div>
+    <div class="mb-search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:blog.tox.im">
+  </form>
+</div>
+<footer id="footer">
+	<h1 class="footer-blog-title">
+		<a href="/">Tox Development blog</a>
+	</h1>
+	<span class="copyright">
+		&copy; 2015 Tox Foundation<br>
+		Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>
+		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+	</span>
+</footer>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>

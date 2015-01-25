@@ -1,1 +1,163 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><title>Tox, packaging, and versions | Tox Development blog</title><meta name="viewport" content="width=device-width"><meta name="description" content="As many of you know, Tox follows a pretty fun rolling release style alpha development cycle where a lot of code changes and improves very rapidly without any set pace."><meta property="og:type" content="article"><meta property="og:title" content="Tox, packaging, and versions"><meta property="og:url" content="https://blog.tox.im/2014/11/23/tox-packaging-and-versions/"><meta property="og:site_name" content="Tox Development blog"><meta property="og:description" content="As many of you know, Tox follows a pretty fun rolling release style alpha development cycle where a lot of code changes and improves very rapidly without any set pace."><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Tox, packaging, and versions"><meta name="twitter:description" content="As many of you know, Tox follows a pretty fun rolling release style alpha development cycle where a lot of code changes and improves very rapidly without any set pace."><link rel="alternative" href="/atom.xml" title="Tox Development blog" type="application/atom+xml"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/style.css" type="text/css"><!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div id="container"><div class="mobile-nav-panel"><i class="icon-reorder icon-large"></i></div><header id="header"><h1 class="blog-title"><a href="/">Tox Development blog</a></h1><nav class="nav"><ul><li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li><li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li><li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li></ul></nav><div id="search-form-wrap"><form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:https://blog.tox.im"></form></div></header><div id="main"><article id="post-tox-packaging-and-versions" class="post"><footer class="entry-meta-header"><span class="meta-elements date"><a href="/2014/11/23/tox-packaging-and-versions/" class="article-date"><time datetime="2014-11-24T02:10:04.000Z" itemprop="datePublished">Nov 23 2014</time></a></span> <span class="meta-elements author">Tox Foundation</span><div class="commentscount"></div></footer><header class="entry-header"><h1 class="article-title entry-title" itemprop="name">Tox, packaging, and versions</h1></header><div class="entry-content"><p>As many of you know, Tox follows a pretty fun rolling release style alpha development cycle where a lot of code changes and improves very rapidly without any set pace.<br><a id="more"></a><br>Because of the oh so fast pace of this we spent a good deal of time designing a cross-OS compilation system that churns out the latest copy of Tox no more than 5 minutes after a commit was pushed ready to be tested by you, our lovely users.</p><p>Because we churned out builds so fast we knew we needed a way to make sure you always ran the latest version of Tox + your favourite client so you could enjoy all the new features and bug fixes as soon as is possible. As such we statically linked and packaged the Linux clients sitting in a repo we run, designed autoupdaters for our Windows clients, and spent a good deal working on efficient ways to update on OS X seamlessly.</p><p>While this system works out wonderfully for those users who pull the tox clients from this repo or use our autoupdaters, there still exists the group of users who use distribution created packages. The problem with distro packaging is that for rolling release software it reduces and slows our ability to get the latest features or security fixes directly in to your hands.</p><p>Our issue with distro packaging at this stage is simple, we don’t want our users to miss out on features or critical security fixes at the hand of slower packagers or the bureaucratic cycle/freeze model that some Linux distributions implement(looking at you, Debian).</p><p>Why is this post happening now of all times? Lemmie tell you a little story.</p><p>A few days back a user entered our IRC channel asking for help joining group chats, he explained that he just ran apt-get update/upgrade and installed the latest Tox package and he wasn’t getting invites to the chat at all. After a bit of questioning I realised he used an obscure Ubuntu fork aimed at older systems that shipped a copy of utox that was almost a month old. It turns out he was attempting to join the new audio group chats with a super old client. After he added our up to date and current repositories he had no more issues.</p><p>If you don’t think this mess is still an issue, <a href="https://github.com/irungentoo/toxcore/compare/master%40%7B30day%7D...master" target="_blank" rel="external">I encourage you to take a look at all the changes that have happened to toxcore alone.</a></p><p>About versioning, it won’t happen while we’re in our rolling release alpha build cycle.</p><p>&nbsp;</p><p>Happy Toxing, Sean</p></div><footer class="entry-footer"><div class="entry-meta-footer"><span class="category"><div class="article-category"><a class="article-category-link" href="/categories/Tox-Core/">Tox Core</a>»<a class="article-category-link" href="/categories/Tox-Core/Tox-Repositories/">Tox Repositories</a></div></span> <span class="tags"></span></div></footer><nav id="article-nav"><a href="/2014/11/30/tox-bootstrap-now-packaging-for-armhf/" id="article-nav-newer" class="article-nav-link-wrap"><strong class="article-nav-caption">Newer</strong><div class="article-nav-title">Tox Bootstrap Now Packaging for armhf</div></a> <a href="/2014/11/23/utox-now-has-audio-filtering-noise-cancellation-etc/" id="article-nav-older" class="article-nav-link-wrap"><strong class="article-nav-caption">Older</strong><div class="article-nav-title">uTox now has Audio Filtering (Noise cancellation, etc..).</div></a></nav></article></div><div class="mb-search"><form action="//google.com/search" method="get" accept-charset="utf-8"><input type="search" name="q" results="0" placeholder="Search"> <input type="hidden" name="q" value="site:blog.tox.im"></form></div><footer id="footer"><h1 class="footer-blog-title"><a href="/">Tox Development blog</a></h1><span class="copyright">&copy; 2015 Tox Foundation<br>Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></span></footer><script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css"><script src="/fancybox/jquery.fancybox.pack.js"></script><script src="/js/script.js" type="text/javascript"></script></div></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Tox, packaging, and versions | Tox Development blog</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="As many of you know, Tox follows a pretty fun rolling release style alpha development cycle where a lot of code changes and improves very rapidly without any set pace.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Tox, packaging, and versions">
+<meta property="og:url" content="https://blog.tox.im/2014/11/23/tox-packaging-and-versions/">
+<meta property="og:site_name" content="Tox Development blog">
+<meta property="og:description" content="As many of you know, Tox follows a pretty fun rolling release style alpha development cycle where a lot of code changes and improves very rapidly without any set pace.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Tox, packaging, and versions">
+<meta name="twitter:description" content="As many of you know, Tox follows a pretty fun rolling release style alpha development cycle where a lot of code changes and improves very rapidly without any set pace.">
+
+  
+    <link rel="alternative" href="/atom.xml" title="Tox Development blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+<body>
+  <div id="container">
+    <div class="mobile-nav-panel">
+	<i class="icon-reorder icon-large"></i>
+</div>
+<header id="header">
+	<h1 class="blog-title">
+		<a href="/">Tox Development blog</a>
+	</h1>
+	<nav class="nav">
+		<ul>
+			<li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li>
+			<li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li>
+			<li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li>
+		</ul>
+	</nav>
+	<div id="search-form-wrap">
+		<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:https://blog.tox.im"></form>
+	</div>
+</header>
+    <div id="main">
+      <article id="post-tox-packaging-and-versions" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/11/23/tox-packaging-and-versions/" class="article-date">
+  <time datetime="2014-11-24T02:10:04.000Z" itemprop="datePublished">Nov 23 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 class="article-title entry-title" itemprop="name">
+      Tox, packaging, and versions
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>As many of you know, Tox follows a pretty fun rolling release style alpha development cycle where a lot of code changes and improves very rapidly without any set pace.<br><a id="more"></a><br>Because of the oh so fast pace of this we spent a good deal of time designing a cross-OS compilation system that churns out the latest copy of Tox no more than 5 minutes after a commit was pushed ready to be tested by you, our lovely users.</p>
+<p>Because we churned out builds so fast we knew we needed a way to make sure you always ran the latest version of Tox + your favourite client so you could enjoy all the new features and bug fixes as soon as is possible. As such we statically linked and packaged the Linux clients sitting in a repo we run, designed autoupdaters for our Windows clients, and spent a good deal working on efficient ways to update on OS X seamlessly.</p>
+<p>While this system works out wonderfully for those users who pull the tox clients from this repo or use our autoupdaters, there still exists the group of users who use distribution created packages. The problem with distro packaging is that for rolling release software it reduces and slows our ability to get the latest features or security fixes directly in to your hands.</p>
+<p>Our issue with distro packaging at this stage is simple, we don’t want our users to miss out on features or critical security fixes at the hand of slower packagers or the bureaucratic cycle/freeze model that some Linux distributions implement(looking at you, Debian).</p>
+<p>Why is this post happening now of all times? Lemmie tell you a little story.</p>
+<p>A few days back a user entered our IRC channel asking for help joining group chats, he explained that he just ran apt-get update/upgrade and installed the latest Tox package and he wasn’t getting invites to the chat at all. After a bit of questioning I realised he used an obscure Ubuntu fork aimed at older systems that shipped a copy of utox that was almost a month old. It turns out he was attempting to join the new audio group chats with a super old client. After he added our up to date and current repositories he had no more issues.</p>
+<p>If you don’t think this mess is still an issue, <a href="https://github.com/irungentoo/toxcore/compare/master%40%7B30day%7D...master" target="_blank" rel="external">I encourage you to take a look at all the changes that have happened to toxcore alone.</a></p>
+<p>About versioning, it won’t happen while we’re in our rolling release alpha build cycle.</p>
+<p>&nbsp;</p>
+<p>Happy Toxing, Sean</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Tox-Core/">Tox Core</a>»<a class="article-category-link" href="/categories/Tox-Core/Tox-Repositories/">Tox Repositories</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+    
+<nav id="article-nav">
+  
+    <a href="/2014/11/30/tox-bootstrap-now-packaging-for-armhf/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Tox Bootstrap Now Packaging for armhf
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2014/11/23/utox-now-has-audio-filtering-noise-cancellation-etc/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">
+        
+          uTox now has Audio Filtering (Noise cancellation, etc..).
+        
+      </div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+    </div>
+    <div class="mb-search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:blog.tox.im">
+  </form>
+</div>
+<footer id="footer">
+	<h1 class="footer-blog-title">
+		<a href="/">Tox Development blog</a>
+	</h1>
+	<span class="copyright">
+		&copy; 2015 Tox Foundation<br>
+		Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>
+		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+	</span>
+</footer>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>
