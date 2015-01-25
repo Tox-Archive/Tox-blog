@@ -10,7 +10,7 @@ In a time long ago Tox used cmake.
 
 Cmake was first purely because it matched our goals, sort of. It provided a nice run everywhere interface that the average person who compiled the then build only Tox could use without issues. Cmake wasn't all golden though, maintaining it was a sea of unneeded complexities and overkill, too much for the average developer to deal with for the size of Tox. While this wasn't a major issue, one developer took it on himself to switch to autotools, with the promise that he'd maintain it.
 
- Toxic starts to look all pretty
+ Toxic starts to look all pretty
 
 Our first client, the API test, was nTox. Not long after, Toxic followed. Toxic was pretty client in core, composed of a couple files and real ui, development on it skyrocketed. It wasn't long till Toxic was a fully featured client, almost like the shiny new GUI clients in development. I had a crazy idea that ended up perfect with the timing, moving Toxic from a part of core to its own repo, Tox/toxic. When this happened, autotools were inherited over, as they were an accepted part of core.
 
@@ -24,9 +24,9 @@ Before I go any further, I'll take a moment to explain how the existing build sy
 
 What could be so wrong with GNU autotools?
 
-The design of autotools is an over complex one, composed of m4, marcos, and dozens of files and commands. This results in a slow and bloated install process for users, along with something that even developers who have been using it _for decades _[still run in to undefined behavior](http://esr.ibiblio.org/?p=1877 "still run in to undefined behavior."). The result of this means that things like --disable-av being [broken](https://github.com/Tox/toxic/pull/100) go unnoticed, without support for things like --enable-debug (A BSDBuild specific flag we implemented with ease). From an end user perspective, this means a configure process that takes 9 times longer and lacks features, requiring more software installed.
+The design of autotools is an over complex one, composed of m4, marcos, and dozens of files and commands. This results in a slow and bloated install process for users, along with something that even developers who have been using it _for decades _[still run in to undefined behavior](http://esr.ibiblio.org/?p=1877 "still run in to undefined behavior."). The result of this means that things like --disable-av being [broken](https://github.com/Tox/toxic/pull/100) go unnoticed, without support for things like --enable-debug (A BSDBuild specific flag we implemented with ease). From an end user perspective, this means a configure process that takes 9 times longer and lacks features, requiring more software installed.
 
-But BSDBuild couldn't be perfect, I mean you **did **drop cmake!
+But BSDBuild couldn't be perfect, I mean you **did** drop cmake!
 
 One of the major issues with BSDBuild is that support for checks (REQUIRE(toxcore) can't be done without making them first. Thankfully, the design of the pm file used for a check is so simple, we had toxcore, toxav, sodium, and openal done in half an hour. Since configure is provided by us, this means no extra work for the end user. Now, BSDBuild does have some other side effects, developers editing either configure.in or Makefile (The entire BSDBuild) do need to have BSDBuild installed, in order to run the mkconfigure command.
 
@@ -40,7 +40,7 @@ Reactions to BSDBuild have been mixed, while the autotools maintainer has made s
 
 The last group of people have been supportive, these have generally been users of more popular and more exotic systems, from praising the easy debugging, to the following:
 
-> "&lt;rhaps0dy&gt; so, uhm
+> &lt;rhaps0dy&gt; so, uhm
 > 
 > &lt;rhaps0dy&gt; where do I get the BSDBuild version of libtoxcore?
 > 

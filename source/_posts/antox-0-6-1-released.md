@@ -6,7 +6,7 @@ date: 2014-03-13 04:09:45
 tags:
 ---
 
-We don't normally push two APKs to Google Play in one day, but the recent commits urged us to do so. Various bugs that prevented a pleasant user experience were discovered and appropriately fixed.  The total changes include:
+We don't normally push two APKs to Google Play in one day, but the recent commits urged us to do so. Various bugs that prevented a pleasant user experience were discovered and appropriately fixed. The total changes include:
 
 *   Updating status icons
 *   Properly fixing UI not updating on friend requests

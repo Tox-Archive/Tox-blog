@@ -6,7 +6,7 @@ date: 2014-08-17 16:11:54
 tags:
 ---
 
-**Edit:** <span style="color: #000000;">There seems to be a problem of crashing when registering (both skipping and not skipping). I'd recommend not upgrading just yet and I'll try and get it fixed by the end of the week. Sorry for the wait</span>
+**Edit:** <span style="color: #000000;">There seems to be a problem of crashing when registering (both skipping and not skipping). I'd recommend not upgrading just yet and I'll try and get it fixed by the end of the week. Sorry for the wait</span>
 
 It's been a long time since I've written a blog post for a release of Antox but I felt with the major changes in this version, it would be best if I did.
 
@@ -17,8 +17,8 @@ Some other notable changes are:
 *   Nicer looking tabs in the main section
 *   You can now accept and reject file transfers
 *   File transfer speed is now displayed
-*   Better ordering and searching of the contacts list
+*   Better ordering and searching of the contacts list
 *   The Tox ID can now be found under the 'Advanced' tab of Settings
 We will soon have A/V in antox as well. The functions have already been wrapped in jToxCore and are just being proof-read as we speak to make sure it's correct. Once merged and ready, audio is the first function I want to get into antox.
 
-**Edit: **If you tick "skip registration" an account name is still required so that multiple tox id's can be used. It uses the account name you entered as the file name for the tox save so that when you login, it loads the appropriate tox id
+**Edit: **If you tick "skip registration" an account name is still required so that multiple tox id's can be used. It uses the account name you entered as the file name for the tox save so that when you login, it loads the appropriate tox id

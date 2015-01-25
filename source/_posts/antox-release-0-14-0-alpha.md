@@ -11,7 +11,3 @@ It didn't take long for another release to happen but here it is, version 0.14.0
 {% limg antox-0-14-0.png %}
 
 Hopefully this transition of language goes smoothly and everything works as well as it did before. Next in the development line is adding avatars and finally finishing off implementing audio calling
-
-&nbsp;
-
-&nbsp;

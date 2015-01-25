@@ -7,7 +7,7 @@ date: 2014-05-31 15:41:45
 tags:
 ---
 
-Yesterday a new milestone was reached, winTox (a windows only GUI) now supports audio calling. winTox is the first non command line client and the first windows client to support audio calling.
+Yesterday a new milestone was reached, winTox (Windows only GUI) now supports audio calling. winTox is the first non command line client and the first Windows client to support audio calling.
 
 To try it out just grab one of the latest winTox builds from: https://wiki.tox.im/Binaries
 

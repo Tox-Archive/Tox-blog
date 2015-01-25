@@ -20,5 +20,3 @@ Changes:
 *   Verify the connection to the bootstrap server is completed upon startup.
 *   Chat messaging debugged heavily
 The updated APK will take a while to propagate through the Google servers but you should be receiving it shortly. As always, if you find a bug please report it on the Github issues page so it can be fixed. Please submit Google crash reports as well when possible.
-
-&nbsp;

@@ -6,7 +6,7 @@ date: 2014-05-20 15:21:56
 tags:
 ---
 
-The TCP branch was merged 2 days ago breaking all compatibility with older clients, yesterday, a major protocol change was introduced, if you run a bootstrap node or a client with a core version older than https://github.com/irungentoo/ProjectTox-Core/commit/e85feb8a3db42a0285b940a090c60102fae50374 then please update it.
+The TCP branch was merged 2 days ago breaking all compatibility with older clients, yesterday, a major protocol change was introduced, if you run a bootstrap node or a client with a core version older than https://github.com/irungentoo/ProjectTox-Core/commit/e85feb8a3db42a0285b940a090c60102fae50374 then please update it.
 
 So, what does the TCP branch bring to Tox?
 

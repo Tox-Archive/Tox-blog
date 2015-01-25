@@ -11,9 +11,8 @@ It's been a long timesince we've starting packaging Venom builds as .deb and .rp
 
 ### Apt/Aptitude (Debian, Ubuntu, Mint, etc.) 
 
-If you want to set the repo up under Debian or any of its' derivatives, simply run `wget https://repo.tox.im/tox-apt.sh &amp;&amp; sudo chmod +x ./tox-apt.sh &amp;&amp; ./tox-apt.sh` in your favorite terminal and then `apt-get install venom`.
+If you want to set the repo up under Debian or any of its' derivatives, simply run `wget https://repo.tox.im/tox-apt.sh && sudo chmod +x ./tox-apt.sh && ./tox-apt.sh` in your favorite terminal and then `apt-get install venom`.
 If you want to update venom, simply run `apt-get update && apt-get upgrade`
-&nbsp;
 
 ### Yum (Fedora, CentOS, RHEL, etc.) 
 

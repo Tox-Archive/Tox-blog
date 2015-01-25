@@ -10,4 +10,4 @@ You can now finally get up to date Antox releases on the [Tox Downloads](http://
 
 This comes just in time as unfortunately we've had to pull Antox from the Google Play Store Alpha. This is due to a technical mishap with our key signing. Check back here and the current Google+ group for more news on how we fix this.
 
-Lastly as a small note, you can now get bitcoins for your commits to Antox thanks to anonymous doners on[ tip4commit](http://tip4commit.com/projects/654).
+Lastly as a small note, you can now get bitcoins for your commits to Antox thanks to anonymous doners on [tip4commit](http://tip4commit.com/projects/654).

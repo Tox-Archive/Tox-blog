@@ -21,5 +21,3 @@ A new version of Antox has been released with the following changes:
 **Antox is now on F-Droid**
 
 Since the last release, you can now get Antox on F-Droid by adding http://markwinter.me/fdroid/repo to your repo list. To do this, go to 'Manage Repos' in F-Droid. These will only be updated with every major release (or when a bug is fixed) rather than with every slight change.
-
-&nbsp;

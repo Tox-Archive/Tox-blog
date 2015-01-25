@@ -14,7 +14,7 @@ After a quick investigation I determined that the web server was up and the name
 
 So, what exactly went wrong? Tox's DNS is provided by service X, behind nameservers on domain b. Domain b once used service X, though for DNSSEC support moved to service Y. Service Y was chosen because DNSSEC DNS providers are rather rare, and these servers provided faster response times. Service Y's 4 nameservers were all taken down as a result of what we suspect was a DDoS attack, rendering queries on the nameservers for Tox useless. DNS glue was designed to prevent this issue, stop that catch-22, done by providing nameserver names and IPs in the whois record itself. This managed to get ignored by every DNS resolver, resulting in no queries going through. I was able to address this issue by fetching the bind file from X for domain b and deploying nameservers with service Z. After a bit of mitigation everything was all fine, with availability all around.
 
-Service Y was chosen due to price and limited selection, though this later turned out to be a poor decision, service Z  is a larger well known provider of Internet services, who offer a SLA, DDoS protection, and amazing uptime; at about 12 times the price.
+Service Y was chosen due to price and limited selection, though this later turned out to be a poor decision, service Z is a larger well known provider of Internet services, who offer a SLA, DDoS protection, and amazing uptime; at about 12 times the price.
 
 At the end of the day, this was a painful lesson to learn. DNS isn't something to be taken lightly, and is something we really do need to pay a pretty penny for.
 
