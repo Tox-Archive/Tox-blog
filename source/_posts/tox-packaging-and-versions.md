@@ -21,7 +21,7 @@ Why is this post happening now of all times? Lemmie tell you a little story.
 
 A few days back a user entered our IRC channel asking for help joining group chats, he explained that he just ran apt-get update/upgrade and installed the latest Tox package and he wasn’t getting invites to the chat at all. After a bit of questioning I realised he used an obscure Ubuntu fork aimed at older systems that shipped a copy of utox that was almost a month old. It turns out he was attempting to join the new audio group chats with a super old client. After he added our up to date and current repositories he had no more issues.
 
-If you don't think this mess is still an issue, [I encourage you to take a look at all the changes that have happened to toxcore alone.](https://github.com/irungentoo/toxcore/compare/master%40%7B30day%7D...master)
+If you don't think this mess is still an issue, [I encourage you to take a look at all the changes that have happened to toxcore alone.](https://github.com/irungentoo/toxcore/compare/master%40%7B30day%7D...master)
 
 About versioning, it won't happen while we're in our rolling release alpha build cycle.
 

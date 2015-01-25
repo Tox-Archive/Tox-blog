@@ -6,7 +6,7 @@ date: 2014-09-24 15:49:28
 tags:
 ---
 
-What's new: Save file location changed, bug fixes, bug fixes, new translations and some small features like the icon on windows changing colour when a message is received.
+What's new: Save file location changed, bug fixes, bug fixes, new translations and some small features like the icon on Windows changing colour when a message is received.
 
 For credits and a detailed list of all changes: [https://github.com/notsecure/uTox/commits/master](https://github.com/notsecure/uTox/commits/master "https://github.com/notsecure/uTox/commits/master")
 
