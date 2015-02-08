@@ -1,3 +1,5 @@
+/* Copyright 2014 - 2015 Andrew Boni
+   Licensed under the MIT license */
 hexo.extend.tag.register("soundcloud", function(args) {
     var options, songUrl, soundcloudUrl, type;
     songUrl = args[0];
