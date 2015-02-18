@@ -79,13 +79,7 @@ and reinstall in order to get the new updater (your personal data will be left i
 #Google Summer of Code
 
 Like last year, Tox is applying to be a participating organization in the Google Summer of Code.
-If you are or know a student who may be interested in working to better secure the world,
-using technologies such as distributed hash tables (BitTorrent style), video and
-audio encoding and mixing, writing Android apps, or using the Qt graphical interface
-library, then take a look at our [GSoC 2015 project ideas](https://wiki.tox.im/GSoC/2015/Ideas)
-page. (Please note that per GSoC guidelines, those ideas are merely suggestions for
-students to make proposals, and so there are many more ways to contribute to Tox
-than just that list.)
+Check back soon for updates.
 
 #Android
 
