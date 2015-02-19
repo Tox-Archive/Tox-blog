@@ -16,11 +16,11 @@ Hello everyone. We realize it's been a while since the last post, but a lot has 
 As a small treat, the [boostrap daemon](https://github.com/irungentoo/toxcore/tree/master/other/bootstrap_daemon) now has systemd support, thanks to contributor [ray65536](https://github.com/ray65536). It is also available as the package `tox-bootstrapd` from our Linux repositories.
 
 ####New groupchats
-Additionally, work is progressing on the complete [groupchat re-design](https://github.com/JFreegman/toxcore)and overhaul, started by [alnf](https://github.com/alnf) with currently beinglead primarily by [JFreegman](https://github.com/JFreegman). Features include moderationabilities and group chat persistence (!). These group chats are currently a longway from being ready to merge into master; however, there is currently a properly[modified build of Toxic](https://jenkins.libtoxcore.so/job/toxic_linux_beta/lastSuccessfulBuild/artifact/toxic)for Linux available with the changes. 
+Additionally, work is progressing on the complete [groupchat re-design](https://github.com/JFreegman/toxcore) and overhaul, started by [alnf](https://github.com/alnf) with currently beinglead primarily by [JFreegman](https://github.com/JFreegman). Features include moderation abilities and group chat persistence (!). These group chats are currently a longway from being ready to merge into master; however, there is currently a properly [modified build of Toxic](https://jenkins.libtoxcore.so/job/toxic_linux_beta/lastSuccessfulBuild/artifact/toxic)for Linux available with the changes. 
 
 You can also download the modified Toxic by installing toxic-beta from our Apt and Yum repos and running ``toxic-beta``. Keep in mind that this copy is totally isolated from your existing Toxic install to prevent issues.
 
-Please be aware that this is experimental testing code that will not work with the regular Tox network until we've finished it and merged it with master. You can follow development on the #tox-groupchatsIRC channel on Freenode.
+Please be aware that this is experimental testing code that will not work with the regular Tox network until we've finished it and merged it with master. You can follow development on the #tox-groupchats IRC channel on Freenode.
 
 #Audio filtering and echo cancellation
 
@@ -28,21 +28,21 @@ It's been around for a few months now, but [uTox](https://github.com/notsecure/u
 has had audio filtering, provided by [code](https://github.com/irungentoo/filter_audio) from [WebRTC](https://code.google.com/p/webrtc/). [qTox](https://github.com/tux3/qTox) now supports it as well.
 
 ####Experimental echo cancellation
-Recently though, [irungentoo](https://github.com/irungentoo) (project founder andlead developer, in case you needed reminding :) ) has created [some patches forOpenAL](https://github.com/irungentoo/openal-soft-tox)that allow for cancelling speaker echoes from your microphone's sound input, anecessary feature for using a microphone without headphones or earbuds. uToxquickly put that to use, and qTox gained the same ability yesterday. Note that,if you compile these clients yourself, you will need the patched version of OpenALto link against to enjoy echo cancellation. The official builds of both qTox and uToxare both built that way, and if you need you can try using the [OpenAL builds](https://jenkins.libtoxcore.so/search/?q=openal)on [Jenkins](https://jenkins.libtoxcore.so/) used for qTox and uTox.
+Recently though, [irungentoo](https://github.com/irungentoo) (project founder and lead developer, in case you needed reminding :) ) has created [some patches for OpenAL](https://github.com/irungentoo/openal-soft-tox) that allow for cancelling speaker echoes from your microphone's sound input, anecessary feature for using a microphone without headphones or earbuds. uTox quickly put that to use, and qTox gained the same ability yesterday. Note that, if you compile these clients yourself, you will need the patched version of OpenAL to link against to enjoy echo cancellation. The official builds of both qTox and uTox are both built that way, and if you need you can try using the [OpenAL builds](https://jenkins.libtoxcore.so/search/?q=openal) on [Jenkins](https://jenkins.libtoxcore.so/) used for qTox and uTox.
 
-Currently echo cancellation is considered experimental, and Tox is seeking testingand feedback from users (on IRC or [reddit](https://reddit.com/r/projecttox), for example)about how effective it is. If testing demonstrates that it is working properly,the patches will be submitted to the [OpenAL upstream](https://github.com/kcat/openal-soft)for merging.
+Currently echo cancellation is considered experimental, and Tox is seeking testing and feedback from users (on IRC or [reddit](https://reddit.com/r/projecttox), for example) about how effective it is. If testing demonstrates that it is working properly, the patches will be submitted to the [OpenAL upstream](https://github.com/kcat/openal-soft) for merging.
 
 ##qTox progress
 Besides continual minor improvements, qTox has gained the following major features.
 
 ####New chatform
-Over the last several months, [krepa098](https://github.com/krepa098) had been workingon a complete rewrite of qTox's chat form, and we're happy to say that it was finallymerged into master in the last week (over 4000 new lines of code!). Users shouldsee significant reductions in memory and CPU usage (though some problems stillexist), as well as being much prettier and easier to use. Copy and pasting inparticular had been a big issue that should be pretty much solved, and there aresome nice little animations (such as the typing notification).
+Over the last several months, [krepa098](https://github.com/krepa098) had been working on a complete rewrite of qTox's chat form, and we're happy to say that it was finally merged into master in the last week (over 4000 new lines of code!). Users should see significant reductions in memory and CPU usage (though some problems still exist), as well as being much prettier and easier to use. Copy and pasting in particular had been a big issue that should be pretty much solved, and there are some nice little animations (such as the typing notification).
 
 ####Local file encryption
-Additionally, a fair bit of work (no where near as much as the new chat form required)was put into fixing the local file encryption and its interface in qTox, and thatwork was merged roughly two weeks ago. Users can now password protect theirprofile to safely transfer their profile to other computers, or even public computers.(Be sure to delete your profile when you leave a public computer!)
+Additionally, a fair bit of work (no where near as much as the new chat form required) was put into fixing the local file encryption and its interface in qTox, and that work was merged roughly two weeks ago. Users can now password protect their profile to safely transfer their profile to other computers, or even public computers. (Be sure to delete your profile when you leave a public computer!)
 
 ####Compact contact list
-Finally, a lot of people probably love (or perhaps are unaware of) the new [compact contact list](http://i.imgur.com/tmX8z9s.png)option that qTox has, thanks to [lumirayz](https://github.com/lumirayz).
+Finally, a lot of people probably love (or perhaps are unaware of) the new [compact contact list](http://i.imgur.com/tmX8z9s.png) option that qTox has, thanks to [lumirayz](https://github.com/lumirayz).
 
 ####OS X
 A note for Mac OS X users: We pushed a number of major changes that totally reworked how the app works. Because of this, many improvements like Qt 5.3 -> 5.4 mean updating it normally will break. Please be aware that this update includes a new icon that you may not be used to, and has many visual improvements.
@@ -58,7 +58,7 @@ Like last year, Tox is applying to be a participating organization in the Google
 
 ##Android
 
-As mentioned above, work continues on Tox4j, the replacement Java wrapper for core,and when that's complete a new Android client will be developed from scratch on topof it. Another vague possibility is that qTox can be ported to Android, since it'swritten in Qt 5; [tux3](https://github.com/tux3) (qTox's primary author) has recentlystarted the very basic framework of such a port, but it is currently significantly less useful than the old Antox.
+As mentioned above, work continues on Tox4j, the replacement Java wrapper for core,and when that's complete a new Android client will be developed from scratch on topof it. Another vague possibility is that qTox can be ported to Android, since it's written in Qt 5; [tux3](https://github.com/tux3) (qTox's primary author) has recently started the very basic framework of such a port, but it is currently significantly less useful than the old Antox.
 
 A fork of the old Antox is currently being maintained against the Tox4j work in progress. You can download it by joining the Google play beta or adding our fdroid repo. Details on this are [here](https://wiki.tox.im/Binaries).
 
