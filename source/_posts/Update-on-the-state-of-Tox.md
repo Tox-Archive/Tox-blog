@@ -66,7 +66,7 @@ A fork of the old Antox is currently being maintained against the Tox4j work in 
 
 We've been continuously working to improve and refine the experience for new users by making things simpler and more straightforward. With this, we're currently working on a new site for tox.im and a new downloads page until the site is complete.
 
-You can check out progress on the new site [here](https://beta.tox.im) and check out the progress on the new temporary downloads page [here](https://downloads.tox.im).
+You can check out progress on the new site [here](https://beta.tox.im) and check out the progress on the new temporary downloads page [here](https://download.tox.im).
 
 ###ToxMe improvements
 
