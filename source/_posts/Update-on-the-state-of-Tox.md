@@ -16,7 +16,7 @@ Hello everyone. We realize it's been a while since the last post, but a lot has 
 As a small treat, the [boostrap daemon](https://github.com/irungentoo/toxcore/tree/master/other/bootstrap_daemon) now has systemd support, thanks to contributor [ray65536](https://github.com/ray65536). It is also available as the package `tox-bootstrapd` from our Linux repositories.
 
 ####New groupchats
-Additionally, work is progressing on the complete [groupchat re-design](https://github.com/JFreegman/toxcore) and overhaul, started by [alnf](https://github.com/alnf) with currently beinglead primarily by [JFreegman](https://github.com/JFreegman). Features include moderation abilities and group chat persistence (!). These group chats are currently a longway from being ready to merge into master; however, there is currently a properly [modified build of Toxic](https://jenkins.libtoxcore.so/job/toxic_linux_beta/lastSuccessfulBuild/artifact/toxic)for Linux available with the changes. 
+Additionally, work is progressing on the complete [groupchat re-design](https://github.com/JFreegman/toxcore) and overhaul, started by [alnf](https://github.com/alnf) with currently being lead primarily by [JFreegman](https://github.com/JFreegman). Features include moderation abilities and group chat persistence (!). These group chats are currently a long way from being ready to merge into master; however, there is currently a properly [modified build of Toxic](https://jenkins.libtoxcore.so/job/toxic_linux_beta/lastSuccessfulBuild/artifact/toxic) for Linux available with the changes. 
 
 You can also download the modified Toxic by installing toxic-beta from our Apt and Yum repos and running ``toxic-beta``. Keep in mind that this copy is totally isolated from your existing Toxic install to prevent issues.
 
@@ -28,7 +28,7 @@ It's been around for a few months now, but [uTox](https://github.com/notsecure/u
 has had audio filtering, provided by [code](https://github.com/irungentoo/filter_audio) from [WebRTC](https://code.google.com/p/webrtc/). [qTox](https://github.com/tux3/qTox) now supports it as well.
 
 ####Experimental echo cancellation
-Recently though, [irungentoo](https://github.com/irungentoo) (project founder and lead developer, in case you needed reminding :) ) has created [some patches for OpenAL](https://github.com/irungentoo/openal-soft-tox) that allow for cancelling speaker echoes from your microphone's sound input, anecessary feature for using a microphone without headphones or earbuds. uTox quickly put that to use, and qTox gained the same ability yesterday. Note that, if you compile these clients yourself, you will need the patched version of OpenAL to link against to enjoy echo cancellation. The official builds of both qTox and uTox are both built that way, and if you need you can try using the [OpenAL builds](https://jenkins.libtoxcore.so/search/?q=openal) on [Jenkins](https://jenkins.libtoxcore.so/) used for qTox and uTox.
+Recently though, [irungentoo](https://github.com/irungentoo) (project founder and lead developer, in case you needed reminding :) ) has created [some patches for OpenAL](https://github.com/irungentoo/openal-soft-tox) that allow for cancelling speaker echoes from your microphone's sound input, a necessary feature for using a microphone without headphones or earbuds. uTox quickly put that to use, and qTox gained the same ability yesterday. Note that, if you compile these clients yourself, you will need the patched version of OpenAL to link against to enjoy echo cancellation. The official builds of both qTox and uTox are both built that way, and if you need you can try using the [OpenAL builds](https://jenkins.libtoxcore.so/search/?q=openal) on [Jenkins](https://jenkins.libtoxcore.so/) used for qTox and uTox.
 
 Currently echo cancellation is considered experimental, and Tox is seeking testing and feedback from users (on IRC or [reddit](https://reddit.com/r/projecttox), for example) about how effective it is. If testing demonstrates that it is working properly, the patches will be submitted to the [OpenAL upstream](https://github.com/kcat/openal-soft) for merging.
 
@@ -50,7 +50,7 @@ A note for Mac OS X users: We pushed a number of major changes that totally rewo
 In order to update cleanly you'll need to re-download qTox and drag the app in to your applications folder like usual. Your profiles won't be harmed or modified in any way.
 
 ##uTox progress
-uTox has been slowly receiving incremental improvements, primarily in the interface.For more details, you can check out the [commit log](https://github.com/notsecure/uTox/commits/master)or [irungentoo's twitter](https://twitter.com/irungentoo).
+uTox has been slowly receiving incremental improvements, primarily in the interface.For more details, you can check out the [commit log](https://github.com/notsecure/uTox/commits/master) or [irungentoo's twitter](https://twitter.com/irungentoo).
 
 ##Google Summer of Code
 
@@ -58,9 +58,9 @@ Like last year, Tox is applying to be a participating organization in the Google
 
 ##Android
 
-As mentioned above, work continues on Tox4j, the replacement Java wrapper for core,and when that's complete a new Android client will be developed from scratch on topof it. Another vague possibility is that qTox can be ported to Android, since it's written in Qt 5; [tux3](https://github.com/tux3) (qTox's primary author) has recently started the very basic framework of such a port, but it is currently significantly less useful than the old Antox.
+As mentioned above, work continues on Tox4j, the replacement Java wrapper for core,and when that's complete a new Android client will be developed from scratch on top of it. Another vague possibility is that qTox can be ported to Android, since it's written in Qt 5; [tux3](https://github.com/tux3) (qTox's primary author) has recently started the very basic framework of such a port, but it is currently significantly less useful than the old Antox.
 
-A fork of the old Antox is currently being maintained against the Tox4j work in progress. You can download it by joining the Google play beta or adding our fdroid repo. Details on this are [here](https://wiki.tox.im/Binaries).
+A fork of the old Antox is currently being maintained against the Tox4j work in progress. You can download it by joining the Google play beta or adding our F-Droid repo. Details on this are [here](https://wiki.tox.im/Binaries).
 
 
 ##Website improvements
