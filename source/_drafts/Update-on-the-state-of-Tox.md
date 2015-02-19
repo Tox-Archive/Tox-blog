@@ -4,7 +4,7 @@ author: Dubslow
 tags:
 ---
 
-Hello everyone. We realise it's been a while since the last post, but a lot has
+Hello everyone. We realize it's been a while since the last post, but a lot has
 happened and Tox continues to progress, so there's a lot to talk about.
 
 ##Tox core
@@ -59,6 +59,7 @@ the patches will be submitted to the [OpenAL upstream](https://github.com/kcat/o
 for merging.
 
 ##qTox progress
+Besides continual minor improvements, qTox has gained the following major features.
 
 ####New chatform
 Over the last several months, [krepa098](https://github.com/krepa098) had been working
@@ -87,10 +88,13 @@ A note for Mac OS X users: We pushed a number of major changes that totally rewo
 In order to update cleanly you'll need to re-download qTox and drag the app in to your applications folder like usual. Your profiles won't be harmed or modified in any way.
 
 ##uTox progress
+uTox has been slowly receiving incremental improvements, primarily in the interface.
+For more details, you can check out the [commit log](https://github.com/notsecure/uTox/commits/master)
+or [irungentoo's twitter](https://twitter.com/irungentoo).
 
 ##Google Summer of Code
 
-Like last year, Tox is applying to be a participating organisation in the Google Summer of Code.
+Like last year, Tox is applying to be a participating organization in the Google Summer of Code.
 Check back soon for updates.
 
 ##Android
@@ -115,7 +119,7 @@ You can check out progress on the new site [here](https://beta.tox.im) and check
 
 By popular demand we've added a reverse lookup API to ToxMe. This allows people to look up DNS Discovery names using just a Tox ID as long as the ID they want to lookup isn't marked private. It is documented [here](https://github.com/Tox/toxme.se/blob/master/api.md)
 
-##Repo improvements
+##Repository improvements
 
 If you use our RPM repo you may have suffered some issues downloading Tox due to an old revoked PGP getting stuck in the signing process. We've gone ahead and fixed all the issues associated with that and ensured that it works perfectly.
 
