@@ -49,6 +49,69 @@
     <div id="main">
       
   
+    <article id="post-antox-v0-12-released" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/08/17/antox-v0-12-released/" class="article-date">
+  <time datetime="2014-08-17T20:11:54.000Z" itemprop="datePublished">Aug 17 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/08/17/antox-v0-12-released/">Antox v0.12 released</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p><strong>Edit:</strong> <span style="color: #000000;">There seems to be a problem of crashing when registering (both skipping and not skipping). I’d recommend not upgrading just yet and I’ll try and get it fixed by the end of the week. Sorry for the wait</span></p>
+<p>It’s been a long time since I’ve written a blog post for a release of Antox but I felt with the major changes in this version, it would be best if I did.</p>
+<p>The major change in this release which may cause confusion is the introduction of an account system. When you create an account, it assigns the account a new tox id as well as its own friends list and chat logs, so that you can easily create and manage multiple identities from the same application. You just logout of one account, and login to another to swap tox id’s. No hassle in dragging tox save files about. It also takes the account name and registers it on <a href="https://toxme.se" target="_blank" rel="external">https://toxme.se</a> so that others can add you using just the account name. If you don’t want to be signed up on toxme, you should tick “skip registration” in the registration screen. I’ve taken these steps to try and make the application extremely easy to use. Regular users are used to creating accounts and having people add that account name and this is what I’m trying to emulate for tox. Hopefully others like the changes I’ve made and that other clients follow so that the experience is the same across all platforms.</p>
+<p>Some other notable changes are:</p>
+<ul>
+<li>Nicer looking tabs in the main section</li>
+<li>You can now accept and reject file transfers</li>
+<li>File transfer speed is now displayed</li>
+<li>Better ordering and searching of the contacts list</li>
+<li>The Tox ID can now be found under the ‘Advanced’ tab of Settings<br>We will soon have A/V in antox as well. The functions have already been wrapped in jToxCore and are just being proof-read as we speak to make sure it’s correct. Once merged and ready, audio is the first function I want to get into antox.</li>
+</ul>
+<p><strong>Edit: </strong>If you tick “skip registration” an account name is still required so that multiple tox id’s can be used. It uses the account name you entered as the file name for the tox save so that when you login, it loads the appropriate tox id</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Antox/">Antox</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+
+  
     <article id="post-tox-now-works-through-tor" class="post">
 	<footer class="entry-meta-header">
 		<span class="meta-elements date">
@@ -583,65 +646,6 @@
 				
   <div class="article-category">
     <a class="article-category-link" href="/categories/Tox-Core/">Tox Core</a>»<a class="article-category-link" href="/categories/Tox-Core/Tox-Foundation/">Tox Foundation</a>
-  </div>
-
-			</span>
-			<span class="tags">
-				
-			</span>
-		</div>
-	</footer>
-	
-</article>
-
-
-	<hr class="article-devider">
-
-
-
-
-  
-    <article id="post-tox-updates-kinda" class="post">
-	<footer class="entry-meta-header">
-		<span class="meta-elements date">
-			<a href="/2014/07/08/tox-updates-kinda/" class="article-date">
-  <time datetime="2014-07-08T07:03:36.000Z" itemprop="datePublished">Jul 8 2014</time>
-</a>
-		</span>
-		<span class="meta-elements author">Tox Foundation</span>
-		<div class="commentscount">
-			
-		</div>
-	</footer>
-	
-	<header class="entry-header">
-		
-  
-    <h1 itemprop="name" class="entry-title">
-      <a class="article-title" href="/2014/07/08/tox-updates-kinda/">Tox Updates! Kinda</a>
-    </h1>
-  
-
-	</header>
-	<div class="entry-content">
-		
-    	<p>Well folks, here we are, a blog post in what seems like forever.</p>
-<p>Now, if you’re following the project off our blog and twitter, don’t get discouraged, we’re still alive and well, busily working away.</p>
-<p>So, if you haven’t heard we introduced a site called <a href="https://toxme.se" title="https://toxme.se" target="_blank" rel="external">https://toxme.se</a>, a fast and easy way to share your ID with your friends. It’s as simple as punching in an ID, selecting a name, and getting a name like joe@toxme.se. Now I know what you may be wondering, isn’t this controlling in some sense? To correctly answer that we’ll have to look at how it works. The website is an extension of the DNS Discovery standard, a method for storing keys in DNS records, usually encrypted to prevent spoofing and mitm attacks. The way this works is that you can take your domain like cats.com and make your own sarah user, so all your friends can add you by adding sarah@cats.com, we’ve just gone ahead and setup a site to make it easy.</p>
-<p>Now, toxme isn’t new, we introduced it a few weeks back, but never formally announced its arrival. If you signed up back then keep in mind, a few weeks back we did wipe all the records as we moved to an encrypted format, so your entry may no longer exist.</p>
-<p>Now, I know what you’re thinking, that can’t be all they’ve done, right?</p>
-<p>Right!, but we want to keep a good bit of it a surprise, so hold on to your horses for a few more days, this is going to be big.</p>
-<p>Happy Toxxing,</p>
-<p>Sean</p>
-
-    
-	</div>
-	<footer class="entry-footer">
-		<div class="entry-meta-footer">
-			<span class="category">
-				
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Tox-Core/">Tox Core</a>
   </div>
 
 			</span>

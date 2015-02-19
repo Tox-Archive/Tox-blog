@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.tox.im/2014/10/03/antox-release-0-14-0-alpha/</loc>
+    <loc>https://blog.tox.im/2015/02/18/Update-on-the-state-of-Tox/</loc>
+    <lastmod>2015-02-19T02:16:05.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tox.im/2014/08/13/warrant-canary-changes/</loc>
     <lastmod>2015-01-25T01:19:51.000Z</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/04/10/sts-approaches-v0-0-5/</loc>
+    <loc>https://blog.tox.im/2014/11/23/tox-packaging-and-versions/</loc>
     <lastmod>2015-01-25T01:19:51.000Z</lastmod>
   </url>
   
@@ -17,7 +22,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/11/23/tox-packaging-and-versions/</loc>
+    <loc>https://blog.tox.im/2014/10/22/tox-on-your-wii/</loc>
     <lastmod>2015-01-25T01:19:51.000Z</lastmod>
   </url>
   
@@ -38,11 +43,6 @@
   
   <url>
     <loc>https://blog.tox.im/2014/03/15/antox-0-6-4-released/</loc>
-    <lastmod>2015-01-25T01:19:51.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.tox.im/2014/09/07/warrant-canary-updated-changes/</loc>
     <lastmod>2015-01-25T01:19:51.000Z</lastmod>
   </url>
   
@@ -87,7 +87,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/08/13/warrant-canary-changes/</loc>
+    <loc>https://blog.tox.im/2014/09/07/warrant-canary-updated-changes/</loc>
     <lastmod>2015-01-25T01:19:51.000Z</lastmod>
   </url>
   
@@ -97,7 +97,12 @@
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/10/22/tox-on-your-wii/</loc>
+    <loc>https://blog.tox.im/2014/04/10/sts-approaches-v0-0-5/</loc>
+    <lastmod>2015-01-25T01:19:51.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tox.im/2014/10/03/antox-release-0-14-0-alpha/</loc>
     <lastmod>2015-01-25T01:19:51.000Z</lastmod>
   </url>
   
@@ -132,17 +137,17 @@
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/03/31/tox-a-new-direction/</loc>
-    <lastmod>2015-01-25T01:19:51.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.tox.im/2014/05/31/new-milestone-reached-audio-calling-on-windows/</loc>
     <lastmod>2015-01-25T01:19:51.000Z</lastmod>
   </url>
   
   <url>
     <loc>https://blog.tox.im/2014/05/20/the-tcp-branch-an-explanation/</loc>
+    <lastmod>2015-01-25T01:19:51.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tox.im/2014/03/31/tox-a-new-direction/</loc>
     <lastmod>2015-01-25T01:19:51.000Z</lastmod>
   </url>
   
@@ -162,12 +167,12 @@
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/09/28/utox-now-in-apt-yum-repos/</loc>
+    <loc>https://blog.tox.im/2014/10/04/ratox-in-tox-repositories/</loc>
     <lastmod>2015-01-06T23:28:20.000Z</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/10/04/ratox-in-tox-repositories/</loc>
+    <loc>https://blog.tox.im/2014/09/28/utox-now-in-apt-yum-repos/</loc>
     <lastmod>2015-01-06T23:28:20.000Z</lastmod>
   </url>
   
@@ -177,12 +182,12 @@
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/03/10/hello-world-2/</loc>
+    <loc>https://blog.tox.im/2014/11/15/achievement-get-groupchat-audio/</loc>
     <lastmod>2015-01-06T23:28:20.000Z</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/11/15/achievement-get-groupchat-audio/</loc>
+    <loc>https://blog.tox.im/2014/03/10/hello-world-2/</loc>
     <lastmod>2015-01-06T23:28:20.000Z</lastmod>
   </url>
   
@@ -192,12 +197,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/03/14/no-antox-gplay-release-for-march-13th/</loc>
-    <lastmod>2015-01-06T23:28:19.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.tox.im/2014/03/17/antox-0-6-5-released/</loc>
+    <loc>https://blog.tox.im/2014/03/14/antox-0-6-3-released/</loc>
     <lastmod>2015-01-06T23:28:19.000Z</lastmod>
   </url>
   
@@ -207,22 +207,12 @@
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/03/14/antox-0-6-3-released/</loc>
-    <lastmod>2015-01-06T23:28:19.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.tox.im/2014/10/06/help-tox-grow-run-a-tox-node-today/</loc>
     <lastmod>2015-01-06T23:28:19.000Z</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/03/21/toxicity-and-jenkins/</loc>
-    <lastmod>2015-01-06T23:28:19.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.tox.im/2014/03/13/tcp-relay-work-begun/</loc>
+    <loc>https://blog.tox.im/2014/03/14/no-antox-gplay-release-for-march-13th/</loc>
     <lastmod>2015-01-06T23:28:19.000Z</lastmod>
   </url>
   
@@ -232,12 +222,12 @@
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/05/18/tcp-branch-merged-with-master/</loc>
+    <loc>https://blog.tox.im/2014/03/13/tcp-relay-work-begun/</loc>
     <lastmod>2015-01-06T23:28:19.000Z</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/03/25/toxicity-and-background-and-notifications/</loc>
+    <loc>https://blog.tox.im/2014/05/18/tcp-branch-merged-with-master/</loc>
     <lastmod>2015-01-06T23:28:19.000Z</lastmod>
   </url>
   
@@ -247,7 +237,22 @@
   </url>
   
   <url>
+    <loc>https://blog.tox.im/2014/03/21/toxicity-and-jenkins/</loc>
+    <lastmod>2015-01-06T23:28:19.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.tox.im/running-a-bootstrap-node/index.html</loc>
+    <lastmod>2015-01-06T23:28:19.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tox.im/2014/03/17/antox-0-6-5-released/</loc>
+    <lastmod>2015-01-06T23:28:19.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tox.im/2014/03/25/toxicity-and-background-and-notifications/</loc>
     <lastmod>2015-01-06T23:28:19.000Z</lastmod>
   </url>
   
@@ -262,7 +267,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/11/23/utox-now-has-audio-filtering-noise-cancellation-etc/</loc>
+    <loc>https://blog.tox.im/2014/08/15/tox-now-works-through-tor/</loc>
     <lastmod>2015-01-06T23:26:28.000Z</lastmod>
   </url>
   
@@ -272,12 +277,12 @@
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/08/11/-ce-bctox-updates-0-1-2/</loc>
+    <loc>https://blog.tox.im/2014/10/02/utox-updates-0-1-a/</loc>
     <lastmod>2015-01-06T23:26:28.000Z</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/10/02/utox-updates-0-1-a/</loc>
+    <loc>https://blog.tox.im/2014/08/11/-ce-bctox-updates-0-1-2/</loc>
     <lastmod>2015-01-06T23:26:28.000Z</lastmod>
   </url>
   
@@ -292,7 +297,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/08/15/tox-now-works-through-tor/</loc>
+    <loc>https://blog.tox.im/2014/11/23/utox-now-has-audio-filtering-noise-cancellation-etc/</loc>
     <lastmod>2015-01-06T23:26:28.000Z</lastmod>
   </url>
   
@@ -302,12 +307,12 @@
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/08/19/-ce-bctox-updates-0-1-3/</loc>
+    <loc>https://blog.tox.im/2014/03/13/toxic-and-threads/</loc>
     <lastmod>2015-01-06T23:26:28.000Z</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/03/13/toxic-and-threads/</loc>
+    <loc>https://blog.tox.im/2014/08/19/-ce-bctox-updates-0-1-3/</loc>
     <lastmod>2015-01-06T23:26:28.000Z</lastmod>
   </url>
   
