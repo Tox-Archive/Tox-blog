@@ -5,24 +5,24 @@
   
   <title>Update on the state of Tox | Tox Development blog</title>
   <meta name="viewport" content="width=device-width">
-  <meta name="description" content="Hello everyone. We realize it’s been a while since the last post, but a lot hashappened and Tox continues to progress, so there’s a lot to talk about.
+  <meta name="description" content="Hello everyone. We realize it’s been a while since the last post, but a lot has happened and Tox continues to progress, so there’s a lot to talk about.
 Tox core
 core
-toxcore has been largely in mainten">
+toxcore has been largely in mainte">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Update on the state of Tox">
 <meta property="og:url" content="https://blog.tox.im/2015/02/18/Update-on-the-state-of-Tox/">
 <meta property="og:site_name" content="Tox Development blog">
-<meta property="og:description" content="Hello everyone. We realize it’s been a while since the last post, but a lot hashappened and Tox continues to progress, so there’s a lot to talk about.
+<meta property="og:description" content="Hello everyone. We realize it’s been a while since the last post, but a lot has happened and Tox continues to progress, so there’s a lot to talk about.
 Tox core
 core
-toxcore has been largely in mainten">
+toxcore has been largely in mainte">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Update on the state of Tox">
-<meta name="twitter:description" content="Hello everyone. We realize it’s been a while since the last post, but a lot hashappened and Tox continues to progress, so there’s a lot to talk about.
+<meta name="twitter:description" content="Hello everyone. We realize it’s been a while since the last post, but a lot has happened and Tox continues to progress, so there’s a lot to talk about.
 Tox core
 core
-toxcore has been largely in mainten">
+toxcore has been largely in mainte">
 
   
     <link rel="alternative" href="/atom.xml" title="Tox Development blog" type="application/atom+xml">
@@ -80,38 +80,38 @@ toxcore has been largely in mainten">
 	</header>
 	<div class="entry-content">
 		
-    	<p>Hello everyone. We realize it’s been a while since the last post, but a lot has<br>happened and Tox continues to progress, so there’s a lot to talk about.</p>
+    	<p>Hello everyone. We realize it’s been a while since the last post, but a lot has happened and Tox continues to progress, so there’s a lot to talk about.</p>
 <h2 id="Tox_core">Tox core</h2>
 <h4 id="core">core</h4>
-<p><a href="https://github.com/irungentoo/toxcore" target="_blank" rel="external">toxcore</a> has been largely in maintenance mode,<br>with memory leaks, logic errors and other bugs being fixed every day. Recently<br>work has begun on implementing a <a href="https://github.com/irungentoo/toxcore/tree/new_api" target="_blank" rel="external">new, cleaner API</a><br>written by the <a href="https://github.com/sonOfRa/tox4j" target="_blank" rel="external">Tox4j</a> developers.</p>
+<p><a href="https://github.com/irungentoo/toxcore" target="_blank" rel="external">toxcore</a> has been largely in maintenance mode, with memory leaks, logic errors and other bugs being fixed every day. Recently work has begun on implementing a <a href="https://github.com/irungentoo/toxcore/tree/new_api" target="_blank" rel="external">new, cleaner API</a> written by the <a href="https://github.com/sonOfRa/tox4j" target="_blank" rel="external">Tox4j</a> developers.</p>
 <h4 id="Bootstrap_daemon">Bootstrap daemon</h4>
-<p>As a small treat, the <a href="https://github.com/irungentoo/toxcore/tree/master/other/bootstrap_daemon" target="_blank" rel="external">boostrap daemon</a><br>now has systemd support, thanks to contributor <a href="https://github.com/ray65536" target="_blank" rel="external">ray65536</a>.<br>It is also available as the package <code>tox-bootstrapd</code> from our Linux repositories.</p>
+<p>As a small treat, the <a href="https://github.com/irungentoo/toxcore/tree/master/other/bootstrap_daemon" target="_blank" rel="external">boostrap daemon</a> now has systemd support, thanks to contributor <a href="https://github.com/ray65536" target="_blank" rel="external">ray65536</a>. It is also available as the package <code>tox-bootstrapd</code> from our Linux repositories.</p>
 <h4 id="New_groupchats">New groupchats</h4>
-<p>Additionally, work is progressing on the complete <a href="https://github.com/JFreegman/toxcore" target="_blank" rel="external">groupchat re-design</a><br>and overhaul, started by <a href="https://github.com/alnf" target="_blank" rel="external">alnf</a> with currently being<br>lead primarily by <a href="https://github.com/JFreegman" target="_blank" rel="external">JFreegman</a>. Features include moderation<br>abilities and group chat persistence (!). These group chats are currently a long<br>way from being ready to merge into master; however, there is currently a properly<br><a href="https://jenkins.libtoxcore.so/job/toxic_linux_beta/lastSuccessfulBuild/artifact/toxic" target="_blank" rel="external">modified build of Toxic</a><br>for Linux available with the changes. </p>
+<p>Additionally, work is progressing on the complete <a href="https://github.com/JFreegman/toxcore" target="_blank" rel="external">groupchat re-design</a>and overhaul, started by <a href="https://github.com/alnf" target="_blank" rel="external">alnf</a> with currently beinglead primarily by <a href="https://github.com/JFreegman" target="_blank" rel="external">JFreegman</a>. Features include moderationabilities and group chat persistence (!). These group chats are currently a longway from being ready to merge into master; however, there is currently a properly<a href="https://jenkins.libtoxcore.so/job/toxic_linux_beta/lastSuccessfulBuild/artifact/toxic" target="_blank" rel="external">modified build of Toxic</a>for Linux available with the changes. </p>
 <p>You can also download the modified Toxic by installing toxic-beta from our Apt and Yum repos and running <code>toxic-beta</code>. Keep in mind that this copy is totally isolated from your existing Toxic install to prevent issues.</p>
-<p>Please be aware that this is experimental testing code that will not work with the regular Tox network until we’ve finished it and merged it with master. You can follow development on the #tox-groupchats<br>IRC channel on Freenode.</p>
+<p>Please be aware that this is experimental testing code that will not work with the regular Tox network until we’ve finished it and merged it with master. You can follow development on the #tox-groupchatsIRC channel on Freenode.</p>
 <h1 id="Audio_filtering_and_echo_cancellation">Audio filtering and echo cancellation</h1>
 <p>It’s been around for a few months now, but <a href="https://github.com/notsecure/uTox" target="_blank" rel="external">uTox</a><br>has had audio filtering, provided by <a href="https://github.com/irungentoo/filter_audio" target="_blank" rel="external">code</a> from <a href="https://code.google.com/p/webrtc/" target="_blank" rel="external">WebRTC</a>. <a href="https://github.com/tux3/qTox" target="_blank" rel="external">qTox</a> now supports it as well.</p>
 <h4 id="Experimental_echo_cancellation">Experimental echo cancellation</h4>
-<p>Recently though, <a href="https://github.com/irungentoo" target="_blank" rel="external">irungentoo</a> (project founder and<br>lead developer, in case you needed reminding :) ) has created <a href="https://github.com/irungentoo/openal-soft-tox" target="_blank" rel="external">some patches for<br>OpenAL</a><br>that allow for cancelling speaker echoes from your microphone’s sound input, a<br>necessary feature for using a microphone without headphones or earbuds. uTox<br>quickly put that to use, and qTox gained the same ability yesterday. Note that,<br>if you compile these clients yourself, you will need the patched version of OpenAL<br>to link against to enjoy echo cancellation. The official builds of both qTox and uTox<br>are both built that way, and if you need you can try using the <a href="https://jenkins.libtoxcore.so/search/?q=openal" target="_blank" rel="external">OpenAL builds</a><br>on <a href="https://jenkins.libtoxcore.so/" target="_blank" rel="external">Jenkins</a> used for qTox and uTox.</p>
-<p>Currently echo cancellation is considered experimental, and Tox is seeking testing<br>and feedback from users (on IRC or <a href="https://reddit.com/r/projecttox" target="_blank" rel="external">reddit</a>, for example)<br>about how effective it is. If testing demonstrates that it is working properly,<br>the patches will be submitted to the <a href="https://github.com/kcat/openal-soft" target="_blank" rel="external">OpenAL upstream</a><br>for merging.</p>
+<p>Recently though, <a href="https://github.com/irungentoo" target="_blank" rel="external">irungentoo</a> (project founder andlead developer, in case you needed reminding :) ) has created <a href="https://github.com/irungentoo/openal-soft-tox" target="_blank" rel="external">some patches forOpenAL</a>that allow for cancelling speaker echoes from your microphone’s sound input, anecessary feature for using a microphone without headphones or earbuds. uToxquickly put that to use, and qTox gained the same ability yesterday. Note that,if you compile these clients yourself, you will need the patched version of OpenALto link against to enjoy echo cancellation. The official builds of both qTox and uToxare both built that way, and if you need you can try using the <a href="https://jenkins.libtoxcore.so/search/?q=openal" target="_blank" rel="external">OpenAL builds</a>on <a href="https://jenkins.libtoxcore.so/" target="_blank" rel="external">Jenkins</a> used for qTox and uTox.</p>
+<p>Currently echo cancellation is considered experimental, and Tox is seeking testingand feedback from users (on IRC or <a href="https://reddit.com/r/projecttox" target="_blank" rel="external">reddit</a>, for example)about how effective it is. If testing demonstrates that it is working properly,the patches will be submitted to the <a href="https://github.com/kcat/openal-soft" target="_blank" rel="external">OpenAL upstream</a>for merging.</p>
 <h2 id="qTox_progress">qTox progress</h2>
 <p>Besides continual minor improvements, qTox has gained the following major features.</p>
 <h4 id="New_chatform">New chatform</h4>
-<p>Over the last several months, <a href="https://github.com/krepa098" target="_blank" rel="external">krepa098</a> had been working<br>on a complete rewrite of qTox’s chat form, and we’re happy to say that it was finally<br>merged into master in the last week (over 4000 new lines of code!). Users should<br>see significant reductions in memory and CPU usage (though some problems still<br>exist), as well as being much prettier and easier to use. Copy and pasting in<br>particular had been a big issue that should be pretty much solved, and there are<br>some nice little animations (such as the typing notification).</p>
+<p>Over the last several months, <a href="https://github.com/krepa098" target="_blank" rel="external">krepa098</a> had been workingon a complete rewrite of qTox’s chat form, and we’re happy to say that it was finallymerged into master in the last week (over 4000 new lines of code!). Users shouldsee significant reductions in memory and CPU usage (though some problems stillexist), as well as being much prettier and easier to use. Copy and pasting inparticular had been a big issue that should be pretty much solved, and there aresome nice little animations (such as the typing notification).</p>
 <h4 id="Local_file_encryption">Local file encryption</h4>
-<p>Additionally, a fair bit of work (no where near as much as the new chat form required)<br>was put into fixing the local file encryption and its interface in qTox, and that<br>work was merged roughly two weeks ago. Users can now password protect their<br>profile to safely transfer their profile to other computers, or even public computers.<br>(Be sure to delete your profile when you leave a public computer!)</p>
+<p>Additionally, a fair bit of work (no where near as much as the new chat form required)was put into fixing the local file encryption and its interface in qTox, and thatwork was merged roughly two weeks ago. Users can now password protect theirprofile to safely transfer their profile to other computers, or even public computers.(Be sure to delete your profile when you leave a public computer!)</p>
 <h4 id="Compact_contact_list">Compact contact list</h4>
-<p>Finally, a lot of people probably love (or perhaps are unaware of) the new<br><a href="http://i.imgur.com/tmX8z9s.png" target="_blank" rel="external">compact contact list</a><br>option that qTox has, thanks to <a href="https://github.com/lumirayz" target="_blank" rel="external">lumirayz</a>.</p>
+<p>Finally, a lot of people probably love (or perhaps are unaware of) the new <a href="http://i.imgur.com/tmX8z9s.png" target="_blank" rel="external">compact contact list</a>option that qTox has, thanks to <a href="https://github.com/lumirayz" target="_blank" rel="external">lumirayz</a>.</p>
 <h4 id="OS_X">OS X</h4>
 <p>A note for Mac OS X users: We pushed a number of major changes that totally reworked how the app works. Because of this, many improvements like Qt 5.3 -&gt; 5.4 mean updating it normally will break. Please be aware that this update includes a new icon that you may not be used to, and has many visual improvements.</p>
 <p>In order to update cleanly you’ll need to re-download qTox and drag the app in to your applications folder like usual. Your profiles won’t be harmed or modified in any way.</p>
 <h2 id="uTox_progress">uTox progress</h2>
-<p>uTox has been slowly receiving incremental improvements, primarily in the interface.<br>For more details, you can check out the <a href="https://github.com/notsecure/uTox/commits/master" target="_blank" rel="external">commit log</a><br>or <a href="https://twitter.com/irungentoo" target="_blank" rel="external">irungentoo’s twitter</a>.</p>
+<p>uTox has been slowly receiving incremental improvements, primarily in the interface.For more details, you can check out the <a href="https://github.com/notsecure/uTox/commits/master" target="_blank" rel="external">commit log</a>or <a href="https://twitter.com/irungentoo" target="_blank" rel="external">irungentoo’s twitter</a>.</p>
 <h2 id="Google_Summer_of_Code">Google Summer of Code</h2>
-<p>Like last year, Tox is applying to be a participating organization in the Google Summer of Code.<br>Check back soon for updates.</p>
+<p>Like last year, Tox is applying to be a participating organization in the Google Summer of Code. Check back soon for updates.</p>
 <h2 id="Android">Android</h2>
-<p>As mentioned above, work continues on Tox4j, the replacement Java wrapper for core,<br>and when that’s complete a new Android client will be developed from scratch on top<br>of it. Another vague possibility is that qTox can be ported to Android, since it’s<br>written in Qt 5; <a href="https://github.com/tux3" target="_blank" rel="external">tux3</a> (qTox’s primary author) has recently<br>started the very basic framework of such a port, but it is currently significantly<br>less useful than the old Antox.</p>
+<p>As mentioned above, work continues on Tox4j, the replacement Java wrapper for core,and when that’s complete a new Android client will be developed from scratch on topof it. Another vague possibility is that qTox can be ported to Android, since it’swritten in Qt 5; <a href="https://github.com/tux3" target="_blank" rel="external">tux3</a> (qTox’s primary author) has recentlystarted the very basic framework of such a port, but it is currently significantly less useful than the old Antox.</p>
 <p>A fork of the old Antox is currently being maintained against the Tox4j work in progress. You can download it by joining the Google play beta or adding our fdroid repo. Details on this are <a href="https://wiki.tox.im/Binaries" target="_blank" rel="external">here</a>.</p>
 <h2 id="Website_improvements">Website improvements</h2>
 <p>We’ve been continuously working to improve and refine the experience for new users by making things simpler and more straightforward. With this, we’re currently working on a new site for tox.im and a new downloads page until the site is complete.</p>
