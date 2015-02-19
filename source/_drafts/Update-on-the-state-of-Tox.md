@@ -19,7 +19,7 @@ written by the [Tox4j](https://github.com/sonOfRa/tox4j) developers.
 ####Bootstrap daemon
 As a small treat, the [boostrap daemon](https://github.com/irungentoo/toxcore/tree/master/other/bootstrap_daemon)
 now has systemd support, thanks to contributor [ray65536](https://github.com/ray65536).
-It is also available as the package `tox-bootstrapd` from our GNU-Linux repositories.
+It is also available as the package `tox-bootstrapd` from our Linux repositories.
 
 ####New groupchats
 Additionally, work is progressing on the complete [groupchat re-design](https://github.com/JFreegman/toxcore)
@@ -28,12 +28,11 @@ lead primarily by [JFreegman](https://github.com/JFreegman). Features include mo
 abilities and group chat persistence (!). These group chats are currently a long
 way from being ready to merge into master; however, there is currently a properly
 [modified build of Toxic](https://jenkins.libtoxcore.so/job/toxic_linux_beta/lastSuccessfulBuild/artifact/toxic)
-for GNU-Linux available with the changes. Note that important packet IDs have been changed
-from the primary Tox network for testing purposes, so don't use that binary as your regular
-client. Note that this requires continual updating if you use it; breaking changes
-are continually being made as they the new groupchats undergo primary
-development, and older nodes on the testing network can make testing incredibly difficult for
-up-to-date nodes. You can follow development on the #tox-groupchats
+for Linux available with the changes. 
+
+You can also download the modified Toxic by installing toxic-beta from our Apt and Yum repos and running ``toxic-beta``. Keep in mind that this copy is totally isolated from your existing Toxic install to prevent issues.
+
+Please be aware that this is experimential testing code that will not work with the regular Tox network until we've finished it and merged it with master. You can follow development on the #tox-groupchats
 IRC channel on Freenode.
 
 #Audio filtering and echo cancellation
@@ -82,10 +81,10 @@ Finally, a lot of people probably love (or perhaps are unaware of) the new
 [compact contact list](http://i.imgur.com/tmX8z9s.png)
 option that qTox has, thanks to [lumirayz](https://github.com/lumirayz).
 
-####Mac
-A note for Mac OS X users: you may have noticed you haven't received updates in more
-than a week. The problem has been resolved, but you need to download qTox manually
-and reinstall in order to get the new updater (your personal data will be left intact of course).
+####OS X
+A note for Mac OS X users: We pushed a number of major changes that totally reworked how the app works. Because of this, many improvements like Qt 5.3 -> 5.4 mean updating it normally will break. Please be aware that this update includes a new icon that you may not be used to, and has many visual improvements.
+
+In order to update cleanly you'll need to redownload qTox and drag the app in to your applications folder like usual. Your profiles won't be harmed or modified in any way.
 
 ##uTox progress
 
@@ -102,3 +101,22 @@ of it. Another vague possibility is that qTox can be ported to Android, since it
 written in Qt 5; [tux3](https://github.com/tux3) (qTox's primary author) has recently
 started the very basic framework of such a port, but it is currently significantly 
 less useful than the old Antox.
+
+A fork of the old Antox is currently being maintained against the Tox4j work in progress. You can download it by joining the Google play beta or adding our fdroid repo. Details on this are [here](https://wiki.tox.im/Binaries).
+
+
+##Website improvements
+
+We've been continiously working to improve and refine the experience for new users by making things simpler and more straightforward. With this, we're currently working on a new site for tox.im and a new downloads page until the site is complete.
+
+You can check out progress on the new site [here](https://beta.tox.im) and check our the progress on the new temporary downloads page [here](https://downloads.tox.im).
+
+###ToxMe improvements
+
+By popular demand we've added a reverse lookup API to ToxMe. This allows people to look up DNS Discovery names using just a Tox ID as long as the ID they want to lookup isn't marked private. It is documented [here](https://github.com/Tox/toxme.se/blob/master/api.md)
+
+##Repo improvements
+
+If you use our RPM repo you may have suffered some issues downloading Tox due to an old revoked PGP getting stuck in the signing process. We've gone ahead and fixed all the issues associated with that and ensured that it works perfectly.
+
+Supporting our new downloads page, we've gone ahead and made the qTox packages automatically configure and setup setup the repo on your system by just installing the deb. This means for normal users all you'll have to do is click download and Ubuntu software center will pop up to automatically set everything up and ensure you always have the latest and greatest copy of qTox. If you had the repo installed before it may cause conflicts in apt. Please remove it by running ``rm /etc/apt/sources.list.d/toxrepo.list`` and it'll take care of itself automatically.
