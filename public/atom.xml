@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="https://blog.tox.im/"/>
-  <updated>2015-02-19T02:17:05.405Z</updated>
+  <updated>2015-02-19T02:25:04.192Z</updated>
   <id>https://blog.tox.im/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="https://blog.tox.im/2015/02/18/Update-on-the-state-of-Tox/"/>
     <id>https://blog.tox.im/2015/02/18/Update-on-the-state-of-Tox/</id>
     <published>2015-02-18T18:49:11.000Z</published>
-    <updated>2015-02-19T02:16:05.000Z</updated>
+    <updated>2015-02-19T02:24:04.000Z</updated>
     <content type="html"><![CDATA[<p>Hello everyone. We realize it’s been a while since the last post, but a lot has<br>happened and Tox continues to progress, so there’s a lot to talk about.</p>
 <h2 id="Tox_core">Tox core</h2>
 <h4 id="core">core</h4>
