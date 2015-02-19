@@ -1,6 +1,6 @@
 title: Update on the state of Tox
 date: 2015-02-18 13:49:11
-author: Dubslow
+author: Dubslow, co-author: Sean@Tox
 tags:
 ---
 
