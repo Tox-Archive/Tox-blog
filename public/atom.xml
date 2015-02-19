@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="https://blog.tox.im/"/>
-  <updated>2015-02-19T02:22:40.856Z</updated>
+  <updated>2015-02-19T02:25:04.192Z</updated>
   <id>https://blog.tox.im/</id>
   
   <author>
@@ -15,14 +15,12 @@
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[]]></title>
+    <title><![CDATA[Update on the state of Tox]]></title>
     <link href="https://blog.tox.im/2015/02/18/Update-on-the-state-of-Tox/"/>
     <id>https://blog.tox.im/2015/02/18/Update-on-the-state-of-Tox/</id>
-    <published>2015-02-19T02:21:39.000Z</published>
-    <updated>2015-02-19T02:21:39.000Z</updated>
-    <content type="html"><![CDATA[<p>title: Update on the state of Tox<br>date: 2015-02-18 13:49:11<br>author: Dubslow, co-author: Sean@Tox</p>
-<h2 id="tags:">tags:</h2>
-<p>Hello everyone. We realize it’s been a while since the last post, but a lot has<br>happened and Tox continues to progress, so there’s a lot to talk about.</p>
+    <published>2015-02-18T18:49:11.000Z</published>
+    <updated>2015-02-19T02:24:04.000Z</updated>
+    <content type="html"><![CDATA[<p>Hello everyone. We realize it’s been a while since the last post, but a lot has<br>happened and Tox continues to progress, so there’s a lot to talk about.</p>
 <h2 id="Tox_core">Tox core</h2>
 <h4 id="core">core</h4>
 <p><a href="https://github.com/irungentoo/toxcore" target="_blank" rel="external">toxcore</a> has been largely in maintenance mode,<br>with memory leaks, logic errors and other bugs being fixed every day. Recently<br>work has begun on implementing a <a href="https://github.com/irungentoo/toxcore/tree/new_api" target="_blank" rel="external">new, cleaner API</a><br>written by the <a href="https://github.com/sonOfRa/tox4j" target="_blank" rel="external">Tox4j</a> developers.</p>
@@ -65,9 +63,7 @@
 <p>Supporting our new downloads page, we’ve gone ahead and made the qTox packages automatically configure and setup setup the repo on your system by just installing the deb. This means for normal users all you’ll have to do is click download and Ubuntu software center will pop up to automatically set everything up and ensure you always have the latest and greatest copy of qTox. If you had the repo installed before it may cause conflicts in apt. Please remove it by running <code>rm /etc/apt/sources.list.d/toxrepo.list</code> and it’ll take care of itself automatically.</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>title: Update on the state of Tox<br>date: 2015-02-18 13:49:11<br>author: Dubslow, co-author: Sean@Tox</p>
-<h2 id="tags:">tags:</h2>
-<p>H]]>
+    <![CDATA[<p>Hello everyone. We realize it’s been a while since the last post, but a lot has<br>happened and Tox continues to progress, so there’s a l]]>
     </summary>
     
   </entry>
