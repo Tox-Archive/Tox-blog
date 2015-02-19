@@ -4,7 +4,7 @@ author: Dubslow
 tags:
 ---
 
-Hello everyone. We realize it's been a while since the last post, but a lot has
+Hello everyone. We realise it's been a while since the last post, but a lot has
 happened and Tox continues to progress, so there's a lot to talk about.
 
 ##Tox core
@@ -32,7 +32,7 @@ for Linux available with the changes.
 
 You can also download the modified Toxic by installing toxic-beta from our Apt and Yum repos and running ``toxic-beta``. Keep in mind that this copy is totally isolated from your existing Toxic install to prevent issues.
 
-Please be aware that this is experimential testing code that will not work with the regular Tox network until we've finished it and merged it with master. You can follow development on the #tox-groupchats
+Please be aware that this is experimental testing code that will not work with the regular Tox network until we've finished it and merged it with master. You can follow development on the #tox-groupchats
 IRC channel on Freenode.
 
 #Audio filtering and echo cancellation
@@ -62,7 +62,7 @@ for merging.
 
 ####New chatform
 Over the last several months, [krepa098](https://github.com/krepa098) had been working
-on a complete re-write of qTox's chat form, and we're happy to say that it was finally
+on a complete rewrite of qTox's chat form, and we're happy to say that it was finally
 merged into master in the last week (over 4000 new lines of code!). Users should
 see significant reductions in memory and CPU usage (though some problems still
 exist), as well as being much prettier and easier to use. Copy and pasting in
@@ -84,13 +84,13 @@ option that qTox has, thanks to [lumirayz](https://github.com/lumirayz).
 ####OS X
 A note for Mac OS X users: We pushed a number of major changes that totally reworked how the app works. Because of this, many improvements like Qt 5.3 -> 5.4 mean updating it normally will break. Please be aware that this update includes a new icon that you may not be used to, and has many visual improvements.
 
-In order to update cleanly you'll need to redownload qTox and drag the app in to your applications folder like usual. Your profiles won't be harmed or modified in any way.
+In order to update cleanly you'll need to re-download qTox and drag the app in to your applications folder like usual. Your profiles won't be harmed or modified in any way.
 
 ##uTox progress
 
 ##Google Summer of Code
 
-Like last year, Tox is applying to be a participating organization in the Google Summer of Code.
+Like last year, Tox is applying to be a participating organisation in the Google Summer of Code.
 Check back soon for updates.
 
 ##Android
@@ -107,9 +107,9 @@ A fork of the old Antox is currently being maintained against the Tox4j work in 
 
 ##Website improvements
 
-We've been continiously working to improve and refine the experience for new users by making things simpler and more straightforward. With this, we're currently working on a new site for tox.im and a new downloads page until the site is complete.
+We've been continuously working to improve and refine the experience for new users by making things simpler and more straightforward. With this, we're currently working on a new site for tox.im and a new downloads page until the site is complete.
 
-You can check out progress on the new site [here](https://beta.tox.im) and check our the progress on the new temporary downloads page [here](https://downloads.tox.im).
+You can check out progress on the new site [here](https://beta.tox.im) and check out the progress on the new temporary downloads page [here](https://downloads.tox.im).
 
 ###ToxMe improvements
 
@@ -120,3 +120,5 @@ By popular demand we've added a reverse lookup API to ToxMe. This allows people 
 If you use our RPM repo you may have suffered some issues downloading Tox due to an old revoked PGP getting stuck in the signing process. We've gone ahead and fixed all the issues associated with that and ensured that it works perfectly.
 
 Supporting our new downloads page, we've gone ahead and made the qTox packages automatically configure and setup setup the repo on your system by just installing the deb. This means for normal users all you'll have to do is click download and Ubuntu software center will pop up to automatically set everything up and ensure you always have the latest and greatest copy of qTox. If you had the repo installed before it may cause conflicts in apt. Please remove it by running ``rm /etc/apt/sources.list.d/toxrepo.list`` and it'll take care of itself automatically.
+
+
