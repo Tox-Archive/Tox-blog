@@ -9,10 +9,10 @@ happened and Tox continues to progress, so there's a lot to talk about.
 
 #Tox core
 
-[toxcore](https://github.com/irungentoo) has been largely in maintenance mode,
+[toxcore](https://github.com/irungentoo/toxcore) has been largely in maintenance mode,
 with memory leaks, logic errors and other bugs being fixed every day. Recently
 work has begun on implementing a [new, cleaner API](https://github.com/irungentoo/toxcore/tree/new_api)
-written by the [Tox4j](https://github.com/sonOfRa/tox4j) group.
+written by the [Tox4j](https://github.com/sonOfRa/tox4j) developers.
 
 Additionally, work is progressing on the complete [groupchat re-design](https://github.com/JFreegman/toxcore)
 and overhaul, started by [alnf](https://github.com/alnf) with currently being
