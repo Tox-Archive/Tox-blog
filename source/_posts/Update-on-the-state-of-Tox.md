@@ -16,7 +16,7 @@ Hello everyone. We realize it's been a while since the last post, but a lot has 
 As a small treat, the [boostrap daemon](https://github.com/irungentoo/toxcore/tree/master/other/bootstrap_daemon) now has systemd support, thanks to contributor [ray65536](https://github.com/ray65536). It is also available as the package `tox-bootstrapd` from our Linux repositories.
 
 ####New groupchats
-Additionally, work is progressing on the complete [groupchat re-design](https://github.com/JFreegman/toxcore) and overhaul, started by [alnf](https://github.com/alnf) with currently being lead primarily by [JFreegman](https://github.com/JFreegman). Features include moderation abilities and group chat persistence (!). These group chats are currently a long way from being ready to merge into master; however, there is currently a properly [modified build of Toxic](https://jenkins.libtoxcore.so/job/toxic_linux_beta/lastSuccessfulBuild/artifact/toxic) for Linux available with the changes. 
+Additionally, work is progressing on the complete [groupchat re-design](https://github.com/JFreegman/toxcore) and overhaul, started by [alnf](https://github.com/alnf) with currently being lead primarily by [JFreegman](https://github.com/JFreegman). Features include moderation abilities and group chat persistence (!). These group chats are currently a long way from being ready to merge into master; however, there is currently a properly [modified build of Toxic](https://jenkins.libtoxcore.so/job/toxic_linux_beta/lastSuccessfulBuild/artifact/toxic) for Linux available with the changes.
 
 You can also download the modified Toxic by installing toxic-beta from our Apt and Yum repos and running ``toxic-beta``. Keep in mind that this copy is totally isolated from your existing Toxic install to prevent issues.
 
@@ -50,7 +50,7 @@ A note for Mac OS X users: We pushed a number of major changes that totally rewo
 In order to update cleanly you'll need to re-download qTox and drag the app in to your applications folder like usual. Your profiles won't be harmed or modified in any way.
 
 ##uTox progress
-uTox has been slowly receiving incremental improvements, primarily in the interface.For more details, you can check out the [commit log](https://github.com/notsecure/uTox/commits/master) or [irungentoo's twitter](https://twitter.com/irungentoo).
+uTox has been slowly receiving incremental improvements, primarily in the interface.For more details, you can check out the [commit log](https://github.com/notsecure/uTox/commits/master) or [irungentoo's Twitter](https://twitter.com/irungentoo).
 
 ##Google Summer of Code
 
@@ -71,12 +71,14 @@ You can check out progress on the new site [here](https://beta.tox.im) and check
 
 ###ToxMe improvements
 
-By popular demand we've added a reverse lookup API to ToxMe. This allows people to look up DNS Discovery names using just a Tox ID as long as the ID they want to lookup isn't marked private. It is documented [here](https://github.com/Tox/toxme.se/blob/master/api.md)
+By popular demand we've added a reverse lookup API to ToxMe. This allows people to look up DNS Discovery names using just a Tox ID as long as the ID they want to lookup isn't marked private. It is documented [here](https://github.com/Tox/toxme.se/blob/master/api.md).
 
 ##Repository improvements
 
 If you use our RPM repo you may have suffered some issues downloading Tox due to an old revoked PGP getting stuck in the signing process. We've gone ahead and fixed all the issues associated with that and ensured that it works perfectly.
 
 Supporting our new downloads page, we've gone ahead and made the qTox packages automatically configure and setup setup the repo on your system by just installing the deb. This means for normal users all you'll have to do is click download and Ubuntu software center will pop up to automatically set everything up and ensure you always have the latest and greatest copy of qTox. If you had the repo installed before it may cause conflicts in apt. Please remove it by running ``rm /etc/apt/sources.list.d/toxrepo.list`` and it'll take care of itself automatically.
+
+
 
 
