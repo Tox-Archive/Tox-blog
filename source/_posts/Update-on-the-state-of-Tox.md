@@ -5,12 +5,12 @@ tags:
 ---
 
 Hello everyone. We realize it's been a while since the last post, but a lot has happened and Tox continues to progress, so there's a lot to talk about.
+<!-- more -->
 
 ##Tox core
 
-####core
+####Core
 [toxcore](https://github.com/irungentoo/toxcore) has been largely in maintenance mode, with memory leaks, logic errors and other bugs being fixed every day. Recently work has begun on implementing a [new, cleaner API](https://github.com/irungentoo/toxcore/tree/new_api) written by the [Tox4j](https://github.com/sonOfRa/tox4j) developers.
-
 
 ####Bootstrap daemon
 As a small treat, the [boostrap daemon](https://github.com/irungentoo/toxcore/tree/master/other/bootstrap_daemon) now has systemd support, thanks to contributor [ray65536](https://github.com/ray65536). It is also available as the package `tox-bootstrapd` from our Linux repositories.
