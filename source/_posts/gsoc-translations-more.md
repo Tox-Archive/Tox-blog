@@ -4,7 +4,7 @@ author: Sean
 tags:
 ---
 
-Howdy folks, being the month anniversary of our last post I feel like it's a good time to get you all up to speed with Tox development.
+Howdy folks, I feel like it's a good time to get you all up to speed with Tox development.
 <!-- more -->
 
 ##GSoC
