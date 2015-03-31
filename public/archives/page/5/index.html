@@ -49,6 +49,64 @@
     <div id="main">
       
   
+    <article id="post-downtime" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/04/13/downtime/" class="article-date">
+  <time datetime="2014-04-13T09:25:48.000Z" itemprop="datePublished">Apr 13 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/04/13/downtime/">Downtime, DNS, and a reliance on others</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>At around 4 pm PST tox.im and its subdomains failed to load, along with libtoxcore.so.</p>
+<p>About 6 hours later it returned, after my late notice and quick action.</p>
+<p>After a quick investigation I determined that the web server was up and the nameservers were up, all working at 100%. Further investigation determined that the nameservers that powered the domain the nameservers were at went down, and after quickly moving that domains nameservers and a bit of DNS propagation service was restored.</p>
+<p>So, what exactly went wrong? Tox’s DNS is provided by service X, behind nameservers on domain b. Domain b once used service X, though for DNSSEC support moved to service Y. Service Y was chosen because DNSSEC DNS providers are rather rare, and these servers provided faster response times. Service Y’s 4 nameservers were all taken down as a result of what we suspect was a DDoS attack, rendering queries on the nameservers for Tox useless. DNS glue was designed to prevent this issue, stop that catch-22, done by providing nameserver names and IPs in the whois record itself. This managed to get ignored by every DNS resolver, resulting in no queries going through. I was able to address this issue by fetching the bind file from X for domain b and deploying nameservers with service Z. After a bit of mitigation everything was all fine, with availability all around.</p>
+<p>Service Y was chosen due to price and limited selection, though this later turned out to be a poor decision, service Z is a larger well known provider of Internet services, who offer a SLA, DDoS protection, and amazing uptime; at about 12 times the price.</p>
+<p>At the end of the day, this was a painful lesson to learn. DNS isn’t something to be taken lightly, and is something we really do need to pay a pretty penny for.</p>
+<p>Why don’t we run our own DNS servers? DNS is something that demands a level of maintainability, when something goes wrong fixing the server is difficult due to not being able to resolve the servers domain. This means more downtime, harder to maintain, and generally more expensive to run, and more messes like what happened yesterday.</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Uncategorized/">Uncategorized</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+
+  
     <article id="post-sts-approaches-v0-0-5" class="post">
 	<footer class="entry-meta-header">
 		<span class="meta-elements date">
@@ -551,62 +609,6 @@
 				
   <div class="article-category">
     <a class="article-category-link" href="/categories/Toxicity/">Toxicity</a>
-  </div>
-
-			</span>
-			<span class="tags">
-				
-			</span>
-		</div>
-	</footer>
-	
-</article>
-
-
-	<hr class="article-devider">
-
-
-
-
-  
-    <article id="post-antox-jenkins" class="post">
-	<footer class="entry-meta-header">
-		<span class="meta-elements date">
-			<a href="/2014/03/20/antox-jenkins/" class="article-date">
-  <time datetime="2014-03-20T06:30:17.000Z" itemprop="datePublished">Mar 20 2014</time>
-</a>
-		</span>
-		<span class="meta-elements author">Tox Foundation</span>
-		<div class="commentscount">
-			
-		</div>
-	</footer>
-	
-	<header class="entry-header">
-		
-  
-    <h1 itemprop="name" class="entry-title">
-      <a class="article-title" href="/2014/03/20/antox-jenkins/">Antox + Jenkins</a>
-    </h1>
-  
-
-	</header>
-	<div class="entry-content">
-		
-    	<p>Just a quick post, we’ve finally got Antox working on<a href="http://http://jenkins.tox.im/job/Android-Antox" target="_blank" rel="external"> Jenkins</a>.</p>
-<p>Antox downloads from our <a href="http://download.tox.im" title="download.tox.im" target="_blank" rel="external">download.tox.im</a> site are now built up to the commit, with no more than a 10 minute delay after irungentoo or Astonex push a commit.</p>
-<p>Also note that the gplay signing key is going to change, and will share one with the Jenkins build.</p>
-<p>The latest Antox apk is also always available <a href="https://c1cf.https.cdn.softlayer.net/80C1CF/192.254.75.110:8080/job/Android-Antox/lastSuccessfulBuild/artifact/antox.apk" target="_blank" rel="external">here</a>.</p>
-<p>Note: I <em>just</em> noticed <a href="https://blog.libtoxcore.so/141/antox-nightly-builds-google-play-store" target="_blank" rel="external">this.</a></p>
-
-    
-	</div>
-	<footer class="entry-footer">
-		<div class="entry-meta-footer">
-			<span class="category">
-				
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Antox/">Antox</a>»<a class="article-category-link" href="/categories/Antox/Jenkins/">Jenkins</a>
   </div>
 
 			</span>

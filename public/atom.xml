@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="https://blog.tox.im/"/>
-  <updated>2015-03-31T17:52:12.897Z</updated>
+  <updated>2015-03-31T22:00:23.811Z</updated>
   <id>https://blog.tox.im/</id>
   
   <author>
@@ -13,6 +13,31 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Tox, bringing your friends closer]]></title>
+    <link href="https://blog.tox.im/2015/04/01/tox-friends-2015/"/>
+    <id>https://blog.tox.im/2015/04/01/tox-friends-2015/</id>
+    <published>2015-04-01T04:00:02.000Z</published>
+    <updated>2015-03-31T21:59:20.000Z</updated>
+    <content type="html"><![CDATA[<p>While PC usage is on the decline, mobile usage has skyrocketed</p>
+<a id="more"></a>
+
+<p>and will continue to skyrocket in the future. We’ve come to realize<br>that because of this we need to start working to support mobile<br>and mobile device users as best we can.</p>
+<p>With <a href="https://blog.tox.im/2015/04/01/introducing-toxcoin/" target="_blank" rel="external">ToxCOIN</a> support having been recently<br>announced we realized progress was being made in the right direction,<br>but it wasn’t enough. We realized that some people might still<br>want to use traditional Tox IDs and use mobile devices at the<br>same time so we decided to take a step back from what we’re used<br>to and look at what much of our mobile using audience is already doing.</p>
+<p>We saw typical mobile users send short video clips, talk in groups,<br>message automatically without setup, but nothing would work for Tox.<br>That was, until we noticed someone send a cute little heart icon to<br>her friend to express a complex feeling.</p>
+<p>We realized that if one little character could express a whole emotion,<br>a couple of them could express a Tox ID, and so emoji support was born.</p>
+<p>Starting today, most of our clients now support fun and friendly emoji<br>in place of existing scary and frightening Tox IDs, be it uTox or Toxy<br>with more clients in the works.</p>
+<p>Ready to try it out? lean back, open uTox Android, and punch in<br><code>🌔💡⭩⬃⚿🚧⟛⋏⩮🚍🛱💖🖭⚏⋻😇∁⤔ℐ⋜↷⚑⍕👫≧ℇ😇</code> to join our always<br>popular groupchat in style.</p>
+<p>Want to make your own emoji ID? Checkout the tools <a href="https://github.com/irungentoo/base_emoji" target="_blank" rel="external">here</a>.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>While PC usage is on the decline, mobile usage has skyrocketed</p>
+]]>
+    
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Introducing Toxcoin]]></title>
@@ -491,26 +516,6 @@
     </summary>
     
       <category term="μTox" scheme="https://blog.tox.im/categories/%CE%BCTox/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[F-Droid Repo Changing SSL Certificate]]></title>
-    <link href="https://blog.tox.im/2014/09/20/f-droid-repo-changing-ssl-certificate/"/>
-    <id>https://blog.tox.im/2014/09/20/f-droid-repo-changing-ssl-certificate/</id>
-    <published>2014-09-20T13:12:09.000Z</published>
-    <updated>2015-01-25T01:19:51.000Z</updated>
-    <content type="html"><![CDATA[<p><strong>Edit:</strong> This certificate was causing some problems as it was intended for a *.tox.im domain but the repo was on my markwinter.me domain. For now, I have reverted the certificate back to the original markwinter.me cert.</p>
-<p>Just a quick post to let F-Droid users know that I have changed the SSL certificate. Instead of using my own cert, it will now serve a Tox one. The certificate should match<br><a id="more"></a></p>
-<p><img src="/images/antox-tox-im-certificate.png"><br>Some time next month, the URL will also change to fdroid.tox.im or repo.tox.im but I will write another post when that happens</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><strong>Edit:</strong> This certificate was causing some problems as it was intended for a *.tox.im domain but the repo was on my markwinter.me domain. For now, I have reverted the certificate back to the original markwinter.me cert.</p>
-<p>Just a quick post to let F-Droid users know that I have changed the SSL certificate. Instead of using my own cert, it will now serve a Tox one. The certificate should match<br>]]>
-    
-    </summary>
-    
-      <category term="Antox" scheme="https://blog.tox.im/categories/Antox/"/>
     
   </entry>
   
