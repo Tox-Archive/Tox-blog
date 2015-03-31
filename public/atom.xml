@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="https://blog.tox.im/"/>
-  <updated>2015-03-19T01:32:01.572Z</updated>
+  <updated>2015-03-31T17:52:12.897Z</updated>
   <id>https://blog.tox.im/</id>
   
   <author>
@@ -13,6 +13,33 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Introducing Toxcoin]]></title>
+    <link href="https://blog.tox.im/2015/04/01/introducing-toxcoin/"/>
+    <id>https://blog.tox.im/2015/04/01/introducing-toxcoin/</id>
+    <published>2015-04-01T04:00:01.000Z</published>
+    <updated>2015-03-31T17:51:09.000Z</updated>
+    <content type="html"><![CDATA[<p>A new cryptocurrency to solve the issues tox has.</p>
+<a id="more"></a>
+
+<p>The main issues Tox face are that since we do not have central servers things<br>like making multiple devices have the same “account” and offline messaging is<br>very difficult. For this reason we have searched long and hard for a real<br>decentralized solution to these problems. We are proud to announce today that<br>we have found such a solution. This solution also has far reaching applications<br>and could also for example enable the creation of more efficient crypto<br>currencies and solve world hunger.</p>
+<p>So how does it work? First we define proof of trust as the amount of trust that<br>can be proven a node has in a distributed peer to peer network. The trust a<br>node has in the system is defined as the inverse of the non trust a node has in<br>the system. Trusted nodes are assumed to always behave correctly meaning<br>untrusted nodes will not behave correctly. By making each node look for nodes<br>that do not behave correctly non trusted nodes can therefore be identified and<br>disposed of by the network. This leaves a network that only contains trusted<br>nodes. Once a network is certain to contain only trusted nodes any system which<br>requires such a system can easily be implemented on top meaning it is possible<br>to implement every centralized system in an efficient decentralized manner.</p>
+<p>Creating a decentralized internet will therefore be possible. The possibilities<br>are endless. With this revolutionary new technology anybody will be capable of<br>having their own website.</p>
+<p>Why name this technology toxcoin? The best way to get this technology up and<br>running fast and to fund development is to make it its own crypto currency.<br>Toxcoin will also be used to fund development of Tox. Tox developers will be<br>payed in Toxcoins which will increase in value as more and more people used<br>Tox. If we assume a total market cap of 1 million toxcoin and assume each tox<br>user is worth 10$. When Tox reaches 1 billion users each toxcoin will be worth<br>10000$. Toxcoins are clearly an investment that will only grow in value.<br>Investing in this con will truly increase your money.</p>
+<p>Is this an altcoin? No, toxcoin will be implemented using the bitcoin<br>blockchain as a base.</p>
+<p>There is already some proof of concept code in the github repo but it is still<br>in very early stages.</p>
+<p>See the whitepaper: <a href="https://coin.tox.im/whitepaper.pdf" target="_blank" rel="external">coin.tox.im/whitepaper.pdf</a></p>
+<p>Github repo: <a href="https://github.com/irungentoo/toxcoin" target="_blank" rel="external">github.com/irungentoo/toxcoin</a></p>
+<p>Join the revolution: <a href="https://webchat.freenode.net/?channels=%23toxcoin" target="_blank" rel="external">#toxcoin</a> on Freenode.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>A new cryptocurrency to solve the issues tox has.</p>
+]]>
+    
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[GSoC, languages, and more]]></title>
@@ -484,23 +511,6 @@
     </summary>
     
       <category term="Antox" scheme="https://blog.tox.im/categories/Antox/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Warrant Canary Updated & Changes]]></title>
-    <link href="https://blog.tox.im/2014/09/07/warrant-canary-updated-changes/"/>
-    <id>https://blog.tox.im/2014/09/07/warrant-canary-updated-changes/</id>
-    <published>2014-09-07T20:09:58.000Z</published>
-    <updated>2015-01-25T01:19:51.000Z</updated>
-    <content type="html"><![CDATA[<p>To show a more serious commitment to the warrant canary, we will now be updating it every two weeks. The canary itself will now contain news headlines as well to mitigate automatic signing and updating.</p>
-<p>You can visit the canary at <a href="https://wiki.tox.im/canary.html" target="_blank" rel="external">https://wiki.tox.im/canary.html</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>To show a more serious commitment to the warrant canary, we will now be updating it every two weeks. The canary itself will now contain n]]>
-    </summary>
-    
-      <category term="Tox Foundation" scheme="https://blog.tox.im/categories/Tox-Foundation/"/>
     
   </entry>
   
