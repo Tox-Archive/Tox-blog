@@ -4,35 +4,25 @@ author:  irungentoo
 tags:
 ---
 
-The Tox foundation has made an important discovery that might change the world 
-forever.
+The Tox foundation has made an important discovery today that might change the world forever.
 
 <!-- more -->
 
-Our research team at the Tox foundation has made an important discovery today. 
-Data packets travel at the speed of light meaning finding a way to make them 
-travel slightly faster The trick is to make the wire itself go fast in order to 
-transmit data at faster than light speeds. The following diagram should explain 
-very well how it works.
+Our research team at the Tox foundation has made an important discovery today. Data packets travel at the speed of light meaning finding a way to make them travel slightly faster The trick is to make the wire itself go fast in order to transmit data at faster than light speeds. The following diagram should explain very well how it works.
 
 {% limg Tox_ftl.png %}
 
-Faster than light information travel allows us to send information back and 
-forward in time by tweaking the packet parameters.
+Faster than light information travel allows us to send information back and forward in time by tweaking the packet parameters.
 
-I managed to communicate with myself from the future and this is what I managed 
-to understand. The connection was very flaky because of the dimensional noise 
-created when someone interferes with his past. Here is the news from the future:
+I managed to communicate with myself from the future and this is what I managed to understand. The connection was very flaky because of the dimensional noise created when someone interferes with his past. Here is the news from the future:
 
-[Toxcoin](https://github.com/irungentoo/toxcoin) died a slow death after not a 
-single developer was found that wanted to develop it.
+[Toxcoin](https://github.com/irungentoo/toxcoin) died a slow death after not a single developer was found that wanted to develop it.
 
 qTox is doing very well competing with other web browsers.
 
 uTox was rewritten in javascript and became a web client.
 
-Toxic was acquired by microsoft and ported to windows, it will soon be 
-replacing skype.
+Toxic was acquired by microsoft and ported to windows, it will soon be replacing skype.
 
 Antox was slowly replaced by uTox for android.
 
@@ -44,8 +34,7 @@ I also received this image but can't make sense of it.
 {% limg Tox_ftl_message.png %}
 
 
-The connection was then cut suddenly. I will try to find out why the connection 
-cut and why I can't seem to be able to contact the future anymore.
+The connection was then cut suddenly. I will try to find out why the connection cut and why I can't seem to be able to contact the future anymore.
 
 Happy Future Toxing.
 
