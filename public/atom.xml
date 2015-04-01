@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="https://blog.tox.im/"/>
-  <updated>2015-03-31T22:00:23.811Z</updated>
+  <updated>2015-04-01T08:37:00.605Z</updated>
   <id>https://blog.tox.im/</id>
   
   <author>
@@ -13,6 +13,38 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Tox for ChromeOS preview]]></title>
+    <link href="https://blog.tox.im/2015/04/01/tox-chromeos/"/>
+    <id>https://blog.tox.im/2015/04/01/tox-chromeos/</id>
+    <published>2015-04-01T05:10:23.000Z</published>
+    <updated>2015-04-01T08:35:58.000Z</updated>
+    <content type="html"><![CDATA[<p>Tox development preview for ChromeOS</p>
+<a id="more"></a>
+
+<p>With the advent of the Chromebook, the face of modern computing<br>changed in a number of drastic ways. Super low cost but fully<br>usable machines with browsers, chat programs, and full office<br>suites became available to even the lowest income students.</p>
+<p>These devices let users shift from low budget bottom of the<br>barrel laptops often times filled to the brim in spyware and<br>adware to light and responsive machines boasting great battery<br>life and access to services they already use, something that<br>can only be looked at as a win for consumers.</p>
+<p>With the announcement of even cheaper Chromebooks and sticks,<br>we realize the value in providing secure messaging with friends<br>and families to this ever expanding market more than ever.</p>
+<p>As such, we’d like to announce the Tox for ChromeOS technical<br>preview. You’ll be one of the very first testers to this so<br>tons of bugs and issues are to be expected. While these clients<br>work, we do not encourage you to use them as your daily drivers.<br>You may experience data loss or other bugs that could prevent<br>you from using it correctly in some cases because of how early<br>this preview is.</p>
+<h1 id="Getting_started">Getting started</h1>
+<ul>
+<li>To test Antox for ChromeOS please click <a href="https://chrome.google.com/webstore/detail/antox/mblkomdgjiaclkhabhmhnkmkfbbclgdi" target="_blank" rel="external">here</a></li>
+<li>To test uTox for ChromeOS please click <a href="https://chrome.google.com/webstore/detail/%CE%BCtox/cpbcplbgcffgmhagekhlifhpaihcgokf" target="_blank" rel="external">here</a></li>
+</ul>
+<h1 id="Reporting_issues">Reporting issues</h1>
+<ul>
+<li>To report Antox issues please visit the issue tracker <a href="https://github.com/subliun/Antox/issues" target="_blank" rel="external">here</a></li>
+<li>To report uTox issues please visit the issue tracker <a href="https://github.com/notsecure/wintox/issues" target="_blank" rel="external">here</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Tox development preview for ChromeOS</p>
+]]>
+    
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Tox, bringing your friends closer]]></title>
@@ -496,26 +528,6 @@
     </summary>
     
       <category term="Antox" scheme="https://blog.tox.im/categories/Antox/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[uTox updates 0.1.8]]></title>
-    <link href="https://blog.tox.im/2014/09/24/utox-updates-0-1-8/"/>
-    <id>https://blog.tox.im/2014/09/24/utox-updates-0-1-8/</id>
-    <published>2014-09-24T19:49:28.000Z</published>
-    <updated>2015-01-25T01:19:51.000Z</updated>
-    <content type="html"><![CDATA[<p>What’s new: Save file location changed, bug fixes, bug fixes, new translations and some small features like the icon on Windows changing colour when a message is received.</p>
-<p>For credits and a detailed list of all changes: <a href="https://github.com/notsecure/uTox/commits/master" title="https://github.com/notsecure/uTox/commits/master" target="_blank" rel="external">https://github.com/notsecure/uTox/commits/master</a></p>
-<p>The main change in this update and why I made this post is that uTox now saves to roaming appdata instead of local appdata which should lead to less people losing their saves. uTox should automatically load the save from its previous location meaning you don’t have to move it there yourself. What you should do that uTox doesn’t do is remove the old location.</p>
-<p>Also, if anyone isn’t aware of this yet, I will be the one maintaining uTox from now on until notsecure is less busy.</p>
-<p>Expect something bigger next week.</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>What’s new: Save file location changed, bug fixes, bug fixes, new translations and some small features like the icon on Windows changing ]]>
-    </summary>
-    
-      <category term="μTox" scheme="https://blog.tox.im/categories/%CE%BCTox/"/>
     
   </entry>
   
