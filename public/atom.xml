@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="https://blog.tox.im/"/>
-  <updated>2015-04-01T11:16:36.981Z</updated>
+  <updated>2015-04-01T11:27:25.657Z</updated>
   <id>https://blog.tox.im/</id>
   
   <author>
@@ -19,30 +19,30 @@
     <link href="https://blog.tox.im/2015/04/01/tox-ftl/"/>
     <id>https://blog.tox.im/2015/04/01/tox-ftl/</id>
     <published>2015-04-01T11:10:23.000Z</published>
-    <updated>2015-04-01T11:15:33.000Z</updated>
-    <content type="html"><![CDATA[<p>The Tox foundation has made an important discovery that might change the world<br>forever.</p>
+    <updated>2015-04-01T11:25:12.000Z</updated>
+    <content type="html"><![CDATA[<p>The Tox foundation has made an important discovery today that might change the world forever.</p>
 <a id="more"></a>
 
-<p>Our research team at the Tox foundation has made an important discovery today.<br>Data packets travel at the speed of light meaning finding a way to make them<br>travel slightly faster The trick is to make the wire itself go fast in order to<br>transmit data at faster than light speeds. The following diagram should explain<br>very well how it works.</p>
+<p>Our research team at the Tox foundation has made an important discovery today. Data packets travel at the speed of light meaning finding a way to make them travel slightly faster The trick is to make the wire itself go fast in order to transmit data at faster than light speeds. The following diagram should explain very well how it works.</p>
 <img src="/images/Tox_ftl.png">
 
-<p>Faster than light information travel allows us to send information back and<br>forward in time by tweaking the packet parameters.</p>
-<p>I managed to communicate with myself from the future and this is what I managed<br>to understand. The connection was very flaky because of the dimensional noise<br>created when someone interferes with his past. Here is the news from the future:</p>
-<p><a href="https://github.com/irungentoo/toxcoin" target="_blank" rel="external">Toxcoin</a> died a slow death after not a<br>single developer was found that wanted to develop it.</p>
+<p>Faster than light information travel allows us to send information back and forward in time by tweaking the packet parameters.</p>
+<p>I managed to communicate with myself from the future and this is what I managed to understand. The connection was very flaky because of the dimensional noise created when someone interferes with his past. Here is the news from the future:</p>
+<p><a href="https://github.com/irungentoo/toxcoin" target="_blank" rel="external">Toxcoin</a> died a slow death after not a single developer was found that wanted to develop it.</p>
 <p>qTox is doing very well competing with other web browsers.</p>
 <p>uTox was rewritten in javascript and became a web client.</p>
-<p>Toxic was acquired by microsoft and ported to windows, it will soon be<br>replacing skype.</p>
+<p>Toxic was acquired by microsoft and ported to windows, it will soon be replacing skype.</p>
 <p>Antox was slowly replaced by uTox for android.</p>
 <p>nTox is still alive.</p>
 <p>I also received this image but can’t make sense of it.</p>
 <img src="/images/Tox_ftl_message.png">
 
 
-<p>The connection was then cut suddenly. I will try to find out why the connection<br>cut and why I can’t seem to be able to contact the future anymore.</p>
+<p>The connection was then cut suddenly. I will try to find out why the connection cut and why I can’t seem to be able to contact the future anymore.</p>
 <p>Happy Future Toxing.</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>The Tox foundation has made an important discovery that might change the world<br>forever.</p>
+    <![CDATA[<p>The Tox foundation has made an important discovery today that might change the world forever.</p>
 ]]>
     
     </summary>
