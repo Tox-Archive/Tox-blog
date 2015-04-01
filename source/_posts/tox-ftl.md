@@ -31,10 +31,11 @@ nTox is still alive.
 
 I also received this image but can't make sense of it.
 
-{% limg Tox_ftl_message.png %}
+{% limg Tox_ftl_message.jpg %}
 
 
 The connection was then cut suddenly. I will try to find out why the connection cut and why I can't seem to be able to contact the future anymore.
 
 Happy Future Toxing.
 
+In other news it has been reported to us that Tox works from a helicopter.
