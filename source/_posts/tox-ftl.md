@@ -4,7 +4,7 @@ author:  irungentoo
 tags:
 ---
 
-The Tox foundation has made an important discovery today that might change the world forever.
+The Tox Foundation has made an important discovery today that might change the world forever.
 
 <!-- more -->
 
@@ -16,7 +16,7 @@ Faster than light information travel allows us to send information back and forw
 
 I managed to communicate with myself from the future and this is what I managed to understand. The connection was very flaky because of the dimensional noise created when someone interferes with his past. Here is the news from the future:
 
-[Toxcoin](https://github.com/irungentoo/toxcoin) died a slow death after not a single developer was found that wanted to develop it.
+[Toxcoin](https://blog.tox.im/2015/04/01/introducing-toxcoin) died a slow death after not a single developer was found that wanted to develop it.
 
 qTox is doing very well competing with other web browsers.
 
