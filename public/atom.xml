@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="https://blog.tox.im/"/>
-  <updated>2015-04-01T11:37:09.174Z</updated>
+  <updated>2015-04-01T11:48:28.732Z</updated>
   <id>https://blog.tox.im/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="https://blog.tox.im/2015/04/01/tox-ftl/"/>
     <id>https://blog.tox.im/2015/04/01/tox-ftl/</id>
     <published>2015-04-01T11:10:23.000Z</published>
-    <updated>2015-04-01T11:35:59.000Z</updated>
+    <updated>2015-04-01T11:47:24.000Z</updated>
     <content type="html"><![CDATA[<p>The Tox Foundation has made an important discovery today that might change the world forever.</p>
 <a id="more"></a>
 
@@ -35,11 +35,12 @@
 <p>Antox was slowly replaced by uTox for android.</p>
 <p>nTox is still alive.</p>
 <p>I also received this image but can’t make sense of it.</p>
-<img src="/images/Tox_ftl_message.png">
+<img src="/images/Tox_ftl_message.jpg">
 
 
 <p>The connection was then cut suddenly. I will try to find out why the connection cut and why I can’t seem to be able to contact the future anymore.</p>
 <p>Happy Future Toxing.</p>
+<p>In other news it has been reported to us that Tox works from a helicopter.</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>The Tox Foundation has made an important discovery today that might change the world forever.</p>
