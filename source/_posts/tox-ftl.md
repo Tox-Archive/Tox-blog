@@ -22,7 +22,7 @@ qTox is doing very well competing with other web browsers.
 
 uTox was rewritten in javascript and became a web client.
 
-Toxic was acquired by microsoft and ported to windows, it will soon be replacing skype.
+Toxic was acquired by Microsoft and ported to Windows, it will soon be replacing Skype.
 
 Antox was slowly replaced by uTox for android.
 
