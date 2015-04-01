@@ -1,10 +1,10 @@
-title: Tox for ChromeOS preview
+title: Tox for Chrome OS preview
 date: 2015-04-1 01:10:23
 author:  Sean
 tags:
 ---
 
-Tox development preview for ChromeOS
+Tox development preview for Chrome OS
 
 <!-- more -->
 
@@ -23,7 +23,7 @@ With the announcement of even cheaper Chromebooks and sticks,
 we realize the value in providing secure messaging with friends
 and families to this ever expanding market more than ever.
 
-As such, we'd like to announce the Tox for ChromeOS technical
+As such, we'd like to announce the Tox for Chrome OS technical
 preview. You'll be one of the very first testers to this so
 tons of bugs and issues are to be expected. While these clients
 work, we do not encourage you to use them as your daily drivers.
@@ -33,8 +33,8 @@ this preview is.
 
 #Getting started
 
-* To test Antox for ChromeOS please click [here](https://chrome.google.com/webstore/detail/antox/mblkomdgjiaclkhabhmhnkmkfbbclgdi)
-* To test uTox for ChromeOS please click [here](https://chrome.google.com/webstore/detail/%CE%BCtox/cpbcplbgcffgmhagekhlifhpaihcgokf)
+* To test Antox for Chrome OS please click [here](https://chrome.google.com/webstore/detail/antox/mblkomdgjiaclkhabhmhnkmkfbbclgdi)
+* To test uTox for Chrome OS please click [here](https://chrome.google.com/webstore/detail/%CE%BCtox/cpbcplbgcffgmhagekhlifhpaihcgokf)
 
 #Reporting issues
 
