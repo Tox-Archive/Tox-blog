@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="https://blog.tox.im/"/>
-  <updated>2015-04-01T11:29:28.679Z</updated>
+  <updated>2015-04-01T11:34:49.535Z</updated>
   <id>https://blog.tox.im/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <link href="https://blog.tox.im/2015/04/01/tox-ftl/"/>
     <id>https://blog.tox.im/2015/04/01/tox-ftl/</id>
     <published>2015-04-01T11:10:23.000Z</published>
-    <updated>2015-04-01T11:28:18.000Z</updated>
-    <content type="html"><![CDATA[<p>The Tox foundation has made an important discovery today that might change the world forever.</p>
+    <updated>2015-04-01T11:33:39.000Z</updated>
+    <content type="html"><![CDATA[<p>The Tox Foundation has made an important discovery today that might change the world forever.</p>
 <a id="more"></a>
 
 <p>Our research team at the Tox foundation has made an important discovery today. Data packets travel at the speed of light meaning finding a way to make them travel slightly faster is not that hard. The trick is to make the wire itself go fast in order to transmit the data inside at faster than light speeds. The following diagram should explain very well how it works.</p>
@@ -28,7 +28,7 @@
 
 <p>Faster than light information travel allows us to send information back and forward in time by tweaking the packet parameters.</p>
 <p>I managed to communicate with myself from the future and this is what I managed to understand. The connection was very flaky because of the dimensional noise created when someone interferes with his past. Here is the news from the future:</p>
-<p><a href="https://github.com/irungentoo/toxcoin" target="_blank" rel="external">Toxcoin</a> died a slow death after not a single developer was found that wanted to develop it.</p>
+<p><a href="https://blog.tox.im/2015/04/01/introducing-toxcoin" target="_blank" rel="external">Toxcoin</a> died a slow death after not a single developer was found that wanted to develop it.</p>
 <p>qTox is doing very well competing with other web browsers.</p>
 <p>uTox was rewritten in javascript and became a web client.</p>
 <p>Toxic was acquired by microsoft and ported to windows, it will soon be replacing skype.</p>
@@ -42,7 +42,7 @@
 <p>Happy Future Toxing.</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>The Tox foundation has made an important discovery today that might change the world forever.</p>
+    <![CDATA[<p>The Tox Foundation has made an important discovery today that might change the world forever.</p>
 ]]>
     
     </summary>
