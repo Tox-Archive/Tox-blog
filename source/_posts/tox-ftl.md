@@ -8,7 +8,7 @@ The Tox foundation has made an important discovery today that might change the w
 
 <!-- more -->
 
-Our research team at the Tox foundation has made an important discovery today. Data packets travel at the speed of light meaning finding a way to make them travel slightly faster The trick is to make the wire itself go fast in order to transmit data at faster than light speeds. The following diagram should explain very well how it works.
+Our research team at the Tox foundation has made an important discovery today. Data packets travel at the speed of light meaning finding a way to make them travel slightly faster is not that hard. The trick is to make the wire itself go fast in order to transmit the data inside at faster than light speeds. The following diagram should explain very well how it works.
 
 {% limg Tox_ftl.png %}
 
