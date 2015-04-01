@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tox.im/2015/04/01/tox-ftl/</loc>
+    <lastmod>2015-04-01T11:15:33.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.tox.im/2015/04/01/tox-chromeos/</loc>
     <lastmod>2015-04-01T09:06:43.000Z</lastmod>
   </url>
@@ -27,12 +32,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/10/03/antox-release-0-14-0-alpha/</loc>
-    <lastmod>2015-01-25T01:19:51.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.tox.im/2014/03/16/a-quick-overlook-at-toxs-mission/</loc>
+    <loc>https://blog.tox.im/2014/05/31/new-milestone-reached-audio-calling-on-windows/</loc>
     <lastmod>2015-01-25T01:19:51.000Z</lastmod>
   </url>
   
@@ -112,7 +112,12 @@
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/10/03/toxic-release-v-0-5-2-and-groupchat-issues/</loc>
+    <loc>https://blog.tox.im/2014/03/16/a-quick-overlook-at-toxs-mission/</loc>
+    <lastmod>2015-01-25T01:19:51.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tox.im/2014/10/03/antox-release-0-14-0-alpha/</loc>
     <lastmod>2015-01-25T01:19:51.000Z</lastmod>
   </url>
   
@@ -127,12 +132,12 @@
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/11/23/tox-packaging-and-versions/</loc>
+    <loc>https://blog.tox.im/2014/10/03/toxic-release-v-0-5-2-and-groupchat-issues/</loc>
     <lastmod>2015-01-25T01:19:51.000Z</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/10/22/tox-on-your-wii/</loc>
+    <loc>https://blog.tox.im/2014/09/07/warrant-canary-updated-changes/</loc>
     <lastmod>2015-01-25T01:19:51.000Z</lastmod>
   </url>
   
@@ -147,17 +152,12 @@
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/05/31/new-milestone-reached-audio-calling-on-windows/</loc>
-    <lastmod>2015-01-25T01:19:51.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.tox.im/2014/05/20/the-tcp-branch-an-explanation/</loc>
     <lastmod>2015-01-25T01:19:51.000Z</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/10/22/tox-on-osx/</loc>
+    <loc>https://blog.tox.im/2014/11/23/tox-packaging-and-versions/</loc>
     <lastmod>2015-01-25T01:19:51.000Z</lastmod>
   </url>
   
@@ -177,7 +177,12 @@
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/09/07/warrant-canary-updated-changes/</loc>
+    <loc>https://blog.tox.im/2014/10/22/tox-on-osx/</loc>
+    <lastmod>2015-01-25T01:19:51.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tox.im/2014/10/22/tox-on-your-wii/</loc>
     <lastmod>2015-01-25T01:19:51.000Z</lastmod>
   </url>
   
@@ -192,17 +197,12 @@
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/10/20/qtox-now-in-tox-repositories/</loc>
-    <lastmod>2015-01-06T23:28:20.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.tox.im/2014/03/10/hello-world-2/</loc>
-    <lastmod>2015-01-06T23:28:20.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.tox.im/2014/10/06/toxic-added-to-tox-repositories/</loc>
+    <lastmod>2015-01-06T23:28:20.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tox.im/2014/10/20/qtox-now-in-tox-repositories/</loc>
     <lastmod>2015-01-06T23:28:20.000Z</lastmod>
   </url>
   
@@ -217,22 +217,17 @@
   </url>
   
   <url>
+    <loc>https://blog.tox.im/2014/03/10/hello-world-2/</loc>
+    <lastmod>2015-01-06T23:28:20.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.tox.im/2014/05/18/tcp-branch-merged-with-master/</loc>
     <lastmod>2015-01-06T23:28:19.000Z</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/10/06/help-tox-grow-run-a-tox-node-today/</loc>
-    <lastmod>2015-01-06T23:28:19.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.tox.im/running-a-bootstrap-node/index.html</loc>
-    <lastmod>2015-01-06T23:28:19.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.tox.im/2014/03/14/no-antox-gplay-release-for-march-13th/</loc>
+    <loc>https://blog.tox.im/2014/03/13/tcp-relay-work-begun/</loc>
     <lastmod>2015-01-06T23:28:19.000Z</lastmod>
   </url>
   
@@ -242,12 +237,17 @@
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/11/30/tox-bootstrap-now-packaging-for-armhf/</loc>
+    <loc>https://blog.tox.im/2014/03/14/antox-0-6-3-released/</loc>
     <lastmod>2015-01-06T23:28:19.000Z</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/03/14/antox-0-6-3-released/</loc>
+    <loc>https://blog.tox.im/2014/10/06/help-tox-grow-run-a-tox-node-today/</loc>
+    <lastmod>2015-01-06T23:28:19.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tox.im/2014/11/30/tox-bootstrap-now-packaging-for-armhf/</loc>
     <lastmod>2015-01-06T23:28:19.000Z</lastmod>
   </url>
   
@@ -262,17 +262,22 @@
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/03/12/venom-changes-for-march-12th-2014/</loc>
+    <loc>https://blog.tox.im/running-a-bootstrap-node/index.html</loc>
     <lastmod>2015-01-06T23:28:19.000Z</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/03/13/tcp-relay-work-begun/</loc>
+    <loc>https://blog.tox.im/2014/03/14/no-antox-gplay-release-for-march-13th/</loc>
     <lastmod>2015-01-06T23:28:19.000Z</lastmod>
   </url>
   
   <url>
     <loc>https://blog.tox.im/2014/05/04/were-not-dead-just-working-on-tcp/</loc>
+    <lastmod>2015-01-06T23:28:19.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tox.im/2014/03/12/venom-changes-for-march-12th-2014/</loc>
     <lastmod>2015-01-06T23:28:19.000Z</lastmod>
   </url>
   
@@ -302,12 +307,12 @@
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/03/11/audio/</loc>
+    <loc>https://blog.tox.im/2014/03/13/toxic-and-threads/</loc>
     <lastmod>2015-01-06T23:26:28.000Z</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.tox.im/2014/03/13/toxic-and-threads/</loc>
+    <loc>https://blog.tox.im/2014/03/11/audio/</loc>
     <lastmod>2015-01-06T23:26:28.000Z</lastmod>
   </url>
   

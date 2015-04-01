@@ -49,6 +49,64 @@
     <div id="main">
       
   
+    <article id="post-tox-core-and-api-changes" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/03/21/tox-core-and-api-changes/" class="article-date">
+  <time datetime="2014-03-21T04:51:05.000Z" itemprop="datePublished">Mar 21 2014</time>
+</a>
+		</span>
+		<span class="meta-elements author">Tox Foundation</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2014/03/21/tox-core-and-api-changes/">Tox Core and API changes</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>Recently pushed was the api-fix branch by irungentoo. Nothing too big was changed, fortunately, but things were changed to keep consistencies and so forth. Included in this merge was:</p>
+<ul>
+<li>No more forcing NULL terminated strings in Tox Core (meaning whatever you send to the core, it won’t chop off the end forcefully)</li>
+<li>Some naming changes like tox_get_friend_id -&gt; tox_get_friend_number to clear some confusions</li>
+<li>Many <code>int</code>s were changed to <code>int32_t</code> for consistency and clarity<br>You can check all the changes <a href="https://github.com/irungentoo/ProjectTox-Core/commit/5770a0e29ab35efb1ef656ab81c499635fc5fecf" target="_blank" rel="external">here</a>, as well.</li>
+</ul>
+<p>All of the clients have been able to update their builds to reflect the API changes as well, amazingly fast. There might be even more changes to come to make the API even better in the future! In other news, more work is being done on TCP in the core. Can’t wait for that to finish.</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Tox-Core/">Tox Core</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+
+  
     <article id="post-toxicity-and-jenkins" class="post">
 	<footer class="entry-meta-header">
 		<span class="meta-elements date">
@@ -567,58 +625,6 @@
 <p>This update focuses more on aesthetics, with most changes relating to animation-smoothing, notification polishing, and ActionBar backward compatibility. Delivery and read receipts were also added, but will receive a face-lift very shortly. To those who may experience Antox crashing when selecting a friend, re-installing the app will usually fix the problem. If not, please open an issue on GitHub and we’ll get it sorted out.</p>
 <p>A new permission (Android.VIBRATE) has been added. You will have to manually update the app through Google Play, as permission changes, no matter how minor, require your approval. This permission was necessary, as notifications now have permission to vibrate your phone when the screen is off.</p>
 <p>Thanks for being apart of the Alpha Test Group, your feedback is always appreciated.</p>
-
-    
-	</div>
-	<footer class="entry-footer">
-		<div class="entry-meta-footer">
-			<span class="category">
-				
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Antox/">Antox</a>
-  </div>
-
-			</span>
-			<span class="tags">
-				
-			</span>
-		</div>
-	</footer>
-	
-</article>
-
-
-	<hr class="article-devider">
-
-
-
-
-  
-    <article id="post-no-antox-gplay-release-for-march-13th" class="post">
-	<footer class="entry-meta-header">
-		<span class="meta-elements date">
-			<a href="/2014/03/14/no-antox-gplay-release-for-march-13th/" class="article-date">
-  <time datetime="2014-03-14T12:13:00.000Z" itemprop="datePublished">Mar 14 2014</time>
-</a>
-		</span>
-		<span class="meta-elements author">Tox Foundation</span>
-		<div class="commentscount">
-			
-		</div>
-	</footer>
-	
-	<header class="entry-header">
-		
-  
-    <h1 itemprop="name" class="entry-title">
-      <a class="article-title" href="/2014/03/14/no-antox-gplay-release-for-march-13th/">No Antox GPlay Release for March 13th</a>
-    </h1>
-  
-
-	</header>
-	<div class="entry-content">
-		
-    	<p>I apologize for those who await for the daily build of Antox in the Alpha Testing Group, but timing constraints left me away from the computer the entire day. There will be a release pushed to GPlay later today, and will include all the changes made yesterday as well.</p>
 
     
 	</div>
