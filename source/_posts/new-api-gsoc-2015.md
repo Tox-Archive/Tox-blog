@@ -26,4 +26,4 @@ Want to know who got selected? This is published on the [Melange](https://www.go
 
 Did you get selected? Join us in [#tox-gsoc-students](https://webchat.freenode.net/?channels=%23tox-gsoc-students) and get to meet your mentors if you haven’t already.
 
-Did you not get selected? Many of you submitted amazing proposals that we wish we could have selected but didn’t have the mentors or resources to do so. We’d greatly appreciate it if you’d continue to contribute to Tox or any other open source project that you find interesting
+Did you not get selected? Many of you submitted amazing proposals that we wish we could have selected but didn’t have the mentors or resources to do so. We’d greatly appreciate it if you’d continue to contribute to Tox or any other open source project that you find interesting.
