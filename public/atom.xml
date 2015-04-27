@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="https://blog.tox.im/"/>
-  <updated>2015-04-01T11:48:28.732Z</updated>
+  <updated>2015-04-27T19:02:24.103Z</updated>
   <id>https://blog.tox.im/</id>
   
   <author>
@@ -13,6 +13,35 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Tox updates and GSoC 2015]]></title>
+    <link href="https://blog.tox.im/2015/04/27/new-api-gsoc-2015/"/>
+    <id>https://blog.tox.im/2015/04/27/new-api-gsoc-2015/</id>
+    <published>2015-04-27T11:00:00.000Z</published>
+    <updated>2015-04-27T19:01:07.000Z</updated>
+    <content type="html"><![CDATA[<p>As you may have noticed, your Tox client received an update</p>
+<a id="more"></a>
+
+<h2 id="New_API">New API</h2>
+<p>After almost a month of blocking updates we finally pushed a major change that might have caused some issues with your friends. The new API was a major refactor and improvement in the protocol and the public API, resulting in issues with old API clients.</p>
+<p>To transition smoothly we blocked most updates so clients and other software could be updated to work with our changes, and when we felt this was done the flood gates were re-opened.</p>
+<p>If you haven’t already, please update your client and instruct your friends to do the same and you should be back to Toxing without interruption.</p>
+<h2 id="GSoC">GSoC</h2>
+<p>After over a month of work reading proposals, talking to students, and debating on the best of the best we’ve come to a conclusion and decided on the 9 best students we could.</p>
+<p>Students were evaluated on proposals, how much they fit with what we’re trying to accomplish with Tox, and how much we thought they had a genuine interest in helping open source.</p>
+<p>With over 90 proposals from many amazing students from a wide variety of backgrounds, choosing 9 special few for this year’s GSoC was one of the most difficult decisions we’ve had to make all year and we hope we chose well.</p>
+<p>Want to know who got selected? This is published on the <a href="https://www.google-melange.com/gsoc/org2/google/gsoc2015/tox" target="_blank" rel="external">Melange</a>.</p>
+<p>Did you get selected? Join us in <a href="https://webchat.freenode.net/?channels=%23tox-gsoc-students" target="_blank" rel="external">#tox-gsoc-students</a> and get to meet your mentors if you haven’t already.</p>
+<p>Did you not get selected? Many of you submitted amazing proposals that we wish we could have selected but didn’t have the mentors or resources to do so. We’d greatly appreciate it if you’d continue to contribute to Tox or any other open source project that you find interesting</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>As you may have noticed, your Tox client received an update</p>
+]]>
+    
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Major Discovery by the Tox Foundation]]></title>
@@ -510,25 +539,6 @@
     </summary>
     
       <category term="μTox" scheme="https://blog.tox.im/categories/%CE%BCTox/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[uTox now in Apt & Yum Repos]]></title>
-    <link href="https://blog.tox.im/2014/09/28/utox-now-in-apt-yum-repos/"/>
-    <id>https://blog.tox.im/2014/09/28/utox-now-in-apt-yum-repos/</id>
-    <published>2014-09-28T21:56:19.000Z</published>
-    <updated>2015-01-06T23:28:20.000Z</updated>
-    <content type="html"><![CDATA[<p>uTox is now the second Tox client to be hosted on the Tox Repositories, second to Venom.<br>If you haven’t already, add our Tox repo to Apt or Yum by following <a href="https://wiki.tox.im/Binaries#Repositories" target="_blank" rel="external">these instructions.</a> It’s a great way to get the latest changes to Tox clients in a quick and easy fashion.</p>
-<p>32 and 64bit instructions supported; more to come in the upcoming week! (We’re in the process of getting Toxic and qTox on the repo as well!)</p>
-<img src="/images/utox-small.png">]]></content>
-    <summary type="html">
-    <![CDATA[<p>uTox is now the second Tox client to be hosted on the Tox Repositories, second to Venom.<br>If you haven’t already, add our Tox repo to A]]>
-    </summary>
-    
-      <category term="Tox Repositories" scheme="https://blog.tox.im/categories/Tox-Repositories/"/>
-    
-      <category term="μTox" scheme="https://blog.tox.im/categories/Tox-Repositories/%CE%BCTox/"/>
     
   </entry>
   
