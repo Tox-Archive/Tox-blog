@@ -4,7 +4,7 @@ author: Sean
 tags:
 ---
 
-As you may have noticed, your Tox client received an update
+As you may have noticed, your Tox client received an update.
 
 <!-- more -->
 
