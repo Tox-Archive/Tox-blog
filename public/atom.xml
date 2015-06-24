@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="https://blog.tox.im/"/>
-  <updated>2015-04-27T19:35:02.971Z</updated>
+  <updated>2015-06-24T22:18:46.303Z</updated>
   <id>https://blog.tox.im/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <link href="https://blog.tox.im/2015/04/27/new-api-gsoc-2015/"/>
     <id>https://blog.tox.im/2015/04/27/new-api-gsoc-2015/</id>
     <published>2015-04-27T11:00:00.000Z</published>
-    <updated>2015-04-27T19:33:45.000Z</updated>
-    <content type="html"><![CDATA[<p>As you may have noticed, your Tox client received an update</p>
+    <updated>2015-06-24T22:17:32.000Z</updated>
+    <content type="html"><![CDATA[<p>As you may have noticed, your Tox client received an update.</p>
 <a id="more"></a>
 
 <h2 id="New_API">New API</h2>
@@ -36,7 +36,7 @@
 <p>Did you not get selected? Many of you submitted amazing proposals that we wish we could have selected but didn’t have the mentors or resources to do so. We’d greatly appreciate it if you’d continue to contribute to Tox or any other open source project that you find interesting.</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>As you may have noticed, your Tox client received an update</p>
+    <![CDATA[<p>As you may have noticed, your Tox client received an update.</p>
 ]]>
     
     </summary>
