@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="https://blog.tox.im/"/>
-  <updated>2015-07-09T18:59:03.541Z</updated>
+  <updated>2015-07-09T19:24:59.494Z</updated>
   <id>https://blog.tox.im/</id>
   
   <author>
@@ -13,6 +13,32 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Tox infastructure and various changes]]></title>
+    <link href="https://blog.tox.im/2015/07/09/tox-infa-update/"/>
+    <id>https://blog.tox.im/2015/07/09/tox-infa-update/</id>
+    <published>2015-07-09T11:00:00.000Z</published>
+    <updated>2015-07-09T19:22:44.000Z</updated>
+    <content type="html"><![CDATA[<p>With all the drama going on, I think we should talk</p>
+<a id="more"></a>
+
+<p>About a month back the Tox Foundation attempted to peacefully transition and move everything to the project itself. This included various domains and assets renewed and set in place for years.</p>
+<p>We wanted to peacefully transition things and share data, working together to move things from 1 owner to the next while ensuring everything continued to work and operate without issue.</p>
+<p>Unfortunately rather than work together to move everything and its data when I tried to discuss how to do so I was told to fuck off.</p>
+<p>Going forward, the Tox Foundation has decided that rather than let them break everything and since they don’t want to work together, that we’ll distance<br>ourselves from the main of the project, running infrastructure and some external programs totally separate from the project itself.</p>
+<p>We’ve decided on the following course of action: Maintaining the site and build infrastructure until 2017, placing the wiki and mailing list in read only mode, maintaining and supporting ToxMe indefinitely, transitioning our DNS infrastructure to HE, making libtoxcore static fully, making tox.horse static, and migrating ToxMail offsite for about a year.<br>Be advised that until the end of our support deadline things like the repo will continue to run and build packages successfully.</p>
+<p>If you have a @tox.im email and you’d like your emails archived and sent to you or transitioned to the new system please send an email to noc@tox.im</p>
+<p>At the end of the ~2 year extended support period we’ll evaluate either continuing to run everything or search for a new operator, suspending all further operations.</p>
+<p>While we have monitoring systems in place, if you notice an issue or something go wrong shoot an email to noc@tox.im ASAP.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>With all the drama going on, I think we should talk</p>
+]]>
+    
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Tox updates and GSoC 2015]]></title>
@@ -521,24 +547,6 @@
     </summary>
     
       <category term="Toxic" scheme="https://blog.tox.im/categories/Toxic/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[uTox updates 0.1.a]]></title>
-    <link href="https://blog.tox.im/2014/10/02/utox-updates-0-1-a/"/>
-    <id>https://blog.tox.im/2014/10/02/utox-updates-0-1-a/</id>
-    <published>2014-10-02T22:58:53.000Z</published>
-    <updated>2015-01-06T23:26:28.000Z</updated>
-    <content type="html"><![CDATA[<p>The major update this week is the new groupchats that should work much better (connection wise) than the old ones. Note that as of now they are still missing important features like usernames but the base of them (joining/quitting/sending messages) should already work well.</p>
-<p>As for uTox, mainly bug/translation fixes.</p>
-<p>Also, I will be pushing updates in a more regular manner until group chats work well.</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>The major update this week is the new groupchats that should work much better (connection wise) than the old ones. Note that as of now th]]>
-    </summary>
-    
-      <category term="μTox" scheme="https://blog.tox.im/categories/%CE%BCTox/"/>
     
   </entry>
   
